@@ -1,0 +1,13 @@
+.menu {
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    font-size: 13px;
+    color: #46a2f4 f;
+    padding: 20px 0 22px;
+}
