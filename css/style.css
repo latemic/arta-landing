@@ -313,7 +313,7 @@ header .arrow {
 .background_item_1 {
 	height: 2250px;
     width: 100%;
-    background-image: url(../img/_bg.png);
+    background-image: url(../img/bg1.png);
     position: absolute;
     top: 0px;
     background-size: cover;
