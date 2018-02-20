@@ -312,7 +312,7 @@ header .arrow {
 }
 
 .background_item_1 {
-	height: 2250px;
+	height: 2400px;
     width: 100%;
     background-image: url(../img/bg1.png);
     position: absolute;
@@ -384,7 +384,7 @@ header .arrow {
 
 .section_6_content .arrow {
 	position: absolute;
-    bottom: -4%;
+    bottom: 1%;
 	left: 50%;
 	transform: translate(-50%);
 }
@@ -407,7 +407,7 @@ header .arrow {
 }
 
 .desk {
-	top: 74%;
+	top: 67%;
     left: 23%;
     width: 15%;
 }
@@ -481,7 +481,7 @@ header .arrow {
     overflow: hidden;
     height: 542px;
     margin: 0 auto;
-    margin-top: -5%;
+    margin-top: -10%;
    
 }
 
@@ -518,15 +518,15 @@ header .arrow {
 
 .section-8 .arrow {
 	position: absolute;
-    bottom: -18%;
+    bottom: 3%;
 	left: 50%;
 	transform: translate(-50%);
 }
 
 .section-9 {
     text-align: center;
-    margin-top: 28%;
-    margin-bottom: 11.5%;
+    padding-top: 28%;
+    padding-bottom: 34.5%;
     position: relative;
      
 }
@@ -773,4 +773,23 @@ header .arrow {
 @keyframes modalopen {
     from{opacity: 0}
     to{opacity: 1}
+}
+
+.section {
+    padding-top: 15%;
+}
+
+.section_fix {
+    padding-top: 0;
+}
+
+.section_fix2 {
+    padding-top: 6%;
+}
+
+.section_fix3 {
+    padding-top: 25%;
+}
+.section-10_bg {
+    padding-top: 10%;
 }
