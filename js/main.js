@@ -9,6 +9,15 @@ $('.navbar').removeClass('navbar-fix');
 
 });
 
+
+$(function() {
+    $.scrollify({
+      section : ".section",
+      setHeights: false
+    });
+  });
+
+
 var modal = document.getElementById('simpleModal');
 
 var modalBtn = document.getElementById('modalBtn');
