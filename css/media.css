@@ -98,6 +98,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+    .navbar-fix {
+        padding-bottom: 9px;
+    }
+    .navbar-fix .navbar-toggle {
+        top: 14px;
+    }
     .navbar-fix .navbar-toggle .icon-bar {
         background: #2888e8;
     }
@@ -110,13 +116,13 @@
     }
     .header_right .btn {
         position: absolute;
-        top: -50px;
+        top: -45px;
         right: 150px;
     }
     .navbar-toggle {
         position: absolute;
         right: 42px;
-        top: 18px;
+        top: 14px;
     }
     .navbar-toggle .icon-bar {
         background: #fff;
@@ -184,13 +190,13 @@
 }
 
 @media only screen and (max-width : 450px) {
-    
     .navbar-toggle {
         right: 4px;
-        top: 11px;
+        top: 14px;
     }
     .header_right .btn {
         right: 66px;
+        top: -46px;
     }
     .menu li a {
         padding-right: 0px;
@@ -204,5 +210,8 @@
     }
     .section-8 .arrow {
         bottom: -6%;
+    }
+    .modal_content input {
+        width: 90%;
     }
 }
