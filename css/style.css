@@ -312,7 +312,7 @@ header .arrow {
 }
 
 .background_item_1 {
-	height: 2400px;
+	height: 2700px;
     width: 100%;
     background-image: url(../img/bg1.png);
     position: absolute;
@@ -518,9 +518,10 @@ header .arrow {
 
 .section-8 .arrow {
 	position: absolute;
-    bottom: 3%;
+    bottom: 0%;
 	left: 50%;
-	transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 11;
 }
 
 .section-9 {
@@ -761,6 +762,8 @@ header .arrow {
     top: 40px;
     font-size: 30px;
     color: #fff;
+    height: 50px;
+    width: 50px;
 
 }
 
