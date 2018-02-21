@@ -743,6 +743,7 @@ header .arrow {
 .modal_content .btn {
     border: 1px solid #fff;
     margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 15px;
 }
 
