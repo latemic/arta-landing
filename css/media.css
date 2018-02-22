@@ -87,7 +87,12 @@
         line-height: 42px;
     }
     .logo {
-        margin-left: 20px;
+        margin-left: 9px;
+    }
+
+    .arta-logo {
+        height: 38px;
+        width: 34px;
     }
 
     .logo h1 {
@@ -103,8 +108,15 @@
     }
     .header_right .btn {
         position: absolute;
-        top: -45px;
-        right: 85px;
+        top: -36px;
+        right: 54px;    
+        height: 33px;
+        line-height: 33px;
+        padding: 0 16px;
+    }
+
+    header .arrow {
+        bottom: 3%;
     }
     
     /* header end */
@@ -210,7 +222,9 @@
         position: absolute;
         top: 87px;
     }
-
+    .footer-info p {
+        margin-left: 0;
+       }
 	.background_item_1 {
 		height: 1768px;
 	}
@@ -228,11 +242,12 @@
     
     .navbar-toggle {
         position: absolute;
-        right: 20px;
-        top: 9px;
+        right: -9px;
+        top: 11px;
     }
     .navbar-toggle .icon-bar {
         background: #fff;
+        width: 17px;
     }
     
     .navbar-fixed-top {
@@ -315,6 +330,7 @@
         text-align: left;
         margin-left: 10px;
     }
+    
     .section-8 .arrow {
         bottom: -6%;
     }
