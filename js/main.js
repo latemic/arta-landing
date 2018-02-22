@@ -1,45 +1,18 @@
-$(window).scroll(function() {
-var height = $(window).scrollTop();
 
-if(height > 100){
-$('.navbar').addClass('navbar-fix');
-} else{
-$('.navbar').removeClass('navbar-fix');
-}
 
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'footer'],
+        afterLoad: function(anchorLink, index){
+            if(anchorLink !== 'section1'){
+                $(".navbar").addClass("navbar-fix");
+            }
+            
+            
+        },
+        fixedElements: '.modal'
+    });
 });
 
 
-$(function() {
-    $.scrollify({
-      section : ".section",
-      setHeights: false
-    });
-  });
-
-
-var modal = document.getElementById('simpleModal');
-
-var modalBtn = document.getElementById('modalBtn');
-
-var closeBtn = document.getElementsByClassName('closeBtn')[0];
-
-
-
-modalBtn.addEventListener('click', openModal);
-
-
-closeBtn.addEventListener('click', closeModal);
-
-
-window.addEventListener('click', clickOutside);
-
-function openModal(){
-    modal.style.display = 'block';
-}
-
-
-function closeModal(){
-    modal.style.display = 'none';
-}
 
