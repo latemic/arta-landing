@@ -10,7 +10,8 @@ $(document).ready(function() {
             
             
         },
-        fixedElements: '.modal'
+        fixedElements: '.modal',
+        scrollingSpeed: 350
     });
 });
 
