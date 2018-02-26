@@ -15,12 +15,5 @@ $(document).ready(function() {
     });
 });
 
-var supportsOrientationChange = "onorientationchange" in window,
-orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
 
-$(window).bind(orientationEvent, function () {
-    if (isTablet) {
-        doneResizing();
-    }
-});
 
