@@ -361,7 +361,22 @@
 </div>
 
     
-  
+     <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                navigationTooltips: ['fullPage', 'Open', 'Easy', 'Touch'],
+                css3: true,
+                scrollingSpeed: 1000,
+                navigation: true,
+                slidesNavigation: true,
+                responsiveHeight: 330,
+                dragAndMove: true,
+                dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+                controlArrows: false,
+            });
+        });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script> if (screen && screen.width > 768) { document.write('<script src="js/jquery.fullpage.min.js"><\/script>'); } </script>
