@@ -1,20 +1,25 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
 
-    <title>ARTA</title>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-
-    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
+    <title>ARTA</title>
+    
 
   </head>
 
@@ -405,48 +410,11 @@
 </div>
 
 </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
     
-    
-    <script> if (screen && screen.width > 768) { document.write('<script src="js/jquery.fullpage.min.js"><\/script>'); } </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-          $('#fullpage').fullpage({
-              anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11'],       
-              
-              //Scrolling
-              css3: true,
-              scrollingSpeed: 600,
-              autoScrolling: true,
-              fitToSection: false,
-              fitToSectionDelay: 300,
-              scrollBar: false,
-              easing: 'easeInOutCubic',
-              easingcss3: 'ease',
-              loopBottom: false,
-              loopTop: false,
-              loopHorizontal: true,
-              continuousVertical: false,
-              continuousHorizontal: false,
-              scrollHorizontally: false,
-              interlockedSlides: false,
-              resetSliders: false,
-              //Accessibility
-              keyboardScrolling: true,
-              animateAnchor: true,
-              recordHistory: true,
-              //Design  
-              responsiveHeight: 330,
-              controlArrows: false,
-              afterLoad: function(anchorLink, index){
-            if(anchorLink !== 'section1'){
-                $(".navbar").addClass("navbar-fix");
-            }
-        },
-        fixedElements: '.modal'
-          });
-      });
-    </script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script async> if (screen && screen.width > 768) { document.write('<script src="js/jquery.fullpage.min.js"><\/script>'); } </script>
+    <script src="js/bootstrap.min.js"async ></script>
+    <script src="js/main.js" async></script>
   </body>
 </html>
