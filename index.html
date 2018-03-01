@@ -8,7 +8,7 @@
     
 
     <title>ARTA</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <!-- Bootstrap core CSS -->
 
     
@@ -46,10 +46,43 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse col-lg-4 col-lg-offset-2" id="bs-example-navbar-collapse-1">
             <nav class="menu">
-                <li><a href="#">Products</a></li>
+              <li>
+                <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Products</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <div class="menu_close"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDE0IDE0Ij4gICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxwYXRoIGQ9Ik0tNS01aDI0djI0SC01eiIvPiAgICAgICAgPGcgc3Ryb2tlPSIjMTg1ODk5IiBzdHJva2Utd2lkdGg9IjIiPiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xLjA1MyAxLjA1M0wxMy4wOSAxMy4wOU0xLjA1MyAxMy4wODlMMTMuMDkgMS4wNTMiLz4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==" alt=""></div>
+                    <div class="triangle-with-shadow"></div>
+                  <li>
+                    <a href="#">
+                      <div class="menu_img"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI4IDMyIj4gICAgPGRlZnM+ICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSI2MS4yNDUlIiB4Mj0iMTguOTQ3JSIgeTE9IjE0Mi40ODclIiB5Mj0iMTkuMzc2JSI+ICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM1OTFDOSIvPiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzE4NTg5OSIvPiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4gICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjUwJSIgeDI9IjUwJSIgeTE9Ii03MC4xNzclIiB5Mj0iMTAwJSI+ICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM1OTFDOSIvPiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzE4NTg5OSIvPiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4gICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYyIgeDE9IjUwJSIgeDI9IjE5LjE0MSUiIHkxPSIwJSIgeTI9IjgyLjA2MyUiPiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzNTkxQzkiLz4gICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxODU4OTkiLz4gICAgICAgIDwvbGluZWFyR3JhZGllbnQ+ICAgIDwvZGVmcz4gICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxwYXRoIGQ9Ik0tMTEtOWg0OXY0OWgtNDl6Ii8+ICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNMzMuMTggMTQuMjIzbDEzLjM1IDcuNzA4LTYuNzMyIDMuOTUzLTYuNjc1LTMuODU0LTYuNjQyIDMuNzk1LTYuODM0LTMuOTQ1eiIgdHJhbnNmb3JtPSJyb3RhdGUoNjAgMzUuMzgzIDYuMDI4KSIvPiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNiKSIgZD0iTTI0Ljg1NSAyOC43MzdsMTMuMzk3IDcuNzA4LTYuNzkgMy44NTQtNi42MDctMy44NTRMMTguMjUgNDAuM2wtNi43OS0zLjg1NHoiIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIC0xMSA2MC4wMzYpIi8+ICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2MpIiBkPSJNMTYuNjYzIDE0LjIyM2wxMy4zNSA3LjcwOC02LjczMyAzLjk1NC02LjY3NS0zLjg1NC02LjY0IDMuNzk0TDMuMTMgMjEuODh6IiB0cmFuc2Zvcm09InNjYWxlKC0xIDEpIHJvdGF0ZSg2MCAxMy4yOTQgLTMuNjIzKSIvPiAgICA8L2c+PC9zdmc+" alt=""></div>
+                      <div class="menu_info">
+                        <span>ARTA MOBILE SDK</span>
+                        <p>Make a realistic preview of your<br> products at people homes</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li><a href="#">
+                      <div class="menu_img"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDI1IDM1Ij4gICAgPGRlZnM+ICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeTE9IjAlIiB5Mj0iMTAwJSI+ICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxQkRGNSIvPiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI4ODhFOCIvPiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4gICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjEwMCUiIHgyPSItOS44OCUiIHkxPSIxMDAlIiB5Mj0iLTkuMzYyJSI+ICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxQkRGNSIvPiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI4ODhFOCIvPiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4gICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYyIgeDE9IjUwJSIgeDI9IjUwJSIgeTE9IjAlIiB5Mj0iMTAwJSI+ICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM1OTFDOSIvPiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzE4NTg5OSIvPiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4gICAgPC9kZWZzPiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPHBhdGggZD0iTS0xMS03aDQ5djQ5aC00OXoiLz4gICAgICAgIDxwYXRoIGZpbGw9InVybCgjYSkiIGQ9Ik01Ljk1MyAwbDUuOTU0IDMuNTF2Ny4wMjNMNS45NTMgNy4wMjJ6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMi44MTMgNy4xOTYpIi8+ICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNMCAwbDUuOTUzIDMuNTF2Ny4wMjNMMCA3LjAyMnoiIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDE4Ljc2NiA3LjE5NikiLz4gICAgICAgIDxwYXRoIGZpbGw9InVybCgjYykiIGQ9Ik01Ljk1MyA2Ljg3bDUuOTU0IDMuNDM0LTUuOTU0IDMuNDM0TDAgMTAuMzA0eiIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMjQuNzIgNy4xOTYpIi8+ICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNNS45NTMgMGw1Ljk1NCAzLjUxdjcuMDIzTDUuOTUzIDcuMDIyeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLjkwNyAuNzg1KSIvPiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNiKSIgZD0iTTAgMGw1Ljk1MyAzLjUxdjcuMDIzTDAgNy4wMjJ6IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSA2Ljg2IC43ODUpIi8+ICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2MpIiBkPSJNNS45NTMgNi44N2w1Ljk1NCAzLjQzNC01Ljk1NCAzLjQzNEwwIDEwLjMwNHoiIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDEyLjgxMyAuNzg1KSIvPiAgICAgICAgPGc+ICAgICAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTUuOTUzIDBsNS45NTQgMy41MXY3LjAyM0w1Ljk1MyA3LjAyMnoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuODYgMTAuODYpIi8+ICAgICAgICAgICAgPHBhdGggZmlsbD0idXJsKCNiKSIgZD0iTTAgMGw1Ljk1MyAzLjUxdjcuMDIzTDAgNy4wMjJ6IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAxMi44MTMgMTAuODYpIi8+ICAgICAgICAgICAgPHBhdGggZmlsbD0idXJsKCNjKSIgZD0iTTUuOTUzIDYuODdsNS45NTQgMy40MzQtNS45NTQgMy40MzRMMCAxMC4zMDR6IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAxOC43NjYgMTAuODYpIi8+ICAgICAgICA8L2c+ICAgICAgICA8Zz4gICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNNS45NTMgMGw1Ljk1NCAzLjUxdjcuMDIzTDUuOTUzIDcuMDIyeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuODEzIDIwLjkzNSkiLz4gICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNMCAwbDUuOTUzIDMuNTF2Ny4wMjNMMCA3LjAyMnoiIHRyYW5zZm9ybT0ibWF0cml4KC0xIDAgMCAxIDE4Ljc2NiAyMC45MzUpIi8+ICAgICAgICAgICAgPHBhdGggZmlsbD0idXJsKCNjKSIgZD0iTTUuOTUzIDYuODdsNS45NTQgMy40MzQtNS45NTQgMy40MzRMMCAxMC4zMDR6IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAyNC43MiAyMC45MzUpIi8+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=" alt=""></div>
+                      <div class="menu_info">
+                        <span>ARTA AR CLOUD</span>
+                        <p>Store and manage access to your<br> 3D assets</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li><a href="#">
+                      <div class="menu_img"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDMwIDM0Ij4gICAgPGRlZnM+ICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIzMC4zNjIlIiB4Mj0iLTIwLjE4NyUiIHkxPSItMTIuNzY3JSIgeTI9Ijc5LjYxNyUiPiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM4QUIxRTMiLz4gICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzRDVEOTUiLz4gICAgICAgIDwvbGluZWFyR3JhZGllbnQ+ICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImIiIHgxPSIxNDAuMTc4JSIgeDI9Ii0xMC45MDQlIiB5MT0iLTE5LjkxNCUiIHkyPSI2Ny43OCUiPiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5M0M0RjYiLz4gICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzRDVEOTUiLz4gICAgICAgIDwvbGluZWFyR3JhZGllbnQ+ICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImMiIHgxPSI1MCUiIHgyPSI1MCUiIHkxPSIxODkuMTczJSIgeTI9IjAlIj4gICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOTNDNEY2Ii8+ICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjM0Q1RDk1Ii8+ICAgICAgICA8L2xpbmVhckdyYWRpZW50PiAgICA8L2RlZnM+ICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8cGF0aCBkPSJNLTktOGg0OXY0OUgtOXoiLz4gICAgICAgIDxwYXRoIGZpbGw9InVybCgjYSkiIGQ9Ik0xMy43MzguMjM0TDI3LjI5MSA3LjkzdjE1LjM5NGwtMTMuNTUzLTcuNjU2eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS41MzMgMS42MTcpIi8+ICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNMTMuNzM4LjIzNEwuMTg2IDcuOTMxdjE1LjM5M2wxMy41NTItNy42OTd6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjUzMyAxLjYxNykiLz4gICAgICAgIDxwYXRoIHN0cm9rZT0iIzk1QzNGMiIgc3Ryb2tlLXdpZHRoPSIxLjM1IiBkPSJNMTUuMjcxIDEuM2wxMy4yNyA3LjQ4Ni0xMy4yNyA3LjQ4NS0xMy4yNy03LjQ4NUwxNS4yNyAxLjN6Ii8+ICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2MpIiBkPSJNMTMuNzM4IDE1LjUyM0wuMTg2IDIzLjE2OGwxMy41NTIgNy42NDQgMTMuNTUzLTcuNjQ0eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS41MzMgMS42MTcpIi8+ICAgICAgICA8cGF0aCBzdHJva2U9IiM3RUFFREUiIHN0cm9rZS13aWR0aD0iMS4zNSIgZD0iTTEuMzE2IDkuOTU0bDEzLjI0NyA3LjUyM1YzMi41NEwxLjMxNiAyNS4wNTdWOS45NTR6Ii8+ICAgICAgICA8cGF0aCBzdHJva2U9IiM4OEMyRkQiIHN0cm9rZS13aWR0aD0iMS4zNSIgZD0iTTI5LjIyNiA5Ljk1NFYyNS4wMkwxNS45OCAzMi41NDNWMTcuNDc3bDEzLjI0Ny03LjUyM3oiLz4gICAgPC9nPjwvc3ZnPg==" alt=""></div>
+                      <div class="menu_info">
+                        <span>ARTA 3D VISUALISATION</span>
+                        <p>Build your own inventory of the<br> AR-compatible 3D assets</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul></li>
+                
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Blog</a></li>
+                <li class="nav_sign"><a href="#">Sign in</a></li>
+                <li class="nav_start"><a href="#" class="btn btn_blue_bg">START FREE</a></li>
             </nav>
      
           
@@ -69,7 +102,7 @@
           </div>
         </div>
         
-        <a href="#section2" class="arrow"><img src="img/arrow.png" alt=""></a>
+        <a href="#section2" class="arrow"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDI2IDEyIj4gICAgPHBhdGggZmlsbD0iIzczQTNENCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTMuMDMyIDExLjI0N0wyNi4wNjUgMy43NSAxOS40NTkgMGwtNi40MjYgMy43NUw2LjYwNiAwIDAgMy43NXoiLz48L3N2Zz4=" alt=""></a>
     </header>
 
     <section class="section_2 section section_fix">
@@ -122,7 +155,7 @@
                         <h2>Make a realistic preview<br> of your products at<br> people homes</h2>
                         
                         <img src="img/iphone.png" class="iphone">
-                        <div class="arrow"><a href="#section5"><img src="img/arrow.png" alt=""></a></div>
+                        <div class="arrow"><a href="#section5"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDI2IDEyIj4gICAgPHBhdGggZmlsbD0iIzczQTNENCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTMuMDMyIDExLjI0N0wyNi4wNjUgMy43NSAxOS40NTkgMGwtNi40MjYgMy43NUw2LjYwNiAwIDAgMy43NXoiLz48L3N2Zz4=" alt=""></a></div>
                     </div>
             </div>
           </div>
@@ -168,7 +201,7 @@
                               <img src="img/desk.png" alt="" class="desk section_6_item">
                               <img src="img/chair.png" alt="" class="chair">
                               <img src="img/lamp.png" alt="" class="lamp section_6_item">
-                            <div class="arrow"><a href="#section7"><img src="img/arrow.png" alt=""></a></div>
+                            <div class="arrow"><a href="#section7"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDI2IDEyIj4gICAgPHBhdGggZmlsbD0iIzczQTNENCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTMuMDMyIDExLjI0N0wyNi4wNjUgMy43NSAxOS40NTkgMGwtNi40MjYgMy43NUw2LjYwNiAwIDAgMy43NXoiLz48L3N2Zz4=" alt=""></a></div>
                         </div>
         
                       </div>
@@ -215,7 +248,7 @@
       <div class="section_2_rightbg section_8_rightbg">
           <!-- <img src="img/hexa-copy-4.svg" alt=""> -->
       </div>
-      <div class="arrow"><a href="#section9"><img src="img/arrow.png" alt=""></a></div>
+      <div class="arrow"><a href="#section9"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDI2IDEyIj4gICAgPHBhdGggZmlsbD0iIzczQTNENCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTMuMDMyIDExLjI0N0wyNi4wNjUgMy43NSAxOS40NTkgMGwtNi40MjYgMy43NUw2LjYwNiAwIDAgMy43NXoiLz48L3N2Zz4=" alt=""></a></div>
     </section>
     <section class="section-9 section">
         <div class="background_item_1"></div>
@@ -350,7 +383,7 @@
         <div class="form">
             <h3 class="form-title">SIGN UP</h3>
          
-          <input placeholder="Name" type="text" class="icon-name">
+          <input placeholder="Full Name" type="text" class="icon-name">
 
           <input placeholder="Email address" type="email" class="icon-emeil">
           
@@ -373,8 +406,10 @@
 
 </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    
+    
     <script> if (screen && screen.width > 768) { document.write('<script src="js/jquery.fullpage.min.js"><\/script>'); } </script>
+    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
           $('#fullpage').fullpage({
@@ -397,12 +432,10 @@
               scrollHorizontally: false,
               interlockedSlides: false,
               resetSliders: false,
-
               //Accessibility
               keyboardScrolling: true,
               animateAnchor: true,
               recordHistory: true,
-
               //Design  
               responsiveHeight: 330,
               controlArrows: false,
@@ -415,6 +448,5 @@
           });
       });
     </script>
-    <script src="js/main.js"></script>
   </body>
 </html>
