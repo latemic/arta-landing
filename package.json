@@ -21,6 +21,7 @@
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-imagemin": "^4.1.0",
+    "gulp-nunjucks-render": "^2.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgmin": "^1.2.4",
