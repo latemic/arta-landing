@@ -1,0 +1,7 @@
+{% set title = "Index - ARTA Landing Page" %}
+{% set pageClass = "page--index" %}
+{% extends "layout/main.nunjucks" %}
+
+{% block content %}
+  This is index page content!
+{% endblock %}
