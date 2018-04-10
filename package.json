@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/latemic/arta-landing#readme",
   "devDependencies": {
-    "gulp": "github:gulpjs/gulp#4.0"
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-sass": "^4.0.1"
   }
 }
