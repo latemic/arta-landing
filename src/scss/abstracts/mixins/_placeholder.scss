@@ -1,0 +1,17 @@
+@mixin placeholder {
+  @include at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
