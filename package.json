@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/latemic/arta-landing/issues"
   },
-  "homepage": "https://github.com/latemic/arta-landing#readme"
+  "homepage": "https://github.com/latemic/arta-landing#readme",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0"
+  }
 }
