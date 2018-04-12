@@ -1,5 +1,6 @@
 $lato: 'Lato', sans-serif;
-$white: #ffffff;
+$white: black;
+$blue: #2888e8;
 .navbar {
   height: 74px;
   width: 100%;
@@ -41,5 +42,51 @@ $white: #ffffff;
       font-size: 13px;
       font-weight: bold;
     }
+  }
+
+  &__buttons--right {
+    display: inline-block;
+    float: right;
+    font-family: $lato;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: bold;
+    margin-top: -12px;
+    padding-right: 59px;
+  }
+
+  &__sign-in {
+    display: inline-block;
+    border: 1px solid $blue;
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    margin-right: 15px;
+  }
+
+  &__log-link {
+    display: inline-block;
+    padding-left:20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    top: 15px;
+    font-size: 13px;
+  }
+
+  &__start-free {
+    display: inline-block;
+    border: 1px solid $blue;
+    background-color: $blue;
+    border-radius: 20px;
+    height: 40px;
+    width: 130px;
+  }
+
+  &__start-link {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 6px;
+    padding-left:19px;
+    padding-right: 19px;
   }
 }
