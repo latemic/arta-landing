@@ -14,9 +14,10 @@ gulp.task('devServer', function() {
       index: 'index.html'
     },
     files: [
-      `${config.paths.dist}/css/*.css`,
-      `${config.paths.dist}/img/**/*`,
-      `${config.paths.dist}/*.html`
+      config.paths.dist +'fonts/*.woff2',
+      config.paths.dist + 'css/*.css',
+      config.paths.dist + 'img/**/*',
+      config.paths.dist + '*.html'
     ]
   });
 });
