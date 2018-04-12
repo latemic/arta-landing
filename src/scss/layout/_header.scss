@@ -1,0 +1,25 @@
+.navbar {
+  height: 74px;
+  width: 100%;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-left: 57px;
+
+  &__logo {
+    width: 45px;
+    height: 52px;
+  }
+
+  &__company-name {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    top: -17px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 72px;
+    height: 26px;
+    font-weight: 900;
+  }
+}
