@@ -22,9 +22,9 @@ module.exports = {
       dest: `${dist}/svg`
     },
     markup: {
-      templates: `${src}/nunjucks/*.nunjucks`,
-      path: `${src}/nunjucks/`,
-      src: `${src}/nunjucks/**/*.nunjucks`,
+      templates: `${src}/njk/*.njk`,
+      path: `${src}/njk/`,
+      src: `${src}/njk/**/*.njk`,
       dest: dist
     },
     dist: dist
