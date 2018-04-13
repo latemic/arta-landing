@@ -158,7 +158,8 @@
   height: 100%;
   width: 100%;
   min-height: 2505px;
-  background: url('/img/background-section-4.png') no-repeat center center;
+  background: url('/img/background-section-4.png') no-repeat;
+  background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
