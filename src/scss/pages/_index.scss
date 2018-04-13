@@ -149,3 +149,44 @@
     color: #17293d;
   }
 }
+
+/**
+  **BLOCK-4
+**/
+
+.block-4 {
+  height: 100%;
+  width: 100%;
+  min-height: 2505px;
+  background: url('/img/background-section-4.png') no-repeat center center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+
+  &__h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 739px;
+    margin-top: 24px;
+    margin-left: 97px;
+    color: #185899;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+  }
+
+  &__arrow {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 47px;
+  }
+}
