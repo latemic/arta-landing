@@ -312,3 +312,59 @@
     top: 2px;
   }
 }
+
+/**
+  **BLOCK-7
+**/
+
+.block-7 {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  width: 100%;
+  min-height: 750px;
+  color: #17293d;
+  text-align: center;
+  padding-top: 157px;
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__h-1 {
+    display: block;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__h-2 {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: normal;
+    max-width: 475px;
+    line-height: 1;
+    margin: 0 auto;
+  }
+
+  &__features {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #2888e8;
+    background-color: #2888e8;
+    border-radius: 22px;
+    height: 43px;
+    width: 180px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    padding: 12px 18px 13px 18px;
+    margin-left: -80px;
+    top: 72px;
+  }
+}
