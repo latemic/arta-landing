@@ -15,9 +15,9 @@
     position: relative;
     margin-left: 10px;
     top: -17px;
-    font-family: $lato;
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    color: $white;
+    color: #ffffff;
     width: 72px;
     font-size: 26px;
     font-weight: 900;
@@ -33,9 +33,9 @@
       top: -24px;
       padding-left: 27px;
       padding-right: 27px;
-      font-family: $lato;
+      font-family: 'Lato', sans-serif;
       text-transform: uppercase;
-      color: $white;
+      color: #ffffff;
       font-size: 13px;
       font-weight: bold;
     }
@@ -44,9 +44,9 @@
   &__buttons--right {
     display: inline-block;
     float: right;
-    font-family: $lato;
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    color: $white;
+    color: #ffffff;
     font-weight: bold;
     margin-top: -12px;
     padding-right: 59px;
@@ -54,7 +54,7 @@
 
   &__sign-in {
     display: inline-block;
-    border: 1px solid $blue;
+    border: 1px solid #2888e8;
     border-radius: 20px;
     height: 40px;
     width: 90px;
@@ -72,8 +72,8 @@
 
   &__start-free {
     display: inline-block;
-    border: 1px solid $blue;
-    background-color: $blue;
+    border: 1px solid #2888e8;
+    background-color: #2888e8;
     border-radius: 20px;
     height: 40px;
     width: 130px;
