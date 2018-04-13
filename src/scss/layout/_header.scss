@@ -1,0 +1,89 @@
+.navbar {
+  height: 74px;
+  width: 100%;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-left: 57px;
+
+  &__logo {
+    width: 45px;
+    height: 52px;
+  }
+
+  &__company-name {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    top: -17px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 72px;
+    font-size: 26px;
+    font-weight: 900;
+  }
+
+  &__list {
+    display: inline-block;
+    margin-left: 236px;
+
+    &-item {
+      display: inline-block;
+      position: relative;
+      top: -24px;
+      padding-left: 27px;
+      padding-right: 27px;
+      font-family: 'Lato', sans-serif;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: bold;
+    }
+  }
+
+  &__buttons--right {
+    display: inline-block;
+    float: right;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: -12px;
+    padding-right: 59px;
+  }
+
+  &__sign-in {
+    display: inline-block;
+    border: 1px solid #2888e8;
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    margin-right: 15px;
+  }
+
+  &__log-link {
+    display: inline-block;
+    padding-left:20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    top: 15px;
+    font-size: 13px;
+  }
+
+  &__start-free {
+    display: inline-block;
+    border: 1px solid #2888e8;
+    background-color: #2888e8;
+    border-radius: 20px;
+    height: 40px;
+    width: 130px;
+  }
+
+  &__start-link {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 6px;
+    padding-left:19px;
+    padding-right: 19px;
+  }
+}
