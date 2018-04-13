@@ -1,14 +1,15 @@
+/**
+  **BLOCK-1
+**/
 .block-1 {
   height: 100%;
   width: 100%;
   min-height: 828px;
   margin-top: -110px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('/img/background-section-1.png') no-repeat center center fixed;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  background-image: url('/img/background-section-1.png');
   text-align: center;
 
   &__h-1 {
@@ -54,3 +55,7 @@
     top: 244px;
   }
 }
+
+/**
+  **BLOCK-2
+**/
