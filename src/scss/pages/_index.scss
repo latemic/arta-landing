@@ -59,3 +59,50 @@
 /**
   **BLOCK-2
 **/
+
+.block-2 {
+  height: 100%;
+  width: 100%;
+  min-height: 750px;
+  background: url('/img/background-section-2.png') no-repeat center center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+
+  &__image {
+    display: block;
+    position: relative;
+    width: 512px;
+    height: 512px;
+    margin: 0 auto;
+  }
+
+  &__h1 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 810px;
+    color: #3b4550;
+    line-height: 1.4;
+  }
+
+  &__h2 {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 118px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 24px;
+    max-width: 563px;
+    line-height: 1.11;
+    color: #3b4550;
+  }
+}
