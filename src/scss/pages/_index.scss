@@ -78,7 +78,7 @@
     margin: 0 auto;
   }
 
-  &__h1 {
+  &__h-1 {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -91,7 +91,7 @@
     line-height: 1.4;
   }
 
-  &__h2 {
+  &__h-2 {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -165,7 +165,7 @@
   -o-background-size: cover;
   text-align: center;
 
-  &__h1 {
+  &__h-1 {
     display: block;
     position: relative;
     font-size: 50px;
@@ -203,6 +203,9 @@
   font-family: 'Lato', sans-serif;
   position: relative;
   top: 210px;
+  height: 100%;
+  width: 100%;
+  min-height: 750px;
 
   &__image {
     display: block;
@@ -256,5 +259,56 @@
     font-weight: bold;
     margin-left: 44px;
     top: 72px;
+  }
+}
+
+/**
+  **BLOCK-6
+**/
+
+.block-6 {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  width: 100%;
+  min-height: 702px;
+
+  &__h-1 {
+    display: block;
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 739px;
+    top: -35px;
+    margin-left: 97px;
+    color: #ffffff;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  &__item-1 {
+    display: inline-block;
+    position: relative;
+    top: -50px;
+  }
+
+  &__item-2 {
+    display: inline-block;
+    position: relative;
+    top: -75px;
+  }
+
+  &__item-3 {
+    display: inline-block;
+    position: relative;
+    top: -375px;
+    left: 50px;
+  }
+
+  &__arrow {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 2px;
   }
 }
