@@ -68,6 +68,7 @@
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
+  font-family: 'Lato', sans-serif;
 
   &__image {
     display: block;
@@ -81,7 +82,6 @@
     display: block;
     position: relative;
     margin: 0 auto;
-    font-family: 'Lato', sans-serif;
     font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
@@ -96,7 +96,6 @@
     position: relative;
     margin: 0 auto;
     padding-bottom: 118px;
-    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: normal;
     text-align: center;
@@ -104,5 +103,49 @@
     max-width: 563px;
     line-height: 1.11;
     color: #3b4550;
+  }
+}
+
+/**
+  **BLOCK-3
+**/
+
+.block-3 {
+  height: 100%;
+  width: 100%;
+  min-height: 750px;
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+
+  &__item-1,
+  &__item-2 {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: #17293d;
+    margin-top: 194px;
+  }
+
+  &__item-1 {
+    margin-left: 36%;
+  }
+
+  &__item-2 {
+    float:right;
+    margin-right: 36%;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__item-3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #17293d;
   }
 }
