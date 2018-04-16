@@ -70,5 +70,11 @@
     text-transform: uppercase;
     padding-top: 9px;
     padding-left: 19px;
+
+    &:hover,
+    &:active {
+      background-color: #185899;
+      border-color: #185899;
+    }
   }
 }
