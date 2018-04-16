@@ -25,7 +25,7 @@
 
   &__list {
     display: inline-block;
-    margin-left: 236px;
+    margin-left: 13%;
 
     &-item {
       display: inline-block;
@@ -39,51 +39,73 @@
       font-size: 13px;
       font-weight: bold;
     }
+
+    &-link:hover,
+    &-link:active {
+      color: #46a2ff;
+    }
   }
 
   &__buttons--right {
     display: inline-block;
     float: right;
+    width: 320px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
-    margin-top: -12px;
-    padding-right: 59px;
+    margin-top: -13px;
+    padding-right: 12.5%;
+  }
+
+  &__buttons__list {
+    list-style: none;
+    display: inline-block;
+    padding-left: 0px;
+    width: 320px;
+
+    &-item {
+      display:inline-block;
+    }
   }
 
   &__sign-in {
     display: inline-block;
+    position: relative;
     border: 1px solid #2888e8;
     border-radius: 20px;
     height: 40px;
     width: 90px;
     margin-right: 15px;
-  }
-
-  &__log-link {
-    display: inline-block;
     padding-left:20px;
     padding-right: 20px;
-    margin-top: 10px;
-    top: 15px;
+    padding-top: 10px;
     font-size: 13px;
+
+    &:hover,
+    &:active {
+      background-color: #185899;
+      border: 1px solid #185899;
+    }
   }
 
   &__start-free {
     display: inline-block;
+    position: relative;
     border: 1px solid #2888e8;
     background-color: #2888e8;
     border-radius: 20px;
     height: 40px;
     width: 130px;
-  }
-
-  &__start-link {
-    display: inline-block;
     font-size: 16px;
-    margin-top: 6px;
-    padding-left:19px;
+    padding-top: 6px;
+    padding-left: 19px;
     padding-right: 19px;
+
+    &:hover,
+    &:active {
+      background-color: #185899;
+      border: 1px solid #185899;
+    }
   }
 }
