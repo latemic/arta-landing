@@ -248,7 +248,7 @@
   text-align: center;
 
   @include breakpoint (0, $screen-xs-max){
-      min-height: 1590px;
+      min-height: 1630px;
       background: url('/img/background-section-4.png') no-repeat center 40px;
   }
 
@@ -410,6 +410,10 @@
   width: 100%;
   min-height: 702px;
 
+  @include breakpoint (0, $screen-xs-max){
+    min-height: 575px;
+  }
+
   &__h-1 {
     display: block;
     position: relative;
@@ -422,18 +426,36 @@
     color: #ffffff;
     line-height: 1.4;
     text-align: left;
+
+    @include breakpoint (0, $screen-xs-max){
+      font-size: 32px;
+      line-height: 1.31;
+      width: 71%;
+      margin-left: 21px;
+      top: -35px;
+    }
   }
 
   &__item-1 {
     display: inline-block;
     position: relative;
     top: -50px;
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 25%;
+      top: 100px;
+    }
   }
 
   &__item-2 {
     display: inline-block;
     position: relative;
     top: -75px;
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 40%;
+      top: 125px;
+    }
   }
 
   &__item-3 {
@@ -441,6 +463,12 @@
     position: relative;
     top: -375px;
     left: 50px;
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 10%;
+      top: -30px;
+      left: 15px;
+    }
   }
 
   &__arrow {
@@ -448,6 +476,10 @@
     position: relative;
     margin: 0 auto;
     top: 2px;
+
+    @include breakpoint (0, $screen-xs-max){
+      top: 80px;
+    }
   }
 }
 
