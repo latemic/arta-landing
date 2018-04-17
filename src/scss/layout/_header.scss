@@ -4,8 +4,8 @@
   background-color: transparent;
   padding: 16px 0 0 57px;
 
-  @include breakpoint ($screen-sm-min, $screen-md-max) {
-    padding-left: 0;
+  @include breakpoint (0, $screen-md-max) {
+    padding: 11px 0 0 20px;
   }
 
   &__logo {
@@ -32,7 +32,10 @@
     margin-left: 13%;
 
     @include breakpoint($screen-md-min, $screen-md-max) {
-      margin-left: 3%;
+      margin-left: 0;
+    }
+    @include breakpoint(0, $screen-sm-max){
+      display: none;
     }
 
     &-item {
@@ -56,7 +59,6 @@
   &__buttons--right {
     display: inline-block;
     float: right;
-    width: 320px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
@@ -71,6 +73,11 @@
     padding: 8px 0;
     width: 245px;
     margin-right: 18.8%;
+
+    @include breakpoint(0, $screen-sm-max) {
+      width: 140px;
+      margin-right: 20px;
+    }
 
     &-item {
       display:inline-block;
@@ -93,6 +100,12 @@
       background-color: #185899;
       border: 1px solid #185899;
     }
+
+    @include breakpoint(0, $screen-sm-max) {
+      margin-right: 18px;
+      margin-top: 0;
+      margin-left: 0;
+    }
   }
 
   &__start-free {
@@ -110,6 +123,21 @@
     &:active {
       background-color: #185899;
       border: 1px solid #185899;
+    }
+
+    @include breakpoint(0, $screen-sm-max){
+      display: none;
+    }
+  }
+
+  &__toggle {
+    display: none;
+
+    @include breakpoint(0, $screen-sm-max){
+      display: inline-block;
+      position: relative;
+      float: right;
+      top: 6px;
     }
   }
 }
