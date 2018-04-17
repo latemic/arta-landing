@@ -179,6 +179,10 @@
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
 
+  @include breakpoint (0, $screen-xs-max){
+    min-height: 530px;
+  }
+
   &__item-1,
   &__item-2 {
     display: inline-block;
@@ -191,11 +195,27 @@
 
   &__item-1 {
     margin-left: 36%;
+
+    @include breakpoint ($screen-sm-min, $screen-sm-max){
+      margin: 94px 80px 0 80px;
+    }
+
+    @include breakpoint (0, $screen-xs-max){
+      margin: 94px 20px 0 20px;
+    }
   }
 
   &__item-2 {
     float:right;
     margin-right: 36%;
+
+    @include breakpoint ($screen-sm-min, $screen-sm-max){
+      margin: 94px 80px 0 80px;
+    }
+
+    @include breakpoint (0, $screen-xs-max){
+      margin: 94px 20px 0 20px;
+    }
   }
 
   &__image {
