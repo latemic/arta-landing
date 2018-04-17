@@ -247,6 +247,11 @@
   -o-background-size: cover;
   text-align: center;
 
+  @include breakpoint (0, $screen-xs-max){
+      min-height: 1590px;
+      background: url('/img/background-section-4.png') no-repeat center 40px;
+  }
+
   &__h-1 {
     display: block;
     position: relative;
@@ -259,6 +264,13 @@
     color: #185899;
     line-height: 1.4;
     text-align: left;
+
+    @include breakpoint (0, $screen-xs-max){
+      font-size: 32px;
+      line-height: 1.31;
+      width: 71%;
+      margin-left: 21px;
+    }
   }
 
   &__image {
@@ -268,6 +280,10 @@
     margin: 0 auto;
     width: 218px;
     height: 437px;
+
+    @include breakpoint (0, $screen-xs-max){
+      top: -20px;
+    }
   }
 
   &__arrow {
@@ -289,10 +305,19 @@
   width: 100%;
   min-height: 750px;
 
+  @include breakpoint (0, $screen-xs-max){
+    min-height: 530px;
+    top: 0;
+  }
+
   &__image {
     display: block;
     position: relative;
     margin: 0 auto;
+
+    @include breakpoint (0, $screen-xs-max){
+      margin-top: 95px;
+    }
   }
 
   &__h-1 {
@@ -302,6 +327,14 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #ffffff;
+
+    @include breakpoint (0, $screen-xs-max){
+      font-size: 24px;
+      line-height: 1.33;
+      width: 215px;
+      margin: 0 auto;
+      padding-top: 36px;
+    }
   }
 
   &__h-2 {
@@ -313,6 +346,12 @@
     line-height: 1;
     margin: 0 auto;
     color: #ffffff;
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 71%;
+      font-size: 16px;
+      margin-top: 18px;
+    }
   }
 
   &__request {
@@ -337,6 +376,11 @@
       background-color: #086acc;
       border-color: #086acc;
     }
+    @include breakpoint (0, $screen-xs-max){
+      display: block;
+      margin: 0 auto;
+      top: 30px;
+    }
   }
 
   &__details {
@@ -347,6 +391,12 @@
     font-weight: bold;
     margin-left: 44px;
     top: 59px;
+
+    @include breakpoint (0, $screen-xs-max){
+      display: block;
+      margin: 0 auto;
+      top: 46px;
+    }
   }
 }
 
