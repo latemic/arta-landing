@@ -103,7 +103,7 @@
 
     @include breakpoint(0, $screen-sm-max) {
       margin-right: 18px;
-      margin-top: 0;
+      margin-top: -7px;
       margin-left: 0;
     }
   }
