@@ -416,7 +416,7 @@
   min-height: 702px;
 
   @include breakpoint (0, $screen-xs-max){
-    min-height: 575px;
+    min-height: 600px;
   }
 
   &__h-1 {
@@ -484,7 +484,7 @@
     top: 2px;
 
     @include breakpoint (0, $screen-xs-max){
-      top: 80px;
+      top: 50px;
     }
   }
 }
