@@ -249,7 +249,7 @@
 
   @include breakpoint (0, $screen-xs-max){
       min-height: 1630px;
-      background: url('/img/background-section-4.png') no-repeat center 40px;
+      background: url('/img/background-section-4.png') no-repeat center 150px;
   }
 
   &__h-1 {
@@ -266,6 +266,7 @@
     text-align: left;
 
     @include breakpoint (0, $screen-xs-max){
+      top: 0;
       font-size: 32px;
       line-height: 1.31;
       width: 71%;
@@ -282,7 +283,7 @@
     height: 437px;
 
     @include breakpoint (0, $screen-xs-max){
-      top: -20px;
+      top: 20px;
     }
   }
 
@@ -290,6 +291,10 @@
     display: block;
     position: relative;
     margin: 0 auto;
+
+    @include breakpoint (0, $screen-xs-max){
+      top: 28px;
+    }
   }
 }
 
