@@ -443,7 +443,7 @@
 
     @include breakpoint (0, $screen-xs-max){
       width: 25%;
-      top: 100px;
+      top: 70px;
     }
   }
 
@@ -453,8 +453,9 @@
     top: -75px;
 
     @include breakpoint (0, $screen-xs-max){
-      width: 40%;
-      top: 125px;
+      width: 50%;
+      top: 70px;
+      left: -10px;
     }
   }
 
@@ -465,9 +466,9 @@
     left: 50px;
 
     @include breakpoint (0, $screen-xs-max){
-      width: 10%;
-      top: -30px;
-      left: 15px;
+      width: 15%;
+      top: -70px;
+      left: 0;
     }
   }
 

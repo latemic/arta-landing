@@ -102,6 +102,7 @@
     }
 
     @include breakpoint(0, $screen-sm-max) {
+      z-index: 2;
       margin-right: 18px;
       margin-top: -7px;
       margin-left: 0;
