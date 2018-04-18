@@ -321,7 +321,7 @@
     margin: 0 auto;
 
     @include breakpoint (0, $screen-xs-max){
-      margin-top: 95px;
+      margin-top: 175px;
     }
   }
 
@@ -437,7 +437,7 @@
       line-height: 1.31;
       width: 71%;
       margin-left: 21px;
-      top: -35px;
+      top: 15px;
     }
   }
 
@@ -448,7 +448,7 @@
 
     @include breakpoint (0, $screen-xs-max){
       width: 25%;
-      top: 70px;
+      top: 90px;
     }
   }
 
@@ -459,7 +459,7 @@
 
     @include breakpoint (0, $screen-xs-max){
       width: 50%;
-      top: 70px;
+      top: 90px;
       left: -10px;
     }
   }
@@ -472,7 +472,7 @@
 
     @include breakpoint (0, $screen-xs-max){
       width: 15%;
-      top: -70px;
+      top: -50px;
       left: 0;
     }
   }
