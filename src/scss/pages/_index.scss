@@ -496,10 +496,19 @@
   text-align: center;
   padding-top: 157px;
 
+  @include breakpoint (0, $screen-xs-max){
+    min-height: 530px;
+    padding-top: 0;
+  }
+
   &__image {
     display: block;
     position: relative;
     margin: 0 auto;
+
+    @include breakpoint (0, $screen-xs-max){
+      margin-top: 157px;
+    }
   }
 
   &__h-1 {
@@ -508,6 +517,14 @@
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
+
+    @include breakpoint (0, $screen-xs-max){
+      font-size: 24px;
+      line-height: 1.33;
+      width: 215px;
+      margin: 0 auto;
+      padding-top: 36px;
+    }
   }
 
   &__h-2 {
@@ -518,6 +535,12 @@
     max-width: 475px;
     line-height: 1;
     margin: 0 auto;
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 71%;
+      font-size: 16px;
+      margin-top: 18px;
+    }
   }
 
   &__features {
@@ -542,6 +565,12 @@
       background-color: #086acc;
       border-color: #086acc;
     }
+
+    @include breakpoint (0, $screen-xs-max){
+      display: block;
+      margin: 0 auto;
+      top: 30px;
+    }
   }
 
   &__details {
@@ -552,6 +581,12 @@
     font-weight: bold;
     margin-left: 44px;
     top: 44px;
+
+    @include breakpoint (0, $screen-xs-max){
+      display: block;
+      margin: 0 auto;
+      top: 46px;
+    }
   }
 }
 
@@ -743,7 +778,7 @@
   &__line--bottom {
     display:block;
     position: relative;
-    border:none;
+    border: none;
     color: #0a233c;
     height: 2px;
     background:#ffffff;
