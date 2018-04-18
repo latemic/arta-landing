@@ -5,10 +5,19 @@
   font-family: 'Lato', sans-serif;
   padding-left: 60px;
 
+  @include breakpoint (0, $screen-xs-max){
+    height: 960px;
+    padding-left: 20px;
+  }
+
   &__column {
     display: inline-block;
     position: relative;
     width: 24%;
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 100%;
+    }
   }
 
   &__h-5 {
@@ -30,6 +39,12 @@
     font-weight: normal;
     line-height: 1.6;
     color: #ffffff;
+  }
+
+  &__copyright-div {
+    @include breakpoint (0, $screen-xs-max){
+      margin-top: 100px;
+    }
   }
 
   &__logo {
@@ -72,6 +87,13 @@
     &:active {
       background-color: #185899;
       border-color: #185899;
+    }
+
+    @include breakpoint (0, $screen-xs-max){
+      float: none;
+      display: block;
+      margin: 0 auto;
+      top: 100px;
     }
   }
 }
