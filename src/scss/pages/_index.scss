@@ -446,6 +446,10 @@
     position: relative;
     top: -50px;
 
+    @include breakpoint ($screen-sm-min, $screen-sm-max) {
+      left: -30px;
+    }
+
     @include breakpoint (0, $screen-xs-max){
       width: 25%;
       top: 90px;
@@ -456,6 +460,10 @@
     display: inline-block;
     position: relative;
     top: -75px;
+
+    @include breakpoint ($screen-sm-min, $screen-sm-max) {
+      left: -15px;
+    }
 
     @include breakpoint (0, $screen-xs-max){
       width: 50%;
@@ -469,6 +477,10 @@
     position: relative;
     top: -375px;
     left: 50px;
+
+    @include breakpoint ($screen-sm-min, $screen-sm-max) {
+      left: 30px;
+    }
 
     @include breakpoint (0, $screen-xs-max){
       width: 15%;
