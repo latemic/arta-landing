@@ -606,6 +606,10 @@
   -webkit-background-size: cover;
   -o-background-size: cover;
 
+  @include breakpoint (0, $screen-xs-max){
+      min-height: 1240px;
+  }
+
   &__h-1 {
     display: block;
     position: relative;
@@ -618,6 +622,15 @@
     color: #185899;
     line-height: 1.4;
     text-align: left;
+
+    @include breakpoint (0, $screen-xs-max){
+      top: 0;
+      font-size: 32px;
+      line-height: 1.31;
+      width: 71%;
+      margin-left: 21px;
+      padding: 0;
+    }
   }
 
   &__image {
@@ -634,6 +647,10 @@
       background: url('/img/sprite-lamp.png') 0 0;
       left: 17px;
     }
+
+    @include breakpoint (0, $screen-xs-max){
+      top: -20px;
+    }
   }
 
   &__arrow {
@@ -641,7 +658,15 @@
     position: relative;
     margin: 0 auto;
     top: -60px;
+
+    @include breakpoint (0, $screen-xs-max){
+      top: 25px;
+    }
   }
+
+  /**
+    **BLOCK-9
+  **/
 
   .block-9 {
     font-family: 'Lato', sans-serif;
@@ -652,10 +677,19 @@
     text-align: center;
     padding-top: 150px;
 
+    @include breakpoint (0, $screen-xs-max){
+      min-height: 530px;
+      padding-top: 0;
+    }
+
     &__image {
       display: block;
       position: relative;
       margin: 0 auto;
+
+      @include breakpoint (0, $screen-xs-max){
+        margin-top: 177px;
+      }
     }
 
     &__h-1 {
@@ -665,6 +699,14 @@
       font-weight: bold;
       text-transform: uppercase;
       color: #ffffff;
+
+      @include breakpoint (0, $screen-xs-max){
+        font-size: 24px;
+        line-height: 1.33;
+        width: 215px;
+        margin: 0 auto;
+        padding-top: 36px;
+      }
     }
 
     &__h-2 {
@@ -676,6 +718,12 @@
       line-height: 1;
       margin: 0 auto;
       color: #ffffff;
+
+      @include breakpoint (0, $screen-xs-max){
+        width: 71%;
+        font-size: 16px;
+        margin-top: 18px;
+      }
     }
 
     &__contact {
@@ -700,6 +748,12 @@
         background-color: #086acc;
         border-color: #086acc;
       }
+
+      @include breakpoint (0, $screen-xs-max){
+        display: block;
+        margin: 0 auto;
+        top: 30px;
+      }
     }
 
     &__details {
@@ -710,6 +764,12 @@
       font-weight: bold;
       margin-left: 44px;
       top: 44px;
+
+      @include breakpoint (0, $screen-xs-max){
+        display: block;
+        margin: 0 auto;
+        top: 46px;
+      }
     }
   }
 }
