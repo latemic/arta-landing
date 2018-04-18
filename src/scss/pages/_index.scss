@@ -265,6 +265,10 @@
     line-height: 1.4;
     text-align: left;
 
+    @include breakpoint ($screen-sm-min, $screen-sm-max){
+      margin: 0 0 90px 21px;
+    }
+
     @include breakpoint (0, $screen-xs-max){
       top: 0;
       font-size: 32px;
@@ -431,6 +435,10 @@
     color: #ffffff;
     line-height: 1.4;
     text-align: left;
+
+    @include breakpoint ($screen-sm-min, $screen-sm-max){
+      margin: 0 0 90px 21px;
+    }
 
     @include breakpoint (0, $screen-xs-max){
       font-size: 32px;
@@ -641,6 +649,12 @@
     line-height: 1.4;
     text-align: left;
 
+    @include breakpoint ($screen-sm-min, $screen-sm-max){
+      width: 71%;
+      margin: 0 0 90px 0;
+      padding-left: 21px;
+    }
+
     @include breakpoint (0, $screen-xs-max){
       top: 0;
       font-size: 32px;
@@ -821,12 +835,15 @@
     color: #0a233c;
     height: 2px;
     background:#ffffff;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#ffffff), to(#0a233c));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350,
+      from(#ffffff), to(#0a233c));
 
     @include breakpoint (0, $screen-xs-max){
       width: 317px;
       height: 2px;
-      background: linear-gradient(269deg, rgba(200, 200, 200, 0), #ffffff 50%, rgba(151, 151, 151, 0));
+      background: linear-gradient(269deg, rgba(200, 200, 200, 0), #ffffff 50%,
+        rgba(151, 151, 151, 0));
+      margin: 0 auto;
     }
   }
 
@@ -881,14 +898,17 @@
     color: #0a233c;
     height: 2px;
     background:#ffffff;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#ffffff), to(#0a233c));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350,
+      from(#ffffff), to(#0a233c));
     top: 291px;
 
     @include breakpoint (0, $screen-xs-max){
       top: 100px;
       width: 317px;
       height: 2px;
-      background: linear-gradient(269deg, rgba(200, 200, 200, 0), #ffffff 50%, rgba(151, 151, 151, 0));
+      background: linear-gradient(269deg, rgba(200, 200, 200, 0), #ffffff 50%,
+        rgba(151, 151, 151, 0));
+      margin: 0 auto;
     }
   }
 }
