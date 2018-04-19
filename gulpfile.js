@@ -4,6 +4,7 @@ const gulp = require('gulp');
 
 require('./gulp/tasks/fonts');
 require('./gulp/tasks/styles');
+require('./gulp/tasks/scripts');
 require('./gulp/tasks/images');
 require('./gulp/tasks/svg');
 require('./gulp/tasks/markup');
@@ -17,6 +18,7 @@ gulp.task('default',
     gulp.parallel(
       'fonts',
       'styles:dev',
+      'scripts:dev',
       'images',
       'svg',
       'markup'

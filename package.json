@@ -17,11 +17,16 @@
   },
   "homepage": "https://github.com/latemic/arta-landing#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
     "gulp-css-globbing": "^0.2.2",
     "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
     "gulp-nunjucks-render": "^2.2.2",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2",
@@ -29,7 +34,9 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
     "imagemin-pngquant": "^5.1.0",
+    "jshint": "^2.9.5",
     "path": "^0.12.7"
   },
   "dependencies": {
