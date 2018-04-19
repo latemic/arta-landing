@@ -23,6 +23,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-css-globbing": "^0.2.2",
     "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
     "gulp-nunjucks-render": "^2.2.2",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2",
@@ -32,6 +33,7 @@
     "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
     "imagemin-pngquant": "^5.1.0",
+    "jshint": "^2.9.5",
     "path": "^0.12.7"
   },
   "dependencies": {
