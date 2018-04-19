@@ -8,6 +8,11 @@ gulp.task('watch:styles', function() {
     gulp.series('styles:dev'));
 });
 
+gulp.task('watch:scripts', function() {
+  return gulp.watch(config.paths.scripts.src,
+    gulp.series('scripts:dev'));
+});
+
 gulp.task('watch:images', function() {
   return gulp.watch(config.paths.images.src,
     gulp.series('images'));
@@ -18,4 +23,4 @@ gulp.task('watch:markup', function() {
     gulp.series('markup'));
 });
 
-gulp.task('watch', gulp.parallel('watch:styles', 'watch:images', 'watch:markup'));
+gulp.task('watch', gulp.parallel('watch:styles', 'watch:scripts', 'watch:images', 'watch:markup'));
