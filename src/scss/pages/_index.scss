@@ -1,106 +1,4 @@
 /**
-  **BLOCK-1
-**/
-.block-1 {
-  min-height: 828px;
-  margin-top: -110px;
-  background: url('/img/background-section-1.png') no-repeat center center;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-
-  @include breakpoint (0, $screen-xs-max) {
-    margin-top: -80px;
-    min-height: 610px;
-    background: url('/img/bg-section-1.png') no-repeat center 0;
-    background-size: contain;
-    -moz-background-size: contain;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-  }
-
-  &__h-1 {
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffffff;
-    padding-top: 364px;
-    line-height: 1.4;
-
-    @include breakpoint (0, $screen-xs-max) {
-      display: block;
-      position: relative;
-      margin: 0 auto;
-      width: 71%;
-      font-size: 32px;
-      padding-top: 186px;
-      line-height: 1.31;
-    }
-  }
-
-  &__h-2 {
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-weight: normal;
-    line-height: 1;
-    margin-top: -25px;
-
-    @include breakpoint (0, $screen-xs-max) {
-      display: block;
-      position: relative;
-      width: 87.5%;
-      margin: 0 auto;
-      top: 18px;
-      font-size: 18px;
-    }
-  }
-
-  &__start-free {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    top: 35px;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: bold;
-    border: 1px solid #2888e8;
-    background-color: #2888e8;
-    border-radius: 20px;
-    height: 40px;
-    width: 130px;
-    padding-top: 6px;
-
-    &:hover,
-    &:active {
-      background-color: #086acc;
-      border-color: #086acc;
-    }
-
-    @include breakpoint (0, $screen-xs-max) {
-      top: 50px;
-      width: 127px;
-      height: 43px;
-      padding-top: 8px;
-    }
-  }
-
-  &__arrow {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    top: 244px;
-
-    @include breakpoint (0, $screen-sm-max) {
-      top: 110px;
-    }
-  }
-}
-
-/**
   **BLOCK-2
 **/
 
@@ -112,7 +10,6 @@
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  font-family: 'Lato', sans-serif;
 
   @include breakpoint (0, $screen-xs-max){
     min-height: 530px;
@@ -133,7 +30,7 @@
     position: relative;
     margin: 0 auto;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     max-width: 810px;
@@ -154,7 +51,7 @@
     margin: 0 auto;
     padding: 24px 0 118px 0;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 400;
     text-align: center;
     max-width: 563px;
     line-height: 1.11;
@@ -175,7 +72,6 @@
   width: 100%;
   min-height: 750px;
   background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
 
   @include breakpoint (0, $screen-xs-max){
     min-height: 530px;
@@ -186,7 +82,7 @@
     display: inline-block;
     position: relative;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     color: #17293d;
     margin-top: 194px;
   }
@@ -225,7 +121,7 @@
   &__item-3 {
     text-align: center;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     color: #17293d;
   }
 }
@@ -254,7 +150,7 @@
     display: block;
     position: relative;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     max-width: 739px;
     top: -48px;
@@ -305,7 +201,6 @@
 **/
 
 .block-5 {
-  font-family: 'Lato', sans-serif;
   position: relative;
   top: 210px;
   height: 100%;
@@ -331,7 +226,7 @@
     display: block;
     position: relative;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
 
@@ -348,7 +243,7 @@
     display: block;
     position: relative;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 400;
     max-width: 475px;
     line-height: 1;
     margin: 0 auto;
@@ -371,7 +266,7 @@
     width: 164px;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1;
     padding: 12px 18px 13px 18px;
@@ -395,7 +290,7 @@
     position: relative;
     color: #2888e8;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     margin-left: 44px;
     top: 59px;
 
@@ -412,7 +307,6 @@
 **/
 
 .block-6 {
-  font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
   min-height: 702px;
@@ -425,7 +319,7 @@
     display: block;
     position: relative;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     max-width: 739px;
     top: -35px;
@@ -512,7 +406,6 @@
 **/
 
 .block-7 {
-  font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
   min-height: 750px;
@@ -539,7 +432,7 @@
     display: block;
     position: relative;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
 
     @include breakpoint (0, $screen-xs-max){
@@ -555,7 +448,7 @@
     display: block;
     position: relative;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 400;
     max-width: 475px;
     line-height: 1;
     margin: 0 auto;
@@ -577,7 +470,7 @@
     width: 180px;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1;
     padding: 12px 18px 13px 18px;
@@ -602,7 +495,7 @@
     position: relative;
     color: #2888e8;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     margin-left: 44px;
     top: 44px;
 
@@ -619,7 +512,6 @@
 **/
 
 .block-8 {
-  font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
   min-height: 1404px;
@@ -639,7 +531,7 @@
     position: relative;
     padding-left: 97px;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     max-width: 1000px;
     top: -48px;
@@ -699,7 +591,6 @@
   **/
 
   .block-9 {
-    font-family: 'Lato', sans-serif;
     position: relative;
     height: 100%;
     width: 100%;
@@ -726,7 +617,7 @@
       display: block;
       position: relative;
       font-size: 30px;
-      font-weight: bold;
+      font-weight: 700;
       text-transform: uppercase;
       color: #ffffff;
 
@@ -743,7 +634,7 @@
       display: block;
       position: relative;
       font-size: 20px;
-      font-weight: normal;
+      font-weight: 400;
       max-width: 512px;
       line-height: 1;
       margin: 0 auto;
@@ -766,7 +657,7 @@
       width: 164px;
       color: #ffffff;
       text-transform: uppercase;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 16px;
       line-height: 1;
       padding: 12px 18px 13px 18px;
@@ -791,7 +682,7 @@
       position: relative;
       color: #2888e8;
       font-size: 16px;
-      font-weight: bold;
+      font-weight: 700;
       margin-left: 44px;
       top: 44px;
 
@@ -812,7 +703,6 @@
   display: block;
   position: relative;
   margin-bottom: -30px;
-  font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
   min-height: 570px;
@@ -875,7 +765,7 @@
     width: 174px;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1;
     padding: 12px 18px 13px 18px;
