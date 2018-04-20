@@ -4,6 +4,7 @@
   top: 0;
   background-color: transparent;
   padding: 16px 0 0 57px;
+  z-index: 1;
 
   @include breakpoint (0, $screen-md-max) {
     padding: 11px 0 0 20px;
