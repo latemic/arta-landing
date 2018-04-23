@@ -8,18 +8,10 @@
   background-color: #0a233c;
   text-align: center;
 
-  @include breakpoint(xs){
-    min-height: 530px;
-  }
-
   &__image {
     display: block;
     position: relative;
     margin: 0 auto;
-
-    @include breakpoint (xs){
-      margin-top: 175px;
-    }
   }
 
   &__heading {
@@ -28,30 +20,17 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
-
-    @include breakpoint (0, $screen-xs-max){
-      font-size: 24px;
-      line-height: 1.33;
-      width: 215px;
-      margin: 0 auto;
-      padding-top: 36px;
-    }
+    padding-top: 12px;
+    line-height: 2.33;
   }
 
   &__description {
     font-size: 20px;
     font-weight: 400;
-    width: 475px;
     line-height: 1;
     margin: 0 auto;
-    padding-top: 19px;
+    padding: 19px 20px 0 20px;
     color: #ffffff;
-
-    @include breakpoint (0, $screen-xs-max){
-      width: 71%;
-      font-size: 16px;
-      margin-top: 18px;
-    }
   }
 
   &__request {
@@ -63,12 +42,6 @@
     margin: 0 auto;
     left: -25px;
     top: 59px;
-
-    @include breakpoint (0, $screen-xs-max){
-      display: block;
-      margin: 0 auto;
-      top: 30px;
-    }
   }
 
   &__more {
@@ -81,8 +54,38 @@
     margin: 0 auto;
     top: 59px;
     left: -25px;
+  }
+}
 
-    @include breakpoint (0, $screen-xs-max){
+@include breakpoint(xs){
+  .mobile-sdk {
+    height: 530px;
+    padding-top: 50px;
+
+    &__heading {
+      margin: 0 auto;
+      font-size: 24px;
+      line-height: 1.33;
+      width: 215px;
+      padding-top: 30px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+
+    &__br--xs-hidden {
+      display: none;
+    }
+
+    &__request {
+      display: block;
+      margin: 0 auto;
+      top: 30px;
+      left: 0;
+    }
+
+    &__more {
       display: block;
       margin: 0 auto;
       top: 46px;
