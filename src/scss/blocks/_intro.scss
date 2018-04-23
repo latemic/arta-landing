@@ -1,0 +1,100 @@
+/**
+  **ONLINE PRODUCTS THAT FEEL REAL
+**/
+.intro {
+  height: 750px;
+  margin-top: -74px;
+  background: url('/img/header_bgr.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+
+  &__heading {
+    @extend %heading-reset;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 290px 57px 0 57px;
+    line-height: 1.4;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
+  }
+
+  &__br--xs {
+    display: none;
+  }
+
+  &__description {
+    padding: 0 57px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
+  }
+
+  &__start-free {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 35px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    border: 1px solid #2888e8;
+    background-color: #2888e8;
+    border-radius: 20px;
+    height: 43px;
+    width: 127px;
+    padding-top: 8px;
+    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
+      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 #5d98d5;
+
+    &:hover,
+    &:active {
+      background-color: #086acc;
+      border-color: #086acc;
+    }
+  }
+
+  &__arrow {
+    display: block;
+    position: absolute;
+    margin-left: -13px;
+    padding: 24.8px 0 63.8px 0;
+    top: 641px;
+    left: 50%;
+  }
+}
+
+@include breakpoint(xs){
+  .intro {
+    height: 610px;
+    background: url('/img/bg-section-1.png') no-repeat center 0;
+    background-size: cover;
+
+    &__heading {
+      margin: 0 auto;
+      font-size: 32px;
+      padding: 106px 20px 0 20px;
+      line-height: 1.31;
+    }
+
+    &__br--xs {
+      display: block;
+    }
+
+    &__description {
+      padding: 18px 20px;
+      font-size: 18px;
+    }
+
+    &__start-free {
+      top: 50px;
+    }
+
+    &__arrow {
+      top:  545px;
+    }
+  }
+}

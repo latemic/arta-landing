@@ -1,0 +1,91 @@
+/**
+  **MOBILE-SDK
+**/
+
+.mobile-sdk {
+  height: 750px;
+  padding-top: 186px;
+  background-color: #0a233c;
+  text-align: center;
+
+  @include breakpoint(xs){
+    min-height: 530px;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+
+    @include breakpoint (xs){
+      margin-top: 175px;
+    }
+  }
+
+  &__heading {
+    @extend %heading-reset;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @include breakpoint (0, $screen-xs-max){
+      font-size: 24px;
+      line-height: 1.33;
+      width: 215px;
+      margin: 0 auto;
+      padding-top: 36px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    font-weight: 400;
+    width: 475px;
+    line-height: 1;
+    margin: 0 auto;
+    padding-top: 19px;
+    color: #ffffff;
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 71%;
+      font-size: 16px;
+      margin-top: 18px;
+    }
+  }
+
+  &__request {
+    @extend %button-style;
+    display: inline-block;
+    position: relative;
+    width: 164px;
+    padding: 12px 18px 13px 18px;
+    margin: 0 auto;
+    left: -25px;
+    top: 59px;
+
+    @include breakpoint (0, $screen-xs-max){
+      display: block;
+      margin: 0 auto;
+      top: 30px;
+    }
+  }
+
+  &__more {
+    display: inline-block;
+    position: relative;
+    color: #2888e8;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 44px;
+    margin: 0 auto;
+    top: 59px;
+    left: -25px;
+
+    @include breakpoint (0, $screen-xs-max){
+      display: block;
+      margin: 0 auto;
+      top: 46px;
+    }
+  }
+}

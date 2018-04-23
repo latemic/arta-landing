@@ -10,8 +10,9 @@
 @import 'layout/footer';
 
 @import 'pages/index';
-@import 'pages/intro';
-@import 'pages/one_stop';
-@import 'pages/components';
-@import 'pages/realistic_preview';
-@import 'pages/mobile_sdk';
+
+@import 'blocks/intro';
+@import 'blocks/one_stop';
+@import 'blocks/components';
+@import 'blocks/realistic_preview';
+@import 'blocks/mobile_sdk';

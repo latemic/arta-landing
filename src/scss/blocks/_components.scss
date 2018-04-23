@@ -1,0 +1,48 @@
+/**
+  **COMPONENTS IMAGE (SDKs, AR CLOUD, 3D ASSETS)
+**/
+
+.components {
+  height: 750px;
+  background-color: #ffffff;
+
+  &__wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 445px;
+    top: 194px;
+    text-align: center;
+  }
+
+  &__item-1, &__item-2, &__item-3 {
+    display: inline;
+    font-size: 18px;
+    line-height: 1.11;
+    font-weight: 700;
+  }
+
+  &__item-1 {
+    float: left;
+  }
+
+  &__item-2 {
+    float: right;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint (xs) {
+  .components {
+    height: 530px;
+
+    &__wrapper {
+      top: 95px;
+      width: 280px;
+    }
+  }
+}
