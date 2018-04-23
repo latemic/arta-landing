@@ -1,0 +1,79 @@
+/**
+  **3D ASSETS
+**/
+.assets {
+  height: 702px;
+  background-color: #0a233c;
+
+  @include breakpoint (0, $screen-xs-max){
+    min-height: 600px;
+  }
+
+  &__heading {
+    @extend %heading-reset;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 739px;
+    margin-left: 97px;
+    color: #ffffff;
+    line-height: 1.4;
+    text-align: left;
+
+    @include breakpoint ($screen-sm-min, $screen-sm-max){
+      margin: 0 0 90px 21px;
+    }
+
+    @include breakpoint (0, $screen-xs-max){
+      font-size: 32px;
+      line-height: 1.31;
+      width: 71%;
+      margin-left: 21px;
+      top: 15px;
+    }
+  }
+
+  &__item-1 {
+    position: absolute;
+    top: 4137px;
+    left: calc(100% * 207/1280);
+
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 25%;
+    }
+  }
+
+  &__item-2 {
+    position: absolute;
+    top: 3885px;
+    left: calc(50% - 0.5 * 337px);
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 50%;
+    }
+  }
+
+  &__item-3 {
+    position: absolute;
+    top: 3828px;
+    left: calc(827/1280 * 100%);
+
+    @include breakpoint (0, $screen-xs-max){
+      width: 15%;
+      top: -50px;
+      left: 0;
+    }
+  }
+
+  &__arrow {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 2px;
+
+    @include breakpoint (0, $screen-xs-max){
+      top: 50px;
+    }
+  }
+}
