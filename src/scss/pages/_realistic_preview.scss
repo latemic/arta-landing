@@ -1,0 +1,64 @@
+/**
+  **REALISTIC PREVIEW
+**/
+
+.realistic-preview {
+  height: 750px;
+  background: url('') no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  &__heading {
+    @extend %heading-reset;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 59px 0 97px;
+    color: #185899;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 218px;
+    height: 437px;
+  }
+
+  &__arrow {
+    display: block;
+    position: absolute;
+    margin-left: -13px;
+    padding: 47px 0 63.8px 0;
+    left: 50%;
+  }
+}
+
+@include breakpoint (xs) {
+  .realistic-preview {
+    height: 789px;
+    background: url('') no-repeat center;
+    background-size: cover;
+
+    &__heading {
+      font-size: 32px;
+      line-height: 1.31;
+      width: 71%;
+      padding: 0 20px;
+    }
+
+    &__br--hidden-xs {
+      display: none;
+    }
+
+    &__image {
+      padding-top: 45px;
+    }
+
+    &__arrow {
+      padding: 28px 0 25px 0;
+    }
+  }
+}
