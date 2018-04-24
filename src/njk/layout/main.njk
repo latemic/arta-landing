@@ -10,10 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="page {{ pageClass }}">
+<body class="page {{ pageClass }} site">
   {% include "../partials/header.njk" %}
 
-  {% block content %}{% endblock %}
+  <main class="site__content">
+    {% block content %}{% endblock %}
+  </main>
 
   {% include "../partials/footer.njk" %}
   <script src="js/scripts.js"></script>
