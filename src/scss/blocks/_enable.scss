@@ -1,0 +1,59 @@
+/**
+  **ENABLE
+**/
+
+.enable {
+  min-height: 501px;
+  background: url('/img/background-section-10.png') no-repeat center center;
+  background-color:  #0a233c;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+
+  &::before, &::after {
+    content: "";
+    display: block;
+    border:none;
+    height: 2px;
+    background: linear-gradient(269deg, rgba(200, 200, 200, 0), #ffffff 50%,
+      rgba(151, 151, 151, 0));
+  }
+
+  &::after {
+    margin-top: 221px;
+  }
+
+  &__heading {
+    @extend %heading-reset;
+    padding-top: 167px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 2.92;
+  }
+
+  &__start-free {
+    @extend %button-style;
+    width: 173px;
+    padding: 8px 20px 9px 20px;
+    margin: 0 auto;
+    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
+      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 #5d98d5;
+  }
+}
+
+@include breakpoint(xs) {
+  .enable {
+    height: 341px;
+
+    &__heading {
+      padding-top: 143px;
+      line-height: 1.33;
+    }
+
+    &__start-free {
+      position: relative;
+      top: 28px;
+    }
+  }
+}
