@@ -3,7 +3,7 @@
 **/
 .assets {
   height: 702px;
-  background: url('/img/bg-3d-assets.svg') no-repeat center;
+  background: url('/img/bg-3d-assets.svg') no-repeat;
   background-size: cover;
 
   &__heading {
@@ -62,37 +62,37 @@
 @include breakpoint(xs) {
   .assets {
     height: 530px;
-    background: url('/img/bg-3d-assets.svg') no-repeat center;
+    background: url('/img/bg-3d-assets.svg') no-repeat -45px;
     background-size: cover;
 
     &__heading {
       font-size: 32px;
       line-height: 1.31;
       margin-left: 21px;
-      top: 15px;
+      padding-top: 15px;
     }
 
     &__item-1 {
       width: 85px;
-      top: 3275px;
+      top: 3380px;
       left: 20px;
     }
 
     &__item-2 {
       width: 168.5px;
-      top: 3150px;
+      top: 3270px;
       left: 50%;
       margin-left: -84px;
     }
 
     &__item-3 {
       width: 45px;
-      top: 3130px;
+      top: 3260px;
       left: 80%;
     }
 
     &__arrow {
-      top: 3370px;
+      top: 3480px;
     }
   }
 }

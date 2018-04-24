@@ -1,0 +1,101 @@
+/**
+  **ARTA AR CLOUD
+**/
+
+.ar-cloud {
+  height: 750px;
+  color: #17293d;
+  padding-top: 157px;
+  text-align: center;
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    @extend %heading-reset;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 2.33;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 20px;
+    font-weight: 400;
+    width: 475px;
+    line-height: 1;
+    margin: 0 auto;
+    padding-top: 24px;
+  }
+
+  &__features {
+    @extend %button-style;
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    padding: 12px 18px 13px 18px;
+    margin: 0 auto;
+    left: -25px;
+    top: 59px;
+
+    @include breakpoint (0, $screen-xs-max){
+      display: block;
+      margin: 0 auto;
+      top: 30px;
+    }
+  }
+
+  &__more {
+    display: inline-block;
+    position: relative;
+    color: #2888e8;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 44px;
+    margin: 0 auto;
+    top: 59px;
+    left: -25px;
+
+    @include breakpoint (0, $screen-xs-max){
+      display: block;
+      margin: 0 auto;
+      top: 46px;
+    }
+  }
+}
+
+@include breakpoint(xs){
+  .ar-cloud {
+    height: 530px;
+    padding-top: 50px;
+
+    &__heading {
+      font-size: 24px;
+      line-height: 1.33;
+      padding-top: 36px;
+    }
+
+    &__description {
+      font-size: 16px;
+      margin-top: 18px;
+      width: 280px;
+    }
+
+    &__features {
+      display: block;
+      margin: 0 auto;
+      top: 30px;
+      left: 0;
+    }
+
+    &__more {
+      display: block;
+      margin: 0 auto;
+      top: 58px;
+      line-height: 1.25;
+    }
+  }
+}
