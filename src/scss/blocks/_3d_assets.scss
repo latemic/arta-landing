@@ -3,11 +3,8 @@
 **/
 .assets {
   height: 702px;
-  background-color: #0a233c;
-
-  @include breakpoint (0, $screen-xs-max){
-    min-height: 600px;
-  }
+  background: url('/img/bg-3d-assets.svg') no-repeat center;
+  background-size: cover;
 
   &__heading {
     @extend %heading-reset;
@@ -19,61 +16,83 @@
     color: #ffffff;
     line-height: 1.4;
     text-align: left;
-
-    @include breakpoint ($screen-sm-min, $screen-sm-max){
-      margin: 0 0 90px 21px;
-    }
-
-    @include breakpoint (0, $screen-xs-max){
-      font-size: 32px;
-      line-height: 1.31;
-      width: 71%;
-      margin-left: 21px;
-      top: 15px;
-    }
   }
 
   &__item-1 {
     position: absolute;
-    top: 4137px;
-    left: calc(100% * 207/1280);
-
-
-    @include breakpoint (0, $screen-xs-max){
-      width: 25%;
-    }
+    top: 4207px;
+    left: 207px;
   }
 
   &__item-2 {
     position: absolute;
     top: 3885px;
     left: calc(50% - 0.5 * 337px);
-
-    @include breakpoint (0, $screen-xs-max){
-      width: 50%;
-    }
   }
 
   &__item-3 {
     position: absolute;
     top: 3828px;
-    left: calc(827/1280 * 100%);
-
-    @include breakpoint (0, $screen-xs-max){
-      width: 15%;
-      top: -50px;
-      left: 0;
-    }
+    left: calc(827/1280 * 100% + 57px);
   }
 
   &__arrow {
     display: block;
-    position: relative;
-    margin: 0 auto;
-    top: 2px;
+    position: absolute;
+    margin-left: -13px;
+    padding: 24.8px 0;
+    left: 50%;
+    top: 4375px;
+  }
+}
 
-    @include breakpoint (0, $screen-xs-max){
-      top: 50px;
+@include breakpoint($screen-sm-min, $screen-sm-max) {
+  .assets {
+
+    &__heading {
+      margin: 0 0 90px 21px;
+    }
+
+    &__item-1 {
+      left: 103px;
+    }
+  }
+}
+
+@include breakpoint(xs) {
+  .assets {
+    height: 530px;
+    background: url('/img/bg-3d-assets.svg') no-repeat center;
+    background-size: cover;
+
+    &__heading {
+      font-size: 32px;
+      line-height: 1.31;
+      margin-left: 21px;
+      top: 15px;
+    }
+
+    &__item-1 {
+      width: 85px;
+      top: 3275px;
+      left: 20px;
+    }
+
+    &__item-2 {
+      width: 168.5px;
+      top: 3150px;
+      left: 50%;
+      margin-left: -84px;
+    }
+
+    &__item-3 {
+      width: 45px;
+      top: 3130px;
+      left: 80%;
+    }
+
+    &__arrow {
+      top: 3370px;
     }
   }
 }
