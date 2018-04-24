@@ -1,7 +1,6 @@
-.navbar {
+.header {
   position: sticky;
   height: 74px;
-  top: 0;
   background-color: transparent;
   padding: 16px 0 0 57px;
   z-index: 1;
@@ -20,70 +19,54 @@
     position: relative;
     margin-left: 10px;
     top: -17px;
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     color: $white;
-    width: 72px;
     font-size: 26px;
     font-weight: 900;
   }
 
-  &__list {
-    @extend %list-reset;
+  &__navbar--center {
     display: inline-block;
-    margin-left: 13%;
+    text-align: center;
+    margin-left: calc(236/1280 * 100%);
 
-    @include breakpoint($screen-md-min, $screen-md-max) {
-      margin-left: 0;
-    }
     @include breakpoint(0, $screen-sm-max){
       display: none;
     }
-
-    &-item {
-      display: inline-block;
-      position: relative;
-      top: -20px;
-      padding: 0 27px;
-      font-family: 'Lato', sans-serif;
-      text-transform: uppercase;
-      color: $white;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    &-link:hover,
-    &-link:active {
-      color: $dodger-blue;
-    }
   }
 
-  &__buttons--right {
+  &__navbar-item {
+    @extend %list-reset;
     display: inline-block;
-    float: right;
-    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: -20px;
+    padding: 0 27px;
     text-transform: uppercase;
     color: $white;
-    font-weight: bold;
-    margin-top: 0;
+    font-size: 13px;
+    font-weight: 900;
   }
 
-  &__buttons__list {
-    @extend %list-reset;
+  &-link:hover,
+  &-link:active {
+    color: $dodger-blue;
+  }
+
+  &__navbar--right {
     float: right;
+    text-align: right;
     display: inline-block;
     padding: 8px 0;
-    width: 245px;
-    margin-right: 18.8%;
+    margin-right: 59px;
+  }
 
-    @include breakpoint(0, $screen-sm-max) {
-      width: 140px;
-      margin-right: 20px;
-    }
-
-    &-item {
-      display:inline-block;
-    }
+  &__navbar-btn {
+    @extend %list-reset;
+    display: inline-block;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 13px;
+    font-weight: 900;
   }
 
   &__sign-in {
