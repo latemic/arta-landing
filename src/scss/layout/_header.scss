@@ -22,7 +22,7 @@
     top: -17px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $white;
     width: 72px;
     font-size: 26px;
     font-weight: 900;
@@ -47,14 +47,14 @@
       padding: 0 27px;
       font-family: 'Lato', sans-serif;
       text-transform: uppercase;
-      color: #ffffff;
+      color: $white;
       font-size: 13px;
       font-weight: bold;
     }
 
     &-link:hover,
     &-link:active {
-      color: #46a2ff;
+      color: $dodger-blue;
     }
   }
 
@@ -63,7 +63,7 @@
     float: right;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $white;
     font-weight: bold;
     margin-top: 0;
   }
@@ -89,7 +89,7 @@
   &__sign-in {
     display: inline-block;
     position: relative;
-    border: 1px solid #2888e8;
+    border: 1px solid $curious-blue;
     border-radius: 20px;
     height: 40px;
     width: 90px;
@@ -99,8 +99,8 @@
 
     &:hover,
     &:active {
-      background-color: #185899;
-      border: 1px solid #185899;
+      background-color: $matisse;
+      border: 1px solid $matisse;
     }
 
     @include breakpoint(0, $screen-sm-max) {
@@ -114,8 +114,8 @@
   &__start-free {
     display: inline-block;
     position: relative;
-    border: 1px solid #2888e8;
-    background-color: #2888e8;
+    border: 1px solid $curious-blue;
+    background-color: $curious-blue;
     border-radius: 20px;
     height: 40px;
     width: 130px;
@@ -124,8 +124,8 @@
 
     &:hover,
     &:active {
-      background-color: #185899;
-      border: 1px solid #185899;
+      background-color: $matisse;
+      border: 1px solid $matisse;
     }
 
     @include breakpoint(0, $screen-sm-max){

@@ -20,7 +20,7 @@
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $white;
     padding-top: 12px;
     line-height: 2.33;
   }
@@ -31,7 +31,7 @@
     line-height: 1;
     margin: 0 auto;
     padding: 19px 20px 0 20px;
-    color: #ffffff;
+    color: $white;
   }
 
   &__request {
@@ -48,7 +48,7 @@
   &__more {
     display: inline-block;
     position: relative;
-    color: #2888e8;
+    color: $curious-blue;
     font-size: 16px;
     font-weight: 700;
     padding-left: 44px;

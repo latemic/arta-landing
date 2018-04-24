@@ -4,7 +4,7 @@
 
 .lamp {
   height: 699px;
-  color: #185899;
+  color: $matisse;
   background: url('/img/bg-lamp.svg') no-repeat;
   background-size: cover;
 
@@ -15,7 +15,7 @@
     font-weight: 700;
     text-transform: uppercase;
     max-width: 1000px;
-    color: #185899;
+    color: $matisse;
     line-height: 1.4;
     text-align: left;
   }
