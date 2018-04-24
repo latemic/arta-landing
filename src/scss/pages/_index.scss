@@ -1,81 +1,4 @@
-/**
-  **BLOCK-8
-**/
 
-.block-8 {
-  height: 100%;
-  width: 100%;
-  min-height: 1404px;
-  color: #185899;
-  background: url('/img/background-section-8.png') no-repeat;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-
-  @include breakpoint (0, $screen-xs-max){
-      min-height: 1240px;
-  }
-
-  &__h-1 {
-    display: block;
-    position: relative;
-    padding-left: 97px;
-    font-size: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
-    max-width: 1000px;
-    top: -48px;
-    color: #185899;
-    line-height: 1.4;
-    text-align: left;
-
-    @include breakpoint ($screen-sm-min, $screen-sm-max){
-      width: 71%;
-      margin: 0 0 90px 0;
-      padding-left: 21px;
-    }
-
-    @include breakpoint (0, $screen-xs-max){
-      top: 0;
-      font-size: 32px;
-      line-height: 1.31;
-      width: 71%;
-      margin-left: 21px;
-      padding: 0;
-    }
-  }
-
-  &__image {
-    display: block;
-    position: relative;
-    top: -250px;
-    margin: 0 auto;
-    left: -15px;
-    width: 265px;
-    height: 542px;
-    background: url('/img/sprite-lamp.png') -265px 0;
-
-    &:hover {
-      background: url('/img/sprite-lamp.png') 0 0;
-      left: 17px;
-    }
-
-    @include breakpoint (0, $screen-xs-max){
-      top: -20px;
-    }
-  }
-
-  &__arrow {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    top: -60px;
-
-    @include breakpoint (0, $screen-xs-max){
-      top: 25px;
-    }
-  }
 
   /**
     **BLOCK-9
@@ -184,7 +107,7 @@
       }
     }
   }
-}
+
 
 /**
   **BLOCK-10

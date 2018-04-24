@@ -1,0 +1,79 @@
+/**
+  **BUILD YOUR OWN INVENTORY OF THE AR-COMPATIBLE
+**/
+
+.lamp {
+  height: 699px;
+  color: #185899;
+  background: url('/img/bg-lamp.svg') no-repeat;
+  background-size: cover;
+
+  &__heading {
+    position: relative;
+    padding-left: 97px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 1000px;
+    color: #185899;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    top: -250px;
+    margin: 0 auto;
+    left: -15px;
+    width: 265px;
+    height: 542px;
+    background: url('/img/sprite-lamp.png') -265px 0;
+
+    &:hover {
+      background: url('/img/sprite-lamp.png') 0 0;
+      left: 17px;
+    }
+  }
+
+  &__arrow {
+    display: block;
+    position: absolute;
+    margin-left: -13px;
+    padding: 47px 0 63.8px 0;
+    left: 50%;
+    top: 5875px;
+  }
+}
+
+#lampControl {
+  display:none;
+}
+
+#lampControl:checked + label > img {
+  background: url('/img/sprite-lamp.png') 0 0;
+  left: 17px;
+}
+
+@include breakpoint(xs){
+  .lamp {
+    height: 710px;
+    background: url('/img/bg-lamp.svg') no-repeat center;
+    background-size: cover;
+
+    &__heading {
+      margin-left: 21px;
+      font-size: 32px;
+      line-height: 1.31;
+      padding: 0;
+    }
+
+    &__image {
+      top: -150px;
+    }
+
+    &__arrow {
+      top: 4720px;
+    }
+  }
+}
