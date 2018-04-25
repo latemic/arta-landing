@@ -71,7 +71,7 @@
     height: 40px;
     width: 90px;
     margin-right: 15px;
-    padding: 11px 20px 0 20px;
+    padding: 12px 20px 0 20px;
     font-size: 13px;
     line-height: 1.23;
     box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
@@ -110,8 +110,28 @@
   }
 
   &--scrolled {
-
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba(49, 56, 64, 0.23);
+    padding-top: 11px;
   }
+
+  &--scrolled > * &__company-name {
+    color: $curious-blue;
+  }
+
+  &--scrolled > * &__navbar-item {
+    color: $matisse;
+  }
+
+  &--scrolled > * &__sign-in {
+    color: $matisse;
+
+    &:hover,
+    &:active {
+      color: $white;
+    }
+  }
+
 }
 
 @include breakpoint(0, $screen-md-max) {
@@ -157,7 +177,7 @@
       width: 76px;
       height: 32px;
       line-height: 1;
-      padding: 8px 0 0 13px;
+      padding: 9px 0 0 13px;
     }
 
     &__start-free {

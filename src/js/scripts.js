@@ -20,3 +20,16 @@ function openModalWindow() {
 function closeModalWindow() {
   modal.classList.remove('subscribe--visible');
 }
+
+
+//CHANGING HEADER CLASS ON SCROLLING
+window.onscroll = function changeClass(){
+  var scrollPosY = window.pageYOffset | document.body.scrollTop;
+  var navBar = document.getElementById('changing-header');
+
+  if(scrollPosY > 100) {
+    navBar.className = ('header header--scrolled');
+  } else if(scrollPosY <= 100) {
+    navBar.className =  ('header');
+  }
+}
