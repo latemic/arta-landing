@@ -60,7 +60,7 @@
     text-transform: uppercase;
     color: $white;
     font-size: 13px;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   &__sign-in {
@@ -108,6 +108,10 @@
   &__toggle {
     display: none;
   }
+
+  &--scrolled {
+
+  }
 }
 
 @include breakpoint(0, $screen-md-max) {
@@ -153,7 +157,7 @@
       width: 76px;
       height: 32px;
       line-height: 1;
-      padding: 8px 12px 0 12px;
+      padding: 8px 0 0 13px;
     }
 
     &__start-free {
