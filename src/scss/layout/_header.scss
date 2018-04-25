@@ -1,13 +1,10 @@
 .header {
   position: sticky;
+  top: 0;
   height: 74px;
   background-color: transparent;
   padding: 16px 0 0 57px;
   z-index: 1;
-
-  @include breakpoint (0, $screen-md-max) {
-    padding: 11px 0 0 20px;
-  }
 
   &__logo {
     width: 45px;
@@ -29,14 +26,13 @@
     display: inline-block;
     text-align: center;
     margin-left: calc(236/1280 * 100%);
+  }
 
-    @include breakpoint(0, $screen-sm-max){
-      display: none;
-    }
+  &__list {
+    @extend %list-reset;
   }
 
   &__navbar-item {
-    @extend %list-reset;
     display: inline-block;
     position: relative;
     top: -20px;
@@ -54,14 +50,12 @@
 
   &__navbar--right {
     float: right;
-    text-align: right;
     display: inline-block;
-    padding: 8px 0;
+    padding-top: 6px;
     margin-right: 59px;
   }
 
   &__navbar-btn {
-    @extend %list-reset;
     display: inline-block;
     text-transform: uppercase;
     color: $white;
@@ -77,20 +71,16 @@
     height: 40px;
     width: 90px;
     margin-right: 15px;
-    padding: 10px 20px 0 20px;
+    padding: 11px 20px 0 20px;
     font-size: 13px;
+    line-height: 1.23;
+    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
+      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
 
     &:hover,
     &:active {
       background-color: $matisse;
       border: 1px solid $matisse;
-    }
-
-    @include breakpoint(0, $screen-sm-max) {
-      z-index: 2;
-      margin-right: 18px;
-      margin-top: -7px;
-      margin-left: 0;
     }
   }
 
@@ -101,29 +91,80 @@
     background-color: $curious-blue;
     border-radius: 20px;
     height: 40px;
-    width: 130px;
+    width: 127px;
     font-size: 16px;
-    padding: 6px 19px 0 19px;
+    line-height: 1;
+    padding: 11px 16px 0 16px;
+    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
+      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
 
     &:hover,
     &:active {
       background-color: $matisse;
       border: 1px solid $matisse;
     }
-
-    @include breakpoint(0, $screen-sm-max){
-      display: none;
-    }
   }
 
   &__toggle {
     display: none;
+  }
+}
 
-    @include breakpoint(0, $screen-sm-max){
+@include breakpoint(0, $screen-md-max) {
+  .header {
+    padding: 11px 0 0 20px;
+
+    &__navbar--center {
+      margin-left: calc(236/2560 * 100%);
+    }
+
+    &__navbar--right {
+      padding: 6px 20px 0 20px;
+      margin-right: 0;
+    }
+  }
+}
+
+@include breakpoint(0, $screen-sm-max) {
+  .header {
+    height: 60px;
+
+    &__logo {
+      width: 32.4px;
+      height: 37.8px;
+    }
+
+    &__company-name {
+      font-size: 18px;
+      top: -11px;
+    }
+
+    &__navbar--center {
+      display: none;
+    }
+
+    &__navbar--right {
+      padding-top: 6px;
+    }
+
+    &__sign-in {
+      z-index: 2;
+      margin: -7px 18px 0 0;
+      width: 76px;
+      height: 32px;
+      line-height: 1;
+      padding: 8px 12px 0 12px;
+    }
+
+    &__start-free {
+      display: none;
+    }
+
+    &__toggle {
       display: inline-block;
       position: relative;
       float: right;
-      top: 6px;
+      top: 5px;
     }
   }
 }
