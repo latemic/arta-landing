@@ -28,8 +28,8 @@ window.onscroll = function changeClass(){
   var navBar = document.getElementById('changing-header');
 
   if(scrollPosY > 100) {
-    navBar.className = ('header header--scrolled');
+    navBar.classList.add('header--scrolled');
   } else if(scrollPosY <= 100) {
-    navBar.className =  ('header');
+    navBar.classList.remove('header--scrolled');
   }
 }
