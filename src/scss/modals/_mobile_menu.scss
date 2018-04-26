@@ -1,0 +1,146 @@
+.mobile-menu {
+  display: none;
+  top: 0;
+  right: 0;
+  position: fixed;
+  margin: 10px;
+  width: 93.75%;
+  height: 507px;
+  border-radius: 6px;
+  background-color: $white;
+  box-shadow: 0 1px 0 0 $alabaster;
+  border: 1px solid $alabaster;
+  z-index: 10;
+
+  &__products::after {
+    content: "";
+    display: block;
+    position: relative;
+    border-bottom: 1px solid $alabaster;
+  }
+
+  &__heading {
+    @extend %heading-reset;
+    margin: 21px 0 21px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $gull-gray;
+  }
+
+  &__close {
+    position: absolute;
+    top: 25px;
+    right: 21px;
+  }
+
+  &__products-list,
+  &__sections-list {
+    @extend %list-reset;
+  }
+
+  &__product {
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 15px 0 15px 0;
+    line-height: 1.25;
+    color: $big-stone;
+  }
+
+  &__mobile-sdk {
+    background: url('/img/sdk-logo.svg') no-repeat 25px 0;
+    background-size: contain;
+    padding-left: 74px;
+
+    &:active,
+    &:hover {
+      background: url('/img/sdk-logo-hov.svg') no-repeat 25px 0;
+      background-size: contain;
+      color: $curious-blue;
+    }
+  }
+
+  &__ar-cloud {
+    background: url('/img/cloud-logo.svg') no-repeat 25px 0;
+    background-size: contain;
+    padding-left: 74px;
+
+    &:active,
+    &:hover {
+      background: url('/img/cloud-logo-hov.svg') no-repeat 25px 0;
+      background-size: contain;
+      color: $curious-blue;
+    }
+  }
+
+  &__3d-visualisation {
+    background: url('/img/3-d-logo.svg') no-repeat 25px 0;
+    background-size: contain;
+    padding-left: 74px;
+
+    &:active,
+    &:hover {
+      background: url('/img/3-d-logo-hov.svg') no-repeat 25px 0;
+      background-size: contain;
+      color: $curious-blue;
+    }
+  }
+
+  &__sections-list {
+    padding-left: 25px;
+  }
+
+  &__section {
+    color: $matisse;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 2.5;
+    font-weight: 700;
+
+    &:active,
+    &:hover {
+      color: $curious-blue;
+    }
+  }
+
+  &__bottom {
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    top: 438px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: $alabaster;
+  }
+
+  &__start-free {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 24px;
+    border: 1px solid $curious-blue;
+    background-color: $curious-blue;
+    border-radius: 20px;
+    height: 40px;
+    width: 127px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    padding: 11px 16px 0 16px;
+    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
+      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
+
+    &:hover,
+    &:active {
+      background-color: $matisse;
+      border: 1px solid $matisse;
+    }
+  }
+}
+
+.mobile-menu--visible {
+  display: block;
+}
