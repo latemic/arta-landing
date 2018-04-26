@@ -54,6 +54,14 @@
   left: 17px;
 }
 
+@include breakpoint($screen-sm-min, $screen-sm-max){
+  .lamp {
+    &__image {
+      top: -210px;
+    }
+  }
+}
+
 @include breakpoint(xs){
   .lamp {
     height: 710px;

@@ -38,6 +38,14 @@
   }
 }
 
+@include breakpoint($screen-sm-min, $screen-sm-max) {
+  .realistic-preview {
+    &__image {
+      margin-top: -50px;
+    }
+  }
+}
+
 @include breakpoint(xs) {
   .realistic-preview {
     height: 789px;

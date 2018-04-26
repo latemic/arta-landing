@@ -21,7 +21,7 @@
   &__item-1 {
     position: absolute;
     top: 4207px;
-    left: 207px;
+    left: calc(207/1280 * 100%);
   }
 
   &__item-2 {
@@ -32,7 +32,7 @@
 
   &__item-3 {
     position: absolute;
-    top: 3828px;
+    top: 3840px;
     left: calc(827/1280 * 100% + 57px);
   }
 
@@ -46,6 +46,14 @@
   }
 }
 
+@include breakpoint($screen-md-min, $screen-md-max) {
+  .assets {
+    &__item-1 {
+      left: 97px;
+    }
+  }
+}
+
 @include breakpoint($screen-sm-min, $screen-sm-max) {
   .assets {
 
@@ -54,7 +62,7 @@
     }
 
     &__item-1 {
-      left: 103px;
+      left: 40px;
     }
   }
 }
