@@ -6,7 +6,7 @@ const dist = `./dist/`;
 module.exports = {
   paths: {
     fonts: {
-      src: src + 'fonts/**/*.woff2',
+      src: src + 'fonts/**/*',
       dest: dist + 'fonts'
     },
     styles: {
