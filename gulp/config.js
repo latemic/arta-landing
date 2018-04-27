@@ -16,6 +16,10 @@ module.exports = {
       src: src + 'scss/**/*.scss',
       dest: dist + 'css'
     },
+    scripts: {
+      src: src + 'js/**/*.js',
+      dest: dist + 'js'
+    },
     images: {
       src: src + 'images/**/*',
       dest: dist + 'img'
@@ -34,6 +38,7 @@ module.exports = {
   },
   names: {
     css: 'styles.css',
+    js: 'scripts.js',
     svgSprite: 'svgSprite.svg'
   }
 };

@@ -14,7 +14,13 @@ defaultTask = gulp.task('devServer');
 defaultTask.description = `Fire up BrowserSync webserver on localhost:3000. Doesn't open the page in browser automatically by default.`;
 
 defaultTask = gulp.task('styles:dev');
-defaultTask.description = "Combine all sass and compiles it to generatedByGulp.css, add source maps.";
+defaultTask.description = "Combine all sass and compiles it to styles.css, add source maps.";
+
+defaultTask = gulp.task('scripts:dev');
+defaultTask.description = 'Concatenate custom javascript to one file named scripts.js and add a source map.';
+
+defaultTask = gulp.task('scripts:test');
+defaultTask.description = 'Run JS through JShint linter.';
 
 defaultTask = gulp.task('images');
 defaultTask.description = 'Optimize images';
