@@ -14,6 +14,7 @@ gulp.task('devServer', function() {
       index: 'index.html'
     },
     files: [
+      config.paths.dist +'fonts/*.woff',
       config.paths.dist +'fonts/*.woff2',
       config.paths.dist + 'css/*.css',
       config.paths.dist + 'js/*.js',
