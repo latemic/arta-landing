@@ -43,20 +43,22 @@ burger.addEventListener('click', openMenu);
 closeMenuBtn.addEventListener('click', closeMenu);
 
 //Open Menu
-function openMenu(){
+function openMenu(e){
   menu.classList.add('mobile-menu--visible');
+  e.preventDefault();
 }
 
 //Close Menu
-function closeMenu(){
+function closeMenu(e){
   menu.classList.remove('mobile-menu--visible');
+  e.preventDefault();
 }
 
-//Any click outside of the Menu will close the menu if it's open
-document.addEventListener('click', function(event) {
-  var isClickInside = menu.contains(event.target);
-  var isToggleClicked = burger.contains(event.target);
+//Any click outside of the Menu will close the menu
+document.addEventListener('click', function(e) {
+  var isClickInside = menu.contains(e.target);
+  var isToggleClicked = burger.contains(e.target);
   if (!isClickInside && !isToggleClicked) {
-    closeMenu();
+    menu.classList.remove('mobile-menu--visible');
   }
 });
