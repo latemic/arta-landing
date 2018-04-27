@@ -62,3 +62,6 @@ document.addEventListener('click', function(e) {
     menu.classList.remove('mobile-menu--visible');
   }
 });
+
+
+//FULL PAGE SCROLLING
