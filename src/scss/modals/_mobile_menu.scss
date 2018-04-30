@@ -11,7 +11,11 @@
   background-color: $white;
   box-shadow: 0 1px 0 0 $alabaster;
   border: 1px solid $alabaster;
-  z-index: 9999;
+  z-index: 999;
+
+  &--visible {
+    display: block;
+  }
 
   &__products::after {
     content: "";
@@ -124,8 +128,4 @@
       border-color: $matisse;
     }
   }
-}
-
-.mobile-menu--visible {
-  display: block;
 }
