@@ -1,17 +1,16 @@
-/**
-  **MOBILE-SDK
-**/
-
 .mobile-sdk {
   height: 750px;
   padding-top: 186px;
-  background: url('/img/bg-mob-sdk.svg') no-repeat center;
+  background-image: url('/img/bg-mob-sdk.svg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   text-align: center;
 
   &__image {
     display: block;
     position: relative;
+    width: 67px;
     margin: 0 auto;
   }
 
@@ -34,6 +33,13 @@
     color: $white;
   }
 
+  &__buttons {
+    position: relative;
+    margin: 0 auto;
+    right: 25px;
+    width: 328px;
+  }
+
   &__request {
     @extend %button-style;
     display: inline-block;
@@ -41,7 +47,6 @@
     width: 164px;
     padding: 12px 18px 13px 18px;
     margin: 0 auto;
-    left: -25px;
     top: 59px;
   }
 
@@ -54,7 +59,6 @@
     padding-left: 44px;
     margin: 0 auto;
     top: 59px;
-    left: -25px;
   }
 }
 
@@ -79,8 +83,8 @@
       font-size: 16px;
     }
 
-    &__br--xs-hidden {
-      display: none;
+    &__buttons {
+      right: 0;
     }
 
     &__request {
@@ -93,8 +97,13 @@
     &__more {
       display: block;
       margin: 0 auto;
+      padding-left: 0;
       top: 58px;
       line-height: 1.25;
     }
+  }
+
+  .mobile-sdk br {
+    display: none;
   }
 }
