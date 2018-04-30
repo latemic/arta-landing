@@ -37,14 +37,13 @@
     position: relative;
     margin: 0 auto;
     right: 25px;
-    width: 328px;
+    width: 320px;
   }
 
   &__request {
     @extend %button-style;
     display: inline-block;
     position: relative;
-    width: 164px;
     padding: 12px 18px 13px 18px;
     margin: 0 auto;
     top: 59px;
@@ -88,10 +87,8 @@
     }
 
     &__request {
-      display: block;
-      margin: 0 auto;
       top: 30px;
-      left: 0;
+      margin: 0 auto;
     }
 
     &__more {

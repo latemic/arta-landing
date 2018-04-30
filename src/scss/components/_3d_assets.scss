@@ -1,6 +1,8 @@
 .assets {
+  position: relative;
   height: 702px;
   background-image: url('/img/bg-3d-assets.svg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -18,34 +20,37 @@
 
   &__item-1 {
     position: absolute;
-    top: 4207px;
+    top: 450px;
     left: calc(207/1280 * 100%);
   }
 
   &__item-2 {
     position: absolute;
-    top: 3885px;
+    top: 135px;
+    width: 337px;
     left: calc(50% - 0.5 * 337px);
   }
 
   &__item-3 {
     position: absolute;
-    top: 3840px;
+    top: 78px;
     left: calc(827/1280 * 100% + 57px);
   }
 
   &__arrow {
     display: block;
     position: absolute;
+    width: 26px;
     margin-left: -13px;
-    padding: 24.8px 0;
+    padding: 25px 0;
     left: 50%;
-    top: 4375px;
+    top: 638px;
   }
 }
 
 @include breakpoint($screen-md-min, $screen-md-max) {
   .assets {
+
     &__item-1 {
       left: 97px;
     }
@@ -68,8 +73,8 @@
 @include breakpoint(xs) {
   .assets {
     height: 530px;
-    background: url('/img/bg-3d-assets.svg') no-repeat -45px;
-    background-size: cover;
+    background-image: url('/img/bg-3d-assets.svg');
+    background-position: -75px;
 
     &__heading {
       font-size: 32px;
@@ -80,25 +85,25 @@
 
     &__item-1 {
       width: 85px;
-      top: 3380px;
+      top: 400px;
       left: 20px;
     }
 
     &__item-2 {
-      width: 168.5px;
-      top: 3270px;
+      width: 169px;
+      top: 275px;
       left: 50%;
       margin-left: -84px;
     }
 
     &__item-3 {
       width: 45px;
-      top: 3260px;
+      top: 245px;
       left: 80%;
     }
 
     &__arrow {
-      top: 3480px;
+      top: 480px;
     }
   }
 }
