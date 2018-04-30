@@ -53,6 +53,14 @@
     font-weight: 700;
   }
 
+  &__email:-webkit-autofill,
+  &__email:-webkit-autofill:hover,
+  &__email:-webkit-autofill:focus,
+  &__email:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: $white !important;
+  }
+
   &__email:valid + &__btn {
     background-color: $science-blue;
     border-color: $science-blue;
