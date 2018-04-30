@@ -50,40 +50,35 @@
   }
 
   &__mobile-sdk {
-    background: url('/img/sdk-logo.svg') no-repeat 25px 0;
-    background-size: contain;
-    padding-left: 74px;
+    @extend %bg-mobile-menu;
+    background-image: url('/img/sdk-logo.svg');
+
 
     &:active,
     &:hover {
-      background: url('/img/sdk-logo-hov.svg') no-repeat 25px 0;
-      background-size: contain;
+      background-image: url('/img/sdk-logo-hov.svg');
       color: $curious-blue;
     }
   }
 
   &__ar-cloud {
-    background: url('/img/cloud-logo.svg') no-repeat 25px 0;
-    background-size: contain;
-    padding-left: 74px;
+    @extend %bg-mobile-menu;
+    background-image: url('/img/cloud-logo.svg');
 
     &:active,
     &:hover {
-      background: url('/img/cloud-logo-hov.svg') no-repeat 25px 0;
-      background-size: contain;
+      background-image: url('/img/cloud-logo-hov.svg');
       color: $curious-blue;
     }
   }
 
   &__3d-visualisation {
-    background: url('/img/3-d-logo.svg') no-repeat 25px 0;
-    background-size: contain;
-    padding-left: 74px;
+    @extend %bg-mobile-menu;
+    background-image: url('/img/3-d-logo.svg');
 
     &:active,
     &:hover {
-      background: url('/img/3-d-logo-hov.svg') no-repeat 25px 0;
-      background-size: contain;
+      background-image: url('/img/3-d-logo-hov.svg');
       color: $curious-blue;
     }
   }
@@ -116,28 +111,17 @@
   }
 
   &__start-free {
+    @extend %button-style;
     display: inline-block;
     position: relative;
     top: 15px;
     left: 24px;
-    border: 1px solid $curious-blue;
-    background-color: $curious-blue;
-    border-radius: 20px;
-    height: 40px;
-    width: 127px;
-    font-size: 16px;
-    line-height: 1;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $white;
-    padding: 11px 16px 0 16px;
-    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
-      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
+    padding: 12px 16px 0 16px;
 
     &:hover,
     &:active {
       background-color: $matisse;
-      border: 1px solid $matisse;
+      border-color: $matisse;
     }
   }
 }
