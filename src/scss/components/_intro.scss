@@ -1,9 +1,5 @@
-/**
-  **ONLINE PRODUCTS THAT FEEL REAL
-**/
 .intro {
   height: 750px;
-  margin-top: -74px;
   background: url('/img/header_bgr.jpg') no-repeat center;
   background-size: cover;
   text-align: center;
@@ -34,12 +30,10 @@
 
   &__start-free {
     @extend %button-style;
-    display: block;
     position: relative;
     margin: 0 auto;
     top: 35px;
-    width: 127px;
-    padding-top: 12px;
+    padding: 8px 18px 9px 18px;
 
   }
 

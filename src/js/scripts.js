@@ -1,8 +1,3 @@
-const babel = 'babel';
-console.log('scripts has loaded!');
-console.log(`${babel} works!`);
-
-
 //SUBSCRIBE WINDOW
 var modal = document.getElementById('sub');
 var btn = document.getElementById('modal-window');
@@ -29,9 +24,9 @@ window.onscroll = function changeClass(){
   var scrollPosY = window.pageYOffset | document.body.scrollTop;
   var navBar = document.getElementById('changing-header');
 
-  if(scrollPosY > 100) {
+  if(scrollPosY > 74) {
     navBar.classList.add('header--scrolled');
-  } else if(scrollPosY <= 100) {
+  } else if(scrollPosY <= 74) {
     navBar.classList.remove('header--scrolled');
   }
 }
