@@ -1,9 +1,7 @@
-/**
-  **3D ASSETS
-**/
 .assets {
   height: 702px;
-  background: url('/img/bg-3d-assets.svg') no-repeat;
+  background-image: url('/img/bg-3d-assets.svg');
+  background-repeat: no-repeat;
   background-size: cover;
 
   &__heading {

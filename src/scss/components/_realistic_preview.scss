@@ -1,12 +1,9 @@
-/**
-  **REALISTIC PREVIEW
-**/
-
 .realistic-preview {
+  position: relative;
   height: 750px;
-  background: url('/img/bg-realistic-preview.svg') no-repeat;
+  background-image: url('/img/bg-realistic-preview.svg');
+  background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 
   &__heading {
     @extend %heading-reset;
@@ -32,16 +29,18 @@
   &__arrow {
     display: block;
     position: absolute;
+    width: 26px;
     margin-left: -13px;
-    padding: 47px 0 63.8px 0;
+    padding: 32px 0;
     left: 50%;
+    top: 674px;
   }
 }
 
 @include breakpoint($screen-sm-min, $screen-sm-max) {
   .realistic-preview {
-    &__image {
-      margin-top: -50px;
+    &__heading {
+      padding-left: 21px;
     }
   }
 }
@@ -49,25 +48,22 @@
 @include breakpoint(xs) {
   .realistic-preview {
     height: 789px;
-    background: url('/img/bg-realistic-preview.svg') no-repeat center;
-    background-size: cover;
+    background-image: url('/img/bg-realistic-preview.svg');
+    background-position: center;
 
     &__heading {
       font-size: 32px;
       line-height: 1.31;
-      padding: 0 20px;
+      padding: 0 21px;
     }
 
     &__br--hidden-xs {
       display: none;
     }
 
-    &__image {
-      top: -25px;
-    }
-
     &__arrow {
       padding: 28px 0 25px 0;
+      top: 705px;
     }
   }
 }
