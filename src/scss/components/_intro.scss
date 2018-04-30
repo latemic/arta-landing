@@ -1,6 +1,8 @@
 .intro {
   height: 750px;
-  background: url('/img/header_bgr.jpg') no-repeat center;
+  background-image: url('/img/header_bgr.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   text-align: center;
 
@@ -42,16 +44,16 @@
     position: absolute;
     margin-left: -13px;
     padding: 24.8px 0 63.8px 0;
-    top: 641px;
+    top: 675px;
     left: 50%;
   }
 }
 
 @include breakpoint(xs){
   .intro {
-    height: 610px;
-    background: url('/img/bg-section-1.png') no-repeat center 0;
-    background-size: cover;
+    height: 530px;
+    background-image: url('/img/bg-section-1.png');
+    background-position: center 0;
 
     &__heading {
       margin: 0 auto;
@@ -74,7 +76,7 @@
     }
 
     &__arrow {
-      top:  545px;
+      top:  465px;
     }
   }
 }

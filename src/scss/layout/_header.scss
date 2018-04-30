@@ -53,8 +53,7 @@
   &__navbar--right {
     float: right;
     display: inline-block;
-    padding-top: 6px;
-    margin-right: 59px;
+    margin-top: 6px;
   }
 
   &__navbar-btn {
@@ -169,7 +168,7 @@
     }
 
     &__navbar--right {
-      padding-top: 6px;
+      padding-top: 0;
     }
 
     &__sign-in {
