@@ -1,4 +1,5 @@
 .lamp {
+  position: relative;
   height: 699px;
   color: $matisse;
   background-image: url('/img/bg-lamp.svg');
@@ -50,7 +51,7 @@
     margin-left: -13px;
     padding: 47px 0 63.8px 0;
     left: 50%;
-    top: 5875px;
+    top: 610px;
   }
 }
 
@@ -60,6 +61,11 @@
   .lamp {
     &__image {
       top: -210px;
+    }
+
+    &__image:hover {
+      background: url('/img/sprite-lamp.png') -265px 0;
+      left: -15px;
     }
   }
 }
@@ -81,8 +87,13 @@
       top: -150px;
     }
 
+    &__image:hover {
+      background: url('/img/sprite-lamp.png') -265px 0;
+      left: -15px;
+    }
+
     &__arrow {
-      top: 4720px;
+      top: 630px;
     }
   }
 }
