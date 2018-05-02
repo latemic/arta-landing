@@ -87,20 +87,20 @@
 
     &__wrapper {
       display: block;
+      position: relative;
     }
 
     &__info {
       float: none;
       position: absolute;
-      top: 6550px;
+      top: 143px;
     }
 
     &__stay-tuned {
       float: none;
-      margin-top: 0;
-      margin-left: calc(50% - 143px - 21px);
+      margin-top: 0 auto;
       position: absolute;
-      top: 6500px;
+      top: 30px;
     }
   }
 }
