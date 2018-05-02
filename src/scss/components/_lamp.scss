@@ -21,10 +21,11 @@
     position: relative;
     top: -230px;
     margin: 0 auto;
-    left: -15px;
-    width: 265px;
+    width: 240px;
     height: 542px;
-    background: url('/img/sprite-lamp.png') -265px 0;
+    background-image: url('/img/sprite-lamp.png');
+    background-repeat: no-repeat;
+    background-position: -290px 0;
   }
 
   &__label {
@@ -41,8 +42,9 @@
 
   #lampControl:checked + &__image,
   &__image:hover {
-    background: url('/img/sprite-lamp.png') 0 0;
-    left: 17px;
+    width: 260px;
+    background-image: url('/img/sprite-lamp.png');
+    background-position: 17px 0;
   }
 
   &__arrow {
@@ -88,8 +90,9 @@
     }
 
     &__image:hover {
-      background: url('/img/sprite-lamp.png') -265px 0;
-      left: -15px;
+      background-image: url('/img/sprite-lamp.png');
+      background-position: -290px 0;
+      width: 240px;
     }
 
     &__arrow {
