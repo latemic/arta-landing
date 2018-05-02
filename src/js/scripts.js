@@ -1,7 +1,7 @@
 //SUBSCRIBE WINDOW
-var modal = document.getElementById('sub');
-var btn = document.getElementById('modal-window');
-var close = document.getElementById('close-modal-window');
+let modal = document.getElementById('sub');
+let btn = document.getElementById('open-modal-window');
+let close = document.getElementById('close-modal-window');
 
 btn.addEventListener('click', openModalWindow);
 close.addEventListener('click', closeModalWindow);
@@ -21,8 +21,8 @@ function closeModalWindow(e) {
 
 //CHANGING HEADER CLASS ON SCROLLING
 window.onscroll = function changeClass(){
-  var scrollPosY = window.pageYOffset | document.body.scrollTop;
-  var navBar = document.getElementById('changing-header');
+  let scrollPosY = window.pageYOffset | document.body.scrollTop;
+  let navBar = document.getElementById('changing-header');
 
   if(scrollPosY > 74) {
     navBar.classList.add('header--scrolled');
@@ -32,9 +32,9 @@ window.onscroll = function changeClass(){
 }
 
 //MOBILE MENU
-var menu = document.getElementById('menu');
-var burger = document.getElementById('toggle-menu');
-var closeMenuBtn = document.getElementById('close-menu');
+let menu = document.getElementById('menu');
+let burger = document.getElementById('toggle-menu');
+let closeMenuBtn = document.getElementById('close-menu');
 
 burger.addEventListener('click', openMenu);
 closeMenuBtn.addEventListener('click', closeMenu);
@@ -53,8 +53,8 @@ function closeMenu(e){
 
 //Any click outside of the Menu will close the menu
 document.addEventListener('click', function(e) {
-  var isClickInside = menu.contains(e.target);
-  var isToggleClicked = burger.contains(e.target);
+  let isClickInside = menu.contains(e.target);
+  let isToggleClicked = burger.contains(e.target);
   if (!isClickInside && !isToggleClicked) {
     menu.classList.remove('mobile-menu--visible');
   }

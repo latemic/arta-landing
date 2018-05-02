@@ -57,7 +57,6 @@
   }
 
   &__stay-tuned {
-    display: block;
     height: 43px;
     background-color: transparent;
     border: 1px solid $white;
@@ -81,7 +80,7 @@
 @include breakpoint(xs){
   .footer {
     height: 960px;
-    padding-left: 20px;
+    padding: 0 20px;
 
     &__wrapper {
       display: block;
@@ -94,10 +93,12 @@
     }
 
     &__stay-tuned {
+      display: block;
+      position: relative;
       margin: 0 auto;
-      position: absolute;
+      padding: 9px 0;
+      text-align: center;
       top: 93px;
-      padding: 9px 17px;
     }
   }
 }
