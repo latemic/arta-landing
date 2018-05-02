@@ -1,10 +1,8 @@
-/**
-  **ENABLE
-**/
-
 .enable {
   min-height: 501px;
-  background: url('/img/background-section-10.png') no-repeat center center;
+  background-image: url('/img/background-section-10.png');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color:  $tiber;
   background-size: cover;
   color: $white;
@@ -44,16 +42,20 @@
 
 @include breakpoint(xs) {
   .enable {
-    height: 341px;
+    min-height: 341px;
 
     &__heading {
-      padding: 143px 20px 0 20px;
+      padding: 93px 20px 0 20px;
       line-height: 1.33;
     }
 
     &__start-free {
       position: relative;
       top: 28px;
+    }
+
+    &::after {
+      margin-top: 130px;
     }
   }
 }
