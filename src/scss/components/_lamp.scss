@@ -61,13 +61,19 @@
 
 @include breakpoint($screen-sm-min, $screen-sm-max){
   .lamp {
+
+    &__heading {
+      top: -100px;
+    }
+
     &__image {
-      top: -210px;
+      top: -250px;
     }
 
     &__image:hover {
-      background: url('/img/sprite-lamp.png') -265px 0;
-      left: -15px;
+      background-image: url('/img/sprite-lamp.png');
+      background-position: -290px 0;
+      width: 240px;
     }
   }
 }
