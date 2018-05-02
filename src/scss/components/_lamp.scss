@@ -1,11 +1,8 @@
-/**
-  **BUILD YOUR OWN INVENTORY OF THE AR-COMPATIBLE
-**/
-
 .lamp {
   height: 699px;
   color: $matisse;
-  background: url('/img/bg-lamp.svg') no-repeat;
+  background-image: url('/img/bg-lamp.svg');
+  background-repeat: no-repeat;
   background-size: cover;
 
   &__heading {
@@ -20,7 +17,6 @@
   }
 
   &__image {
-    display: block;
     position: relative;
     top: -230px;
     margin: 0 auto;
@@ -28,11 +24,24 @@
     width: 265px;
     height: 542px;
     background: url('/img/sprite-lamp.png') -265px 0;
+  }
 
-    &:hover {
-      background: url('/img/sprite-lamp.png') 0 0;
-      left: 17px;
-    }
+  &__label {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 265px;
+    height: 542px;
+  }
+
+  #lampControl {
+    display: none;
+  }
+
+  #lampControl:checked + &__image,
+  &__image:hover {
+    background: url('/img/sprite-lamp.png') 0 0;
+    left: 17px;
   }
 
   &__arrow {
@@ -45,14 +54,7 @@
   }
 }
 
-#lampControl {
-  display:none;
-}
 
-#lampControl:checked + label > img {
-  background: url('/img/sprite-lamp.png') 0 0;
-  left: 17px;
-}
 
 @include breakpoint($screen-sm-min, $screen-sm-max){
   .lamp {
