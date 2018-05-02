@@ -58,14 +58,13 @@
 
   &__stay-tuned {
     display: block;
-    float: right;
     height: 43px;
     background-color: transparent;
     border: 1px solid $white;
     color: $white;
     border-radius: 22px;
     margin: 71px 60px 0 auto;
-    padding: 9px 17px 0 17px;
+    padding: 9px 17px;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -90,16 +89,15 @@
     }
 
     &__info {
-      float: none;
       position: absolute;
       top: 143px;
     }
 
     &__stay-tuned {
-      float: none;
-      margin-top: 0 auto;
+      margin: 0 auto;
       position: absolute;
-      top: 30px;
+      top: 93px;
+      padding: 9px 17px;
     }
   }
 }
