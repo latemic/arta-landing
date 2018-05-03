@@ -48,8 +48,7 @@
 
 @include breakpoint(xs) {
   .realistic-preview {
-    height: 759px;
-    background-image: url('/img/bg-realistic-preview.svg');
+    height: 711px;
     background-position: center;
 
     &__heading {
@@ -64,7 +63,7 @@
 
     &__arrow {
       padding: 28px 0 25px 0;
-      top: 680px;
+      top: 670px;
     }
   }
 }
