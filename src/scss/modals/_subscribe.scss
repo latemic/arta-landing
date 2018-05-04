@@ -71,6 +71,11 @@
     border: solid 1px $white;
   }
 
+  &__email:invalid {
+    box-shadow: none;
+    outline: 0;
+  }
+
   &__btn {
     @extend %button-reset;
     display: block;
@@ -87,7 +92,7 @@
     line-height: 1;
     text-align: center;
     color: $white;
-    padding: 12px 22px 11px 22px;
+    padding: 11px 22px;
 
     &:hover,
     &:active {
