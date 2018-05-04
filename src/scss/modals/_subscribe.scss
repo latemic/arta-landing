@@ -66,6 +66,11 @@
     border-color: $science-blue;
   }
 
+  &__email:invalid + &__btn:hover {
+    background-color: transparent;
+    border: solid 1px $white;
+  }
+
   &__btn {
     @extend %button-reset;
     display: block;
