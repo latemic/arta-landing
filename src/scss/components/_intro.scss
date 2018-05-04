@@ -48,6 +48,12 @@
     top: 675px;
     left: 50%;
   }
+
+  &__arrow:hover,
+  &__arrow:active {
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 @include breakpoint(xs){
