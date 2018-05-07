@@ -1,0 +1,23 @@
+%sign-form {
+  position: relative;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.07;
+  height: 40px;
+  width: 340px;
+  border-radius: 40px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  background-color: $alabaster;
+  border: solid 1px $alto;
+  margin: 0 auto;
+  text-indent: 48px;
+  outline: 0;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}

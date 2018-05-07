@@ -14,15 +14,20 @@ function removeClass(obj, className) {
   obj.classList.remove(className);
 }
 
+function defaultBehaviour(e, flowStyle) {
+  e.preventDefault();
+  document.body.style.overflow = flowStyle;
+}
+
 //Open Modal Window
 function openModalWindow(e) {
-  e.preventDefault();
+  defaultBehaviour(e, 'hidden');
   addClass(modal, 'subscribe--visible');
 }
 
 //Close Modal Window
 function closeModalWindow(e) {
-  e.preventDefault();
+  defaultBehaviour(e, 'auto');
   removeClass(modal, 'subscribe--visible');
 }
 
@@ -51,13 +56,13 @@ closeMenuBtn.addEventListener('click', closeMenu);
 
 //Open Menu
 function openMenu(e){
-  e.preventDefault();
+  defaultBehaviour(e, 'hidden');
   addClass(menu, 'mobile-menu--visible');
 }
 
 //Close Menu
 function closeMenu(e){
-  e.preventDefault();
+  defaultBehaviour(e, 'auto');
   removeClass(menu, 'mobile-menu--visible');
 }
 
