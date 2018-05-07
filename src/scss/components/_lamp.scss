@@ -48,11 +48,8 @@
   }
 
   &__arrow {
-    display: block;
-    position: absolute;
-    margin-left: -13px;
-    padding: 47px 0 63.8px 0;
-    left: 50%;
+    @extend %arrow;
+    padding: 47px 0 64px 0;
     top: 610px;
   }
 }

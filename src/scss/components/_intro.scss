@@ -40,19 +40,9 @@
   }
 
   &__arrow {
-    display: block;
-    position: absolute;
-    width: 32px;
-    margin-left: -13px;
+    @extend %arrow;
     padding: 24.8px 0 63.8px 0;
     top: 675px;
-    left: 50%;
-  }
-
-  &__arrow:hover,
-  &__arrow:active {
-    outline: none;
-    box-shadow: none;
   }
 }
 

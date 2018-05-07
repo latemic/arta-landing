@@ -37,12 +37,8 @@
   }
 
   &__arrow {
-    display: block;
-    position: absolute;
-    width: 26px;
-    margin-left: -13px;
+    @extend %arrow;
     padding: 25px 0;
-    left: 50%;
     top: 638px;
   }
 }
