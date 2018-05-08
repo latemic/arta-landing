@@ -1,5 +1,5 @@
 .sign-in {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
@@ -11,7 +11,7 @@
   &__form {
     position: relative;
     margin: 0 auto;
-    width: 420px;
+    max-width: 420px;
     height: 400px;
     top: 190px;
     border-radius: 10px;
@@ -92,5 +92,30 @@
 
   &__restore-password {
     color: $cornflower-blue;
+  }
+}
+
+@include breakpoint(xs) {
+  .sign-in {
+    padding: 0 10px;
+
+    &__form {
+      top: 45px;
+    }
+
+    &__email {
+      top: 27px;
+      width: 260px;
+    }
+
+    &__password {
+      top: 55px;
+      width: 260px;
+    }
+
+    &__email-icon,
+    &__password-icon {
+      left: 35px;
+    }
   }
 }
