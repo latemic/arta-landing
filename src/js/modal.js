@@ -3,7 +3,7 @@ let modal = document.getElementById('sub');
 let btn = document.getElementById('open-modal-window');
 let close = document.getElementById('close-modal-window');
 
-btn.addEventListener('click', openModalWindow);
+//btn.addEventListener('click', openModalWindow);
 close.addEventListener('click', closeModalWindow);
 
 function addClass(obj, className) {
