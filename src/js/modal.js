@@ -46,6 +46,7 @@ function changeHeaderClass(){
   }
 }
 
+/*
 //MOBILE MENU
 let menu = document.getElementById('menu');
 let burger = document.getElementById('toggle-menu');
@@ -73,4 +74,4 @@ document.addEventListener('click', function(e) {
   if (!isClickInside && !isToggleClicked) {
     removeClass(menu, 'mobile-menu--visible');
   }
-});
+});*/
