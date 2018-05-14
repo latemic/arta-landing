@@ -1,0 +1,65 @@
+.realistic-preview {
+  position: relative;
+  height: 750px;
+  background-image: url('/img/bg-realistic-preview.svg');
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__heading {
+    @extend %heading-reset;
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: -48px;
+    padding: 0 59px 0 97px;
+    color: $matisse;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 218px;
+    height: 437px;
+  }
+
+  &__arrow {
+    @extend %arrow;
+    padding: 32px 0;
+    top: 674px;
+  }
+}
+
+@include breakpoint($screen-sm-min, $screen-sm-max) {
+  .realistic-preview {
+    &__heading {
+      padding-left: 21px;
+    }
+  }
+}
+
+@include breakpoint(xs) {
+  .realistic-preview {
+    height: 711px;
+    background-position: center;
+
+    &__heading {
+      font-size: 32px;
+      line-height: 1.31;
+      padding: 0 21px;
+    }
+
+    &__br--hidden-xs {
+      display: none;
+    }
+
+    &__arrow {
+      padding: 28px 0 25px 0;
+      top: 660px;
+    }
+  }
+}

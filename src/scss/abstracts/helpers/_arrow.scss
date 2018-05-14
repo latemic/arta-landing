@@ -1,0 +1,15 @@
+%arrow {
+  display: block;
+  position: absolute;
+  width: 32px;
+  margin-left: -13px;
+  left: 50%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}

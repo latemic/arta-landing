@@ -1,0 +1,65 @@
+.components {
+  height: 750px;
+  background-color: $white;
+
+  &__wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 445px;
+    top: 194px;
+  }
+
+  &__item-1, &__item-2, &__item-3 {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.11;
+    font-weight: 700;
+  }
+
+  &__item-1 {
+    text-align: left;
+    width: 49%;
+  }
+
+  &__item-2 {
+    text-align: right;
+    width: 50%;
+  }
+
+  &__item-3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 380px;
+  }
+}
+@include breakpoint(sm) {
+  .components {
+    &__wrapper {
+      top: 95px;
+    }
+  }
+}
+@include breakpoint(xs) {
+  .components {
+    height: 530px;
+
+    &__wrapper {
+      top: 95px;
+      width: 280px;
+    }
+
+    &__item-1 {
+      width: 48%;
+    }
+
+    &__item-2 {
+      width: 49%;
+    }
+  }
+}

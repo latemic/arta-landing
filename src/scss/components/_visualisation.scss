@@ -1,0 +1,97 @@
+.visualisation {
+  height: 705px;
+  text-align: center;
+  background-image: url('/img/bg-visualisation.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 208px;
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 67px;
+  }
+
+  &__heading {
+    @extend %heading-reset;
+    line-height: 2.33;
+    padding: 10px 0 20px 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__description {
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    width: 512px;
+    line-height: 1;
+    margin: 0 auto;
+    color: $white;
+  }
+
+  &__buttons {
+    position: relative;
+    margin: 0 auto;
+    right: 25px;
+    width: 320px;
+  }
+
+  &__contact {
+    @extend %button-style;
+    display: inline-block;
+    position: relative;
+    padding: 12px 18px 13px 18px;
+    margin: 0 auto;
+    top: 59px;
+  }
+
+  &__more {
+    display: inline-block;
+    position: relative;
+    color: #2888e8;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 44px;
+    margin: 0 auto;
+    top: 59px;
+  }
+}
+
+@include breakpoint(xs) {
+  .visualisation {
+    height: 530px;
+    padding-top: 85px;
+
+    &__heading {
+      font-size: 24px;
+      line-height: 1.33;
+      margin: 0 auto;
+      padding: 28px 0 18px 0;
+    }
+
+    &__description {
+      font-size: 16px;
+      width: 280px;
+    }
+
+    &__buttons {
+      right: 0;
+    }
+
+    &__contact {
+      top: 30px;
+      margin: 0 auto;
+    }
+
+    &__more {
+      display: block;
+      padding-left: 0;
+      line-height: 1.25;
+    }
+  }
+}

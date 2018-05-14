@@ -1,0 +1,75 @@
+.intro {
+  height: 750px;
+  background-image: url('/img/header_bgr.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  &__heading {
+    @extend %heading-reset;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    padding: 290px 57px 0 57px;
+    line-height: 1.4;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
+  }
+
+  &__br--xs {
+    display: none;
+  }
+
+  &__description {
+    padding: 0 57px;
+    font-size: 20px;
+    color: $white;
+    font-weight: 400;
+    line-height: 1;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
+  }
+
+  &__start-free {
+    @extend %button-style;
+    position: relative;
+    margin: 0 auto;
+    top: 35px;
+    padding: 8px 18px 9px 18px;
+
+  }
+
+  &__arrow {
+    @extend %arrow;
+    padding: 24.8px 0 63.8px 0;
+    top: 675px;
+  }
+}
+
+@include breakpoint(xs){
+  .intro {
+    height: 530px;
+    background-image: url('/img/bg-section-1.jpg');
+    background-position: center 0;
+
+    &__heading {
+      margin: 0 auto;
+      font-size: 32px;
+      padding: 106px 20px 0 20px;
+      line-height: 1.31;
+    }
+
+    &__description {
+      padding: 18px 20px;
+      font-size: 18px;
+    }
+
+    &__start-free {
+      top: 30px;
+    }
+
+    &__arrow {
+      top:  465px;
+    }
+  }
+}

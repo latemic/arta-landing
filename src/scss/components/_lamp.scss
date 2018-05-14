@@ -1,0 +1,105 @@
+.lamp {
+  position: relative;
+  height: 699px;
+  color: $matisse;
+  background-image: url('/img/bg-lamp.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__heading {
+    position: relative;
+    padding-left: 97px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 1000px;
+    color: $matisse;
+    line-height: 1.4;
+  }
+
+  &__image {
+    position: relative;
+    top: -230px;
+    margin: 0 auto;
+    width: 240px;
+    height: 542px;
+    background-image: url('/img/sprite-lamp.png');
+    background-repeat: no-repeat;
+    background-position: -290px 0;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 265px;
+    height: 542px;
+  }
+
+  #lampControl {
+    display: none;
+  }
+
+  #lampControl:checked + &__image,
+  &__image:hover {
+    width: 260px;
+    background-image: url('/img/sprite-lamp.png');
+    background-position: 17px 0;
+  }
+
+  &__arrow {
+    @extend %arrow;
+    padding: 47px 0 64px 0;
+    top: 610px;
+  }
+}
+
+
+
+@include breakpoint($screen-sm-min, $screen-sm-max){
+  .lamp {
+
+    &__heading {
+      top: -100px;
+    }
+
+    &__image {
+      top: -250px;
+    }
+
+    &__image:hover {
+      background-image: url('/img/sprite-lamp.png');
+      background-position: -290px 0;
+      width: 240px;
+    }
+  }
+}
+
+@include breakpoint(xs){
+  .lamp {
+    height: 710px;
+    background: url('/img/bg-lamp.svg') no-repeat center;
+    background-size: cover;
+
+    &__heading {
+      margin-left: 21px;
+      font-size: 32px;
+      line-height: 1.31;
+      padding: 0;
+    }
+
+    &__image {
+      top: -150px;
+    }
+
+    &__image:hover {
+      background-image: url('/img/sprite-lamp.png');
+      background-position: -290px 0;
+      width: 240px;
+    }
+
+    &__arrow {
+      top: 611px;
+    }
+  }
+}

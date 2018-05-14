@@ -1,11 +1,19 @@
-.navbar {
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
   height: 74px;
-  width: 100%;
   background-color: transparent;
-  padding: 16px 0 0 57px;
+  padding: 0 60px 0 57px;
+  z-index: 999;
 
-  @include breakpoint (0, $screen-md-max) {
-    padding: 11px 0 0 20px;
+  &__brand {
+    display: flex;
+    align-items: center;
   }
 
   &__logo {
@@ -14,131 +22,158 @@
   }
 
   &__company-name {
-    display: inline-block;
-    position: relative;
-    margin-left: 10px;
-    top: -17px;
-    font-family: 'Lato', sans-serif;
+    margin-left: 13px;
     text-transform: uppercase;
-    color: #ffffff;
-    width: 72px;
+    color: $white;
     font-size: 26px;
     font-weight: 900;
   }
 
+  &__navbar--center {
+    text-align: center;
+  }
+
   &__list {
     @extend %list-reset;
-    display: inline-block;
-    margin-left: 13%;
-
-    @include breakpoint($screen-md-min, $screen-md-max) {
-      margin-left: 0;
-    }
-    @include breakpoint(0, $screen-sm-max){
-      display: none;
-    }
-
-    &-item {
-      display: inline-block;
-      position: relative;
-      top: -20px;
-      padding: 0 27px;
-      font-family: 'Lato', sans-serif;
-      text-transform: uppercase;
-      color: #ffffff;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    &-link:hover,
-    &-link:active {
-      color: #46a2ff;
-    }
   }
 
-  &__buttons--right {
+  &__navbar-item {
     display: inline-block;
-    float: right;
-    font-family: 'Lato', sans-serif;
+    position: relative;
+    padding: 0 27px;
     text-transform: uppercase;
-    color: #ffffff;
-    font-weight: bold;
-    margin-top: 0;
+    color: $white;
+    font-size: 13px;
+    font-weight: 700;
   }
 
-  &__buttons__list {
+  &__navbar-link:hover,
+  &__navbar-link:active {
+    color: $dodger-blue;
+  }
+
+  &__navbar--right {
+    right: 0;
+    justify-content: flex-end;
+  }
+
+  &__right-list {
     @extend %list-reset;
-    float: right;
-    display: inline-block;
-    padding: 8px 0;
-    width: 245px;
-    margin-right: 18.8%;
+    display: flex;
+    flex: 0 0 calc(300/1280 * 100%);
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-    @include breakpoint(0, $screen-sm-max) {
-      width: 140px;
-      margin-right: 20px;
-    }
-
-    &-item {
-      display:inline-block;
-    }
+  &__navbar-btn {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 13px;
+    font-weight: 700;
   }
 
   &__sign-in {
-    display: inline-block;
-    position: relative;
-    border: 1px solid #2888e8;
+    border: 1px solid $curious-blue;
     border-radius: 20px;
     height: 40px;
-    width: 90px;
     margin-right: 15px;
-    padding: 10px 20px 0 20px;
+    padding: 10px 20px;
     font-size: 13px;
+    line-height: 1.23;
+    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
+      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
 
     &:hover,
     &:active {
-      background-color: #185899;
-      border: 1px solid #185899;
-    }
-
-    @include breakpoint(0, $screen-sm-max) {
-      z-index: 2;
-      margin-right: 18px;
-      margin-top: -7px;
-      margin-left: 0;
+      background-color: $matisse;
+      border: 1px solid $matisse;
     }
   }
 
   &__start-free {
-    display: inline-block;
-    position: relative;
-    border: 1px solid #2888e8;
-    background-color: #2888e8;
+    border: 1px solid $curious-blue;
+    background-color: $curious-blue;
     border-radius: 20px;
     height: 40px;
-    width: 130px;
     font-size: 16px;
-    padding: 6px 19px 0 19px;
+    line-height: 1;
+    padding: 7px 16px;
+    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
+      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
 
     &:hover,
     &:active {
-      background-color: #185899;
-      border: 1px solid #185899;
-    }
-
-    @include breakpoint(0, $screen-sm-max){
-      display: none;
+      background-color: $matisse;
+      border: 1px solid $matisse;
     }
   }
 
   &__toggle {
     display: none;
+  }
 
-    @include breakpoint(0, $screen-sm-max){
+  &--scrolled {
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba(49, 56, 64, 0.23);
+  }
+
+  &--scrolled > * &__company-name {
+    color: $curious-blue;
+  }
+
+  &--scrolled > * &__navbar-item {
+    color: $matisse;
+  }
+
+  &--scrolled > * &__sign-in {
+    color: $matisse;
+
+    &:hover,
+    &:active {
+      color: $white;
+    }
+  }
+
+}
+
+@include breakpoint(0, $screen-md-max) {
+  .header {
+    padding: 0 20px;
+  }
+}
+
+@include breakpoint(0, $screen-sm-max) {
+  .header {
+    height: 60px;
+
+    &__logo {
+      width: 33px;
+      height: 38px;
+    }
+
+    &__company-name {
+      font-size: 18px;
+    }
+
+    &__navbar--center {
+      display: none;
+    }
+
+    &__sign-in {
+      z-index: 9991;
+      height: 32px;
+      line-height: 1;
+      padding: 9px 17px;
+    }
+
+    &__start-free {
+      display: none;
+    }
+
+    &__toggle {
       display: inline-block;
       position: relative;
-      float: right;
-      top: 6px;
+      top: 2px;
     }
   }
 }

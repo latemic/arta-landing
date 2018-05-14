@@ -1,0 +1,58 @@
+.one-stop {
+  height: 750px;
+  background-image: url('/img/background-section-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  &__image {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    @extend %heading-reset;
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $limed-spruce;
+    line-height: 1.4;
+  }
+
+  &__text {
+    padding: 24px 0 118px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.11;
+    color: $limed-spruce;
+  }
+}
+
+@include breakpoint(xs) {
+  .one-stop {
+    height: 530px;
+
+    &__image {
+      width: 250px;
+    }
+
+    &__heading {
+      top: -30px;
+      font-size: 32px;
+      line-height: 1.31;
+    }
+
+    &__text {
+      padding: 0 20px 26px 20px;
+      font-size: 16px;
+    }
+  }
+
+  .one-stop br {
+    display: none;
+  }
+}
