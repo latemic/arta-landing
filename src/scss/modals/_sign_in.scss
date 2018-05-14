@@ -5,6 +5,117 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(6, 14, 22, 0.95);
-  z-index: 9999;
+  background-color: rgba(6, 14, 22, 0.9);
+  z-index: 999;
+
+  &__form {
+    position: relative;
+    margin: 0 auto;
+    max-width: 420px;
+    height: 400px;
+    top: 190px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: $white;
+    border: solid 1px $mystic;
+    z-index: 9991;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+  }
+
+  &__heading {
+    @extend %heading-reset;
+    color: $pale-sky;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 21px;
+    line-height: 2.33;
+  }
+
+  &__email,
+  &__password {
+    @extend %sign-form;
+  }
+
+  &__email {
+    top: 27px;
+  }
+
+  &__password {
+    top: 55px;
+  }
+
+  &__email-icon {
+    position: absolute;
+    top: 129px;
+    left: 55px;
+    z-index: 999;
+  }
+
+  &__password-icon {
+    position: absolute;
+    top: 194px;
+    left: 55px;
+    z-index: 999;
+  }
+
+  &__submit {
+    @extend %button-style;
+    display: block;
+    position: relative;
+    top: 80px;
+    margin: 0 auto;
+    padding: 13px 53px 14px 53px;
+    font-family: 'Lato', sans-serif;
+    outline: 0;
+  }
+
+  &__text {
+    position: relative;
+    text-align: center;
+    margin-top: 93px;
+    padding-top: 25px;
+    font-size: 13px;
+    color: $gull-gray;
+    z-index: 9999;
+  }
+
+  &__register {
+    color: $blue-ribbon;
+  }
+
+  &__restore-password {
+    color: $cornflower-blue;
+  }
+}
+
+@include breakpoint(xs) {
+  .sign-in {
+    padding: 0 10px;
+
+    &__form {
+      top: 45px;
+    }
+
+    &__email {
+      top: 27px;
+      width: 260px;
+    }
+
+    &__password {
+      top: 55px;
+      width: 260px;
+    }
+
+    &__email-icon,
+    &__password-icon {
+      left: 35px;
+    }
+  }
 }
