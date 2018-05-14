@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="406" height="408" viewBox="0 0 406 408">
+    <defs>
+        <filter id="a" width="141.1%" height="195.2%" x="-20.5%" y="-47.6%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+        </filter>
+        <linearGradient id="b" x1="100%" y1="100%" y2="19.677%">
+            <stop offset="0%" stop-color="#ABD0EC"/>
+            <stop offset="100%" stop-color="#4C79A7"/>
+        </linearGradient>
+        <linearGradient id="c" x1="100%" x2="0%" y1="100%" y2="40.806%">
+            <stop offset="0%" stop-color="#3591C9"/>
+            <stop offset="100%" stop-color="#185899"/>
+        </linearGradient>
+        <linearGradient id="d" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%"/>
+            <stop offset="100%" stop-color="#30455F"/>
+        </linearGradient>
+        <linearGradient id="e" x1="50%" x2="50%" y1="65.925%" y2="0%">
+            <stop offset="0%" stop-color="#51BDF5"/>
+            <stop offset="100%" stop-color="#2888E8"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-54 -21)">
+        <circle cx="256" cy="256" r="256"/>
+        <path stroke="#FFF" d="M257 84l-149 86 149 86 149-86z"/>
+        <path stroke="#FFF" d="M108 170l149.004 86v172L108 342.458z"/>
+        <path stroke="#FFF" d="M406 170l-149 86v172l149-86z"/>
+        <path fill="#17293D" d="M257 285l73 42-37 21-35.998-21-36 21L184 327z" filter="url(#a)" opacity=".456" transform="matrix(1 0 0 -1 0 633)"/>
+        <path fill="#FAFAFA" d="M184.373 297.77v-84l36.996 20.997v42.004l36.004 21v43z"/>
+        <path fill="url(#b)" d="M257 214l36 21v42l-36-21z"/>
+        <path fill="url(#c)" d="M221 214l36 21v42l-36-21z" transform="matrix(-1 0 0 1 478 0)"/>
+        <path fill="url(#d)" d="M256.998 256l36 21L257 298l-36-21z" transform="matrix(-1 0 0 1 513.998 0)"/>
+        <path fill="url(#e)" d="M257 172l73 42-37 21-35.998-21-36 21L184 214z" transform="matrix(-1 0 0 1 514 0)"/>
+        <path fill="#F2F2F2" d="M329.9 297.771v-84l-37 21v42l-36 21v43z"/>
+        <path stroke="#FFF" stroke-dasharray="2,2" d="M257 21v235.003M460 373L257 256M54 373l203-117"/>
+    </g>
+</svg>
