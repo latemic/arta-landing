@@ -40,7 +40,7 @@
 
 @include breakpoint(xs){
   .intro {
-    height: 530px;
+    min-height: 530px;
     background-image: url('/img/bg-section-1.jpg');
     background-position: center 0;
 
