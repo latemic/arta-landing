@@ -1,16 +1,6 @@
 .one-stop {
-  height: 750px;
   background-image: url('/img/background-section-2.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   text-align: center;
-
-  &__image {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-  }
 
   &__heading {
     @extend %heading-reset;
@@ -21,6 +11,11 @@
     text-align: center;
     color: $limed-spruce;
     line-height: 1.4;
+    background-image: url('/img/illustration.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 420px;
+    padding-top: 388px;
   }
 
   &__text {
@@ -36,23 +31,21 @@
   .one-stop {
     height: 530px;
 
-    &__image {
-      width: 250px;
-    }
-
     &__heading {
-      top: -30px;
+      padding: 238px 20px 0 20px;
       font-size: 32px;
       line-height: 1.31;
+      background-size: 250px;
     }
 
     &__text {
-      padding: 0 20px 26px 20px;
+      padding: 20px 20px 26px 20px;
       font-size: 16px;
+    }
+
+    br {
+      display: none;
     }
   }
 
-  .one-stop br {
-    display: none;
-  }
 }
