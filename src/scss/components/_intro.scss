@@ -1,5 +1,4 @@
 .intro {
-  height: 750px;
   background-image: url('/img/header_bgr.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -36,13 +35,6 @@
     margin: 0 auto;
     top: 35px;
     padding: 8px 18px 9px 18px;
-
-  }
-
-  &__arrow {
-    @extend %arrow;
-    padding: 24.8px 0 63.8px 0;
-    top: 675px;
   }
 }
 
@@ -66,10 +58,6 @@
 
     &__start-free {
       top: 30px;
-    }
-
-    &__arrow {
-      top:  465px;
     }
   }
 }
