@@ -29,15 +29,11 @@
     font-weight: 900;
   }
 
-  &__navbar--center {
-    text-align: center;
-  }
-
-  &__list {
+  &__nav {
     @extend %list-reset;
   }
 
-  &__navbar-item {
+  &__nav-item {
     display: inline-block;
     position: relative;
     padding: 0 27px;
@@ -47,28 +43,19 @@
     font-weight: 700;
   }
 
-  &__navbar-link:hover,
-  &__navbar-link:active {
+  &__nav-link:hover,
+  &__nav-link:active {
     color: $dodger-blue;
   }
 
-  &__navbar--right {
-    right: 0;
-    justify-content: flex-end;
-  }
-
-  &__right-list {
+  &__right {
     @extend %list-reset;
     display: flex;
-    flex: 0 0 calc(300/1280 * 100%);
-    align-items: center;
-    justify-content: flex-end;
   }
 
-  &__navbar-btn {
+  &__right-item {
     text-transform: uppercase;
     color: $white;
-    font-size: 13px;
     font-weight: 700;
   }
 
@@ -110,6 +97,9 @@
 
   &__toggle {
     display: none;
+    outline: 0;
+    background-color: transparent;
+    border: none;
   }
 
   &--scrolled {
@@ -117,15 +107,15 @@
     box-shadow: 0 2px 4px 0 rgba(49, 56, 64, 0.23);
   }
 
-  &--scrolled > * &__company-name {
+  &--scrolled &__company-name {
     color: $curious-blue;
   }
 
-  &--scrolled > * &__navbar-item {
+  &--scrolled &__nav-item {
     color: $matisse;
   }
 
-  &--scrolled > * &__sign-in {
+  &--scrolled &__sign-in {
     color: $matisse;
 
     &:hover,
@@ -155,7 +145,7 @@
       font-size: 18px;
     }
 
-    &__navbar--center {
+    &__nav {
       display: none;
     }
 
