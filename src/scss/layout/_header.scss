@@ -14,19 +14,21 @@
   &__brand {
     display: flex;
     align-items: center;
-  }
-
-  &__logo {
-    width: 45px;
-    height: 52px;
-  }
-
-  &__company-name {
-    margin-left: 13px;
     text-transform: uppercase;
     color: $white;
     font-size: 26px;
     font-weight: 900;
+  }
+
+  &__company-name {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    background-image: url('/img/arta-logo.svg');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 58px;
   }
 
   &__nav {
@@ -136,13 +138,14 @@
   .header {
     height: 60px;
 
-    &__logo {
-      width: 33px;
-      height: 38px;
+    &__brand {
+      font-size: 18px;
     }
 
     &__company-name {
-      font-size: 18px;
+      height: 38px;
+      background-size: contain;
+      text-indent: 46px;
     }
 
     &__nav {
