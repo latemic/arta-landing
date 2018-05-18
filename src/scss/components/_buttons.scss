@@ -5,7 +5,6 @@
   width: 320px;
 
   &__request {
-    @extend %button-style;
     display: inline-block;
     position: relative;
     padding: 12px 18px 13px 18px;
