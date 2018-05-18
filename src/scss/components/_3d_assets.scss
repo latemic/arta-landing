@@ -1,6 +1,6 @@
 .assets {
   position: relative;
-  height: 702px;
+  height: 750px;
   background-image: url('/img/bg-3d-assets.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,8 +37,6 @@
   }
 
   &__arrow {
-    @extend %arrow;
-    padding: 25px 0;
     top: 638px;
   }
 }
@@ -68,36 +66,36 @@
 @include breakpoint(xs) {
   .assets {
     height: 530px;
-    background-position: center;
+    background-position: bottom;
 
     &__heading {
       font-size: 32px;
       line-height: 1.31;
       margin-left: 21px;
-      padding-top: 15px;
+      padding-top: 35px;
     }
 
     &__item-1 {
       width: 85px;
-      top: 300px;
+      top: 325px;
       left: 20px;
     }
 
     &__item-2 {
       width: 169px;
-      top: 150px;
+      top: 175px;
       left: 50%;
       margin-left: -70px;
     }
 
     &__item-3 {
       width: 45px;
-      top: 125px;
+      top: 150px;
       left: 80%;
     }
 
     &__arrow {
-      top: 430px;
+      top: 469px;
     }
   }
 }
