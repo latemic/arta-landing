@@ -1,9 +1,6 @@
 .assets {
   position: relative;
   height: 750px;
-  background-image: url('/img/bg-3d-assets.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
 
   &__heading {
     @extend %heading-reset;

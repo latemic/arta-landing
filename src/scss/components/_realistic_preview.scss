@@ -1,6 +1,6 @@
 .realistic-preview {
-  background-image: url('/img/bg-realistic-preview.svg');
-  background-position: center top;
+  top: -48px;
+  height: 750px;
 
   &__heading {
     @extend %heading-reset;
@@ -35,7 +35,6 @@
 @include breakpoint(xs) {
   .realistic-preview {
     min-height: 789px;
-    background-position: center;
 
     &__heading {
       font-size: 32px;
