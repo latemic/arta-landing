@@ -50,5 +50,13 @@
     &__arrow {
       top: 725px;
     }
+
+    &:before {
+      background-position: left center;
+    }
+
+    &:after {
+      background-position: right center;
+    }
   }
 }

@@ -4,3 +4,12 @@
     background-repeat: no-repeat;
   }
 }
+
+@include breakpoint(xs) {
+  .section-group {
+    &--triple-skew {
+      background-image: url('/img/triple-mobile-bg.svg');
+      background-repeat: no-repeat;
+    }
+  }
+}

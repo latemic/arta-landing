@@ -9,6 +9,7 @@
     text-transform: uppercase;
     max-width: 739px;
     margin-left: 97px;
+    padding-top: 10px;
     color: $white;
     line-height: 1.4;
     text-align: left;
@@ -16,20 +17,20 @@
 
   &__item-1 {
     position: absolute;
-    top: 475px;
+    top: 490px;
     left: calc(207/1280 * 100%);
   }
 
   &__item-2 {
     position: absolute;
-    top: 160px;
+    top: 175px;
     width: 337px;
     left: calc(50% - 0.5 * 337px);
   }
 
   &__item-3 {
     position: absolute;
-    top: 103px;
+    top: 100px;
     left: calc(827/1280 * 100% + 57px);
   }
 
@@ -93,6 +94,14 @@
 
     &__arrow {
       top: 469px;
+    }
+
+    &:before {
+      background-position: left center;
+    }
+
+    &:after {
+      background-position: right center;
     }
   }
 }
