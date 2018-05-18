@@ -1,10 +1,6 @@
 .realistic-preview {
-  position: relative;
-  height: 750px;
   background-image: url('/img/bg-realistic-preview.svg');
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center top;
 
   &__heading {
     @extend %heading-reset;
@@ -12,25 +8,19 @@
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
-    top: -48px;
     padding: 0 59px 0 97px;
+    height: 725px;
     color: $matisse;
     line-height: 1.4;
     text-align: left;
-  }
-
-  &__image {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    width: 218px;
-    height: 437px;
+    background-image: url('/img/iphone.png');
+    background-repeat: no-repeat;
+    background-position: center 230px;
+    background-size: 218px 437px;
   }
 
   &__arrow {
-    @extend %arrow;
-    padding: 32px 0;
-    top: 674px;
+    top: 686px;
   }
 }
 
@@ -44,22 +34,22 @@
 
 @include breakpoint(xs) {
   .realistic-preview {
-    height: 711px;
+    min-height: 789px;
     background-position: center;
 
     &__heading {
       font-size: 32px;
       line-height: 1.31;
       padding: 0 21px;
+      background-position: center 288px;
     }
 
-    &__br--hidden-xs {
+    br {
       display: none;
     }
 
     &__arrow {
-      padding: 28px 0 25px 0;
-      top: 660px;
+      top: 725px;
     }
   }
 }

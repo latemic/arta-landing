@@ -16,10 +16,6 @@
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
   }
 
-  &__br--xs {
-    display: none;
-  }
-
   &__description {
     padding: 0 57px;
     font-size: 20px;
@@ -39,6 +35,10 @@
 
   br {
     display: none;
+  }
+
+  &__arrow {
+    top: 647px;
   }
 }
 
@@ -66,6 +66,10 @@
 
     br {
       display: block;
+    }
+
+    &__arrow {
+      top: 465px;
     }
   }
 }
