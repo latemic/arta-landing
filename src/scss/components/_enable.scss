@@ -1,15 +1,16 @@
 .enable {
   min-height: 501px;
-  background-image: url('/img/background-section-10.png');
-  background-repeat: no-repeat;
-  background-position: center center;
   background-color:  $tiber;
-  background-size: cover;
   color: $white;
   text-align: center;
+  background-image: url('/img/hexa-bot.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 
-  &::before, &::after {
-    content: "";
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
     display: block;
     border:none;
     height: 2px;
@@ -17,8 +18,12 @@
       rgba(151, 151, 151, 0));
   }
 
-  &::after {
-    margin-top: 238px;
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
   }
 
   &__heading {
@@ -26,7 +31,7 @@
     padding-top: 167px;
     text-transform: uppercase;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 2.92;
   }
 
@@ -36,12 +41,14 @@
     margin: 0 auto;
     box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
       0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
+    z-index: 999;
   }
+
 }
 
 @include breakpoint(xs) {
   .enable {
-    min-height: 341px;
+    min-height: 344px;
 
     &__heading {
       padding: 93px 20px 0 20px;
@@ -51,10 +58,6 @@
     &__start-free {
       position: relative;
       top: 28px;
-    }
-
-    &::after {
-      margin-top: 130px;
     }
   }
 }
