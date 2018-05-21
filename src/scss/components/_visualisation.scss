@@ -1,27 +1,19 @@
 .visualisation {
   height: 705px;
   text-align: center;
-  background-image: url('/img/bg-visualisation.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   padding-top: 208px;
-
-  &__image {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    width: 67px;
-  }
 
   &__heading {
     @extend %heading-reset;
     line-height: 2.33;
-    padding: 10px 0 20px 0;
+    padding: 102px 0 20px 0;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     color: $white;
+    background-image: url('/img/arta-3-d-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 
   &__description {
@@ -71,7 +63,6 @@
       font-size: 24px;
       line-height: 1.33;
       margin: 0 auto;
-      padding: 28px 0 18px 0;
     }
 
     &__description {
