@@ -1,5 +1,4 @@
 .realistic-preview {
-  top: -48px;
   height: 750px;
 
   &__heading {
@@ -40,7 +39,7 @@
       font-size: 32px;
       line-height: 1.31;
       padding: 0 21px;
-      background-position: center 288px;
+      background-position: center 258px;
     }
 
     br {
@@ -48,7 +47,7 @@
     }
 
     &__arrow {
-      top: 725px;
+      top: 690px;
     }
 
     &:before {

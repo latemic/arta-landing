@@ -64,7 +64,7 @@
 @include breakpoint(xs) {
   .assets {
     height: 530px;
-    background-position: bottom;
+    background-position: center;
 
     &__heading {
       font-size: 32px;
@@ -75,21 +75,22 @@
 
     &__item-1 {
       width: 85px;
-      top: 325px;
+      top: 385px;
       left: 20px;
     }
 
     &__item-2 {
       width: 169px;
-      top: 175px;
+      top: 235px;
       left: 50%;
       margin-left: -70px;
     }
 
     &__item-3 {
       width: 45px;
-      top: 150px;
+      top: 210px;
       left: 80%;
+      z-index: 1;
     }
 
     &__arrow {
@@ -97,11 +98,11 @@
     }
 
     &:before {
-      background-position: left center;
+      background-position: left 75px;
     }
 
     &:after {
-      background-position: right center;
+      background-position: right 75px;
     }
   }
 }
