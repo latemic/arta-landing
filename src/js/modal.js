@@ -6,9 +6,10 @@ class ModalWindow {
     this.toggleSelector = parameters.toggleSelector;
     this.visibility = parameters.visibility;
     this.modal = parameters.modal;
+    this.close = parameters.close;
 
     this.handleToggleClick = this.handleToggleClick.bind(this);
-    this.handleMobileMenuClick = this.handleMobileMenuClick.bind(this);
+    this.handleModalClick = this.handleModalClick.bind(this);
     this.hide = this.hide.bind(this);
 
     this.init();
@@ -25,15 +26,15 @@ class ModalWindow {
 
     for(let i = 0; i < this.toggles.length; i++) {
       this.toggles[i].addEventListener('click', this.handleToggleClick);
-      this.setMobileMenuEvents(this.toggles[i]);
+      this.setModalEvents(this.toggles[i]);
     }
   }
 
-  setMobileMenuEvents() {
-    const mobileMenu = document.getElementById('menu');
-    const closeModal = document.getElementById('close-menu');
+  setModalEvents() {
+    const modalItem = document.getElementById(this.modal);
+    const closeModal = document.getElementById(this.close);
     closeModal.addEventListener('click', this.hide);
-    mobileMenu.addEventListener('click', this.handleMobileMenuClick);
+    modalItem.addEventListener('click', this.handleModalClick);
   }
 
   handleToggleClick(event) {
@@ -48,7 +49,7 @@ class ModalWindow {
     modalLayout.classList.add(this.visibility);
   }
 
-  handleMobileMenuClick(event) {
+  handleModalClick(event) {
     event.stopPropagation();
   }
 
@@ -61,7 +62,8 @@ class ModalWindow {
 const modalWindow = new ModalWindow({
   toggleSelector: 'toggle-menu',
   visibility: 'item--visible',
-  modal: 'menu'
+  modal: 'menu',
+  close: 'close-menu'
 });
 
 
