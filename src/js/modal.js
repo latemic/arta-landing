@@ -47,31 +47,31 @@ function changeHeaderClass(){
 }
 
 
-//MOBILE MENU
-let menu = document.getElementById('menu');
-let burger = document.getElementById('toggle-menu');
-let closeMenuBtn = document.getElementById('close-menu');
-
-burger.addEventListener('click', openMenu);
-closeMenuBtn.addEventListener('click', closeMenu);
-
-//Open Menu
-function openMenu(e){
-  defaultBehaviour(e, 'hidden');
-  addClass(menu, 'mobile-menu--visible');
-}
-
-//Close Menu
-function closeMenu(e){
-  defaultBehaviour(e, 'auto');
-  removeClass(menu, 'mobile-menu--visible');
-}
-
-//Any click outside of the Menu will close the menu
-document.addEventListener('click', function(e) {
-  let isClickInside = menu.contains(e.target);
-  let isToggleClicked = burger.contains(e.target);
-  if (!isClickInside && !isToggleClicked) {
-    removeClass(menu, 'mobile-menu--visible');
-  }
-});
+// //MOBILE MENU
+// let menu = document.getElementById('menu');
+// let burger = document.getElementById('toggle-menu');
+// let closeMenuBtn = document.getElementById('close-menu');
+//
+// burger.addEventListener('click', openMenu);
+// closeMenuBtn.addEventListener('click', closeMenu);
+//
+// //Open Menu
+// function openMenu(e){
+//   defaultBehaviour(e, 'hidden');
+//   addClass(menu, 'mobile-menu--visible');
+// }
+//
+// //Close Menu
+// function closeMenu(e){
+//   defaultBehaviour(e, 'auto');
+//   removeClass(menu, 'mobile-menu--visible');
+// }
+//
+// //Any click outside of the Menu will close the menu
+// document.addEventListener('click', function(e) {
+//   let isClickInside = menu.contains(e.target);
+//   let isToggleClicked = burger.contains(e.target);
+//   if (!isClickInside && !isToggleClicked) {
+//     removeClass(menu, 'mobile-menu--visible');
+//   }
+// });
