@@ -12,8 +12,16 @@
   display: block;
 }
 
-@include breakpoint(0, $screen-sm-max){
-  .chatra--side-bottom {
-    bottom: 5px !important;
+.chatra--side-bottom {
+  bottom: 5px !important;
+}
+
+.chatra--pos-right {
+  right: 60px !important;
+}
+
+@include breakpoint(0, $screen-md-max) {
+  .chatra--pos-right {
+    right: 20px !important;
   }
 }
