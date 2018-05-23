@@ -33,6 +33,7 @@ class ModalWindow {
   setModalEvents() {
     const modalItem = document.getElementById(this.modal);
     const closeModal = document.getElementById(this.close);
+
     closeModal.addEventListener('click', this.hide);
     modalItem.addEventListener('click', this.handleModalClick);
   }
@@ -48,7 +49,7 @@ class ModalWindow {
     if (!isTarget) return;
 
     modalLayout.classList.add(this.visibility);
-
+    document.body.style.overflow = 'hidden';
   }
 
   handleModalClick(event) {
@@ -57,8 +58,11 @@ class ModalWindow {
 
   hide(event) {
     event.preventDefault();
+
     const modalLayout = document.getElementById(this.modal);
+
     modalLayout.classList.remove(this.visibility);
+    document.body.style.overflow = 'auto';
   }
 }
 
