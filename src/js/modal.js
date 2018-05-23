@@ -54,11 +54,10 @@ class ModalWindow {
 
   handleModalClick(event) {
     event.stopPropagation();
+    event.preventDefault();
   }
 
-  hide(event) {
-    event.preventDefault();
-
+  hide() {
     const modalLayout = document.getElementById(this.modal);
 
     modalLayout.classList.remove(this.visibility);
