@@ -12,7 +12,7 @@
   display: block;
 }
 
-@include breakpoint(xs){
+@include breakpoint(0, $screen-sm-max){
   .chatra--side-bottom {
     bottom: 5px !important;
   }
