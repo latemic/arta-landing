@@ -11,3 +11,9 @@
 .item--visible {
   display: block;
 }
+
+@include breakpoint(xs){
+  .chatra--side-bottom {
+    bottom: 5px !important;
+  }
+}
