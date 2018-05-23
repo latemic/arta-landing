@@ -39,6 +39,7 @@ class ModalWindow {
 
   handleToggleClick(event) {
     event.stopPropagation();
+    event.preventDefault();
 
     const toggle = event.target;
     const isTarget = toggle.classList.contains(this.toggleSelector);
@@ -47,15 +48,17 @@ class ModalWindow {
     if (!isTarget) return;
 
     modalLayout.classList.add(this.visibility);
+
   }
 
   handleModalClick(event) {
     event.stopPropagation();
   }
 
-  hide() {
+  hide(event) {
+    event.preventDefault();
     const modalLayout = document.getElementById(this.modal);
-      modalLayout.classList.remove(this.visibility);
+    modalLayout.classList.remove(this.visibility);
   }
 }
 
@@ -66,6 +69,12 @@ const modalWindow = new ModalWindow({
   close: 'close-menu'
 });
 
+const subscribeWindow = new ModalWindow({
+  toggleSelector: 'open-modal-window',
+  visibility: 'item--visible',
+  modal: 'sub',
+  close: 'close-modal-window'
+});
 
 // //SUBSCRIBE WINDOW
 // (function (){
@@ -113,9 +122,9 @@ const modalWindow = new ModalWindow({
 //     let navBar = document.getElementById('changing-header');
 //
 //     if(scrollPosY > 74) {
-//       addClass(navBar, 'header--scrolled');
+//       navBar.classList.add('header--scrolled');
 //     } else if(scrollPosY <= 74) {
-//       removeClass(navBar, 'header--scrolled');
+//       navBar.classList.remove('header--scrolled');
 //     }
 //   }
 //
