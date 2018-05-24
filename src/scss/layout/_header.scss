@@ -153,10 +153,10 @@
     }
 
     &__sign-in {
-      z-index: 9991;
       height: 32px;
       line-height: 1;
       padding: 9px 17px;
+      z-index: 9991;
     }
 
     &__start-free {
@@ -168,5 +168,9 @@
       position: relative;
       top: 2px;
     }
+  }
+
+  .toggle-menu {
+    z-index: 9991;
   }
 }
