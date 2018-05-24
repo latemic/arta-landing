@@ -52,7 +52,6 @@
   }
 
   &__mobile-sdk {
-    @extend %bg-mobile-menu;
     background-image: url('/img/sdk-logo.svg');
 
 
@@ -64,7 +63,6 @@
   }
 
   &__ar-cloud {
-    @extend %bg-mobile-menu;
     background-image: url('/img/cloud-logo.svg');
 
     &:active,
@@ -75,7 +73,6 @@
   }
 
   &__3d-visualisation {
-    @extend %bg-mobile-menu;
     background-image: url('/img/3-d-logo.svg');
 
     &:active,
@@ -83,6 +80,13 @@
       background-image: url('/img/3-d-logo-hov.svg');
       color: $curious-blue;
     }
+  }
+
+  &__bg {
+    background-repeat: no-repeat;
+    background-position: 25px 0;
+    background-size: contain;
+    padding-left: 74px;
   }
 
   &__sections-list {
@@ -113,7 +117,6 @@
   }
 
   &__start-free {
-    @extend %button-style;
     display: inline-block;
     position: relative;
     top: 15px;
