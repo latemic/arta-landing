@@ -15,13 +15,3 @@
 .chatra--side-bottom {
   bottom: 5px !important;
 }
-
-.chatra--pos-right {
-  right: 60px !important;
-}
-
-@include breakpoint(xs) {
-  .chatra--pos-right {
-    right: 15px !important;
-  }
-}
