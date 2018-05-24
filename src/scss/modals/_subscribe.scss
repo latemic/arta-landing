@@ -8,10 +8,6 @@
   background-color: rgba(6, 14, 22, 0.95);
   z-index: 99999;
 
-  &--visible {
-    display: block;
-  }
-
   &__close {
     position: absolute;
     right: 61px;
