@@ -21,15 +21,11 @@
 }
 
 .chatra--expanded {
-  right: 20px!important;
+  right: 0!important;
 }
 
 @include breakpoint(0, $screen-sm-max) {
   .chatra--pos-right {
     right: 20px!important;
-  }
-
-  .chatra--expanded {
-    right: 0!important;
   }
 }
