@@ -1,5 +1,3 @@
-'use strict';
-
 class ModalWindow {
   constructor(parameters) {
     this.toggles = document.getElementsByClassName(parameters.toggleSelector);
