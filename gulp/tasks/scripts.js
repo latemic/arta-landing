@@ -7,6 +7,7 @@ const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const jshint = require('gulp-jshint');
 const rename = require('gulp-rename');
+const wrap = require('gulp-wrap');
 const config = require('../config');
 
 gulp.task('scripts:dev', function() {
@@ -17,6 +18,7 @@ gulp.task('scripts:dev', function() {
       presets: ['env'],
       plugins: ['transform-class-properties']
     }))
+    .pipe(wrap(`(function() { <%= contents %> })();`))
     .pipe(concat('will-be-renamed.js'))
     .pipe(sourcemaps.write())
     .pipe(rename(config.names.js))
