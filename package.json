@@ -36,6 +36,7 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
+    "gulp-wrap": "^0.14.0",
     "imagemin-pngquant": "^5.1.0",
     "jshint": "^2.9.5",
     "path": "^0.12.7"
