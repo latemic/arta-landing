@@ -1,13 +1,28 @@
-//CHANGING HEADER CLASS ON SCROLLING
-  window.addEventListener('scroll', changeHeaderClass);
+class changingHeader {
+  constructor(parameters) {
+    this.header = document.getElementById(parameters.headerSelector);
+    this.state = parameters.state;
 
-  function changeHeaderClass(){
-    let scrollPosY = window.pageYOffset | document.body.scrollTop;
-    const navBar = document.getElementById('changing-header');
+    this.init();
+  }
+
+  init() {
+    if (!this.header) return;
+    window.addEventListener('scroll', this.changeHeaderClass);
+  }
+
+  changeHeaderClass = () => {
+    let scrollPosY = window.pageYOffset || document.body.scrollTop;
 
     if(scrollPosY > 74) {
-      navBar.classList.add('header--scrolled');
-    } else if(scrollPosY <= 74) {
-      navBar.classList.remove('header--scrolled');
+      this.header.classList.add(this.state);
+    } else {
+      this.header.classList.remove(this.state);
     }
-  };
+  }
+}
+
+const header = new changingHeader({
+  headerSelector: 'changing-header',
+  state: 'header--scrolled'
+});
