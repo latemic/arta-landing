@@ -1,8 +1,4 @@
 //CHANGING HEADER CLASS ON SCROLLING
-
-(function() {
-  'use strict';
-
   window.addEventListener('scroll', changeHeaderClass);
 
   function changeHeaderClass(){
@@ -15,4 +11,3 @@
       navBar.classList.remove('header--scrolled');
     }
   };
-})();
