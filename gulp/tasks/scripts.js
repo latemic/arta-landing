@@ -14,7 +14,8 @@ gulp.task('scripts:dev', function() {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(babel({
-      presets: ['env']
+      presets: ['env'],
+      plugins: ['transform-class-properties']
     }))
     .pipe(concat('will-be-renamed.js'))
     .pipe(sourcemaps.write())
