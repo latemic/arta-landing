@@ -43,7 +43,7 @@ if ( 'querySelector' in document && 'addEventListener' in window && Array.protot
     };
 
     // Define smooth scroll links
-    let scrollToggle = document.querySelectorAll('.scroll');
+    let scrollToggle = document.querySelectorAll(`[front-role="scroll-toggle"]`);
 
     // For each smooth scroll link
     [].forEach.call(scrollToggle, function (toggle) {
@@ -55,8 +55,8 @@ if ( 'querySelector' in document && 'addEventListener' in window && Array.protot
             e.preventDefault();
 
             // Get anchor link and calculate distance from the top
-            let dataID = toggle.getAttribute('href');
-            let dataTarget = document.querySelector(dataID);
+            let setTarget = toggle.getAttribute('data-target');
+            let dataTarget = document.querySelector(`[front-role="${setTarget}"]`);
             let dataSpeed = toggle.getAttribute('data-speed');
 
             // If the anchor exists
