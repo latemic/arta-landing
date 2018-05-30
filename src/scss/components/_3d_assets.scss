@@ -26,16 +26,14 @@
     top: 175px;
     width: 337px;
     left: calc(50% - 0.5 * 337px);
+    z-index: 1;
   }
 
   &__item-3 {
     position: absolute;
     top: 100px;
     left: calc(827/1280 * 100% + 57px);
-  }
-
-  &__arrow {
-    top: 678px;
+    z-index: 1;
   }
 }
 
@@ -90,11 +88,6 @@
       width: 45px;
       top: 210px;
       left: 80%;
-      z-index: 1;
-    }
-
-    &__arrow {
-      top: 469px;
     }
 
     &:before {
