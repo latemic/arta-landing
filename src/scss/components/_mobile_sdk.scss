@@ -29,7 +29,7 @@
 
 @include breakpoint(xs){
   .mobile-sdk {
-    height: 530px;
+    min-height: 530px;
     padding-top: 50px;
 
     &__heading {
