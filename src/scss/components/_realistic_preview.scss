@@ -17,10 +17,6 @@
     background-position: center 230px;
     background-size: 218px 437px;
   }
-
-  &__arrow {
-    top: 660px;
-  }
 }
 
 @include breakpoint($screen-sm-min, $screen-sm-max) {
@@ -39,16 +35,13 @@
       font-size: 32px;
       line-height: 1.31;
       padding: 0 21px;
-      background-position: center 258px;
+      background-position: center 288px;
     }
 
     br {
       display: none;
     }
 
-    &__arrow {
-      top: 690px;
-    }
 
     &:before {
       background-position: left center;
