@@ -4,6 +4,10 @@
   background-position: center;
   background-size: cover;
   text-align: center;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__heading {
     @extend %heading-reset;
@@ -11,7 +15,7 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $white;
-    padding: 290px 57px 0 57px;
+    padding: 0 57px 0 57px;
     line-height: 1.4;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
   }
@@ -29,15 +33,15 @@
     position: relative;
     margin: 0 auto;
     top: 35px;
-    padding: 8px 18px 9px 18px;
+    padding: 13px 18px 14px 18px;
   }
 
   br {
     display: none;
   }
 
-  &__arrow {
-    top: 647px;
+  .section__arrow {
+    bottom: 64px;
   }
 }
 
@@ -50,7 +54,7 @@
     &__heading {
       margin: 0 auto;
       font-size: 32px;
-      padding: 106px 20px 0 20px;
+      padding: 0 20px 0 20px;
       line-height: 1.31;
     }
 
@@ -67,8 +71,8 @@
       display: block;
     }
 
-    &__arrow {
-      top: 465px;
+    .section__arrow {
+      bottom: 25px;
     }
   }
 }
