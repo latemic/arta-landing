@@ -19,5 +19,5 @@ function handleToggleClick(event) {
 
   if (!targetElement) return;
 
-  targetElement.scrollIntoView({behavior: 'smooth'});
+  targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
 }
