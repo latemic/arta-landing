@@ -1,72 +1,23 @@
-if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) {
+const toggles = document.querySelectorAll(`[front-role="scroll-toggle"]`);
 
-    // Function to animate the scroll
-    let smoothScroll = function (anchor, duration) {
+if (toggles.length) {
+  for (let i = 0; i <= toggles.length; i++) {
+    const toggle = toggles[i];
 
-        // Calculate how far and how fast to scroll
-        let startLocation = window.pageYOffset;
-        let endLocation = anchor.offsetTop;
-        let distance = endLocation - startLocation;
-        let increments = distance/(duration/16);
-        let stopAnimation;
+    if (!toggle) continue;
 
-        // Scroll the page by an increment, and check if it's time to stop
-        let animateScroll = function () {
-            window.scrollBy(0, increments);
-            stopAnimation();
-        };
+    toggle.addEventListener('click', handleToggleClick);
+  }
+}
 
-        // If scrolling down
-        if ( increments >= 0 ) {
-            // Stop animation when you reach the anchor OR the bottom of the page
-            stopAnimation = function () {
-                let travelled = window.pageYOffset;
-                if ( (travelled >= (endLocation - increments)) || ((window.innerHeight + travelled) >= document.body.offsetHeight) ) {
-                    clearInterval(runAnimation);
-                }
-            };
-        }
-        // If scrolling up
-        else {
-            // Stop animation when you reach the anchor OR the top of the page
-            stopAnimation = function () {
-                let travelled = window.pageYOffset;
-                if ( travelled <= (endLocation || 0) ) {
-                    clearInterval(runAnimation);
-                }
-            };
-        }
+function handleToggleClick(event) {
+  event.preventDefault();
 
-        // Loop the animation function
-        let runAnimation = setInterval(animateScroll, 16);
+  const toggle = this;
+  const target = toggle.dataset.target;
+  const targetElement = document.querySelector(`[front-role="${target}"]`);
 
-    };
+  if (!targetElement) return;
 
-    // Define smooth scroll links
-    let scrollToggle = document.querySelectorAll(`[front-role="scroll-toggle"]`);
-
-    // For each smooth scroll link
-    [].forEach.call(scrollToggle, function (toggle) {
-
-        // When the smooth scroll link is clicked
-        toggle.addEventListener('click', function(e) {
-
-            // Prevent the default link behavior
-            e.preventDefault();
-
-            // Get anchor link and calculate distance from the top
-            let setTarget = toggle.getAttribute('data-target');
-            let dataTarget = document.querySelector(`[front-role="${setTarget}"]`);
-            let dataSpeed = toggle.getAttribute('data-speed');
-
-            // If the anchor exists
-            if (dataTarget) {
-                // Scroll to the anchor
-                smoothScroll(dataTarget, dataSpeed || 500);
-            }
-
-        }, false);
-
-    });
-
+  targetElement.scrollIntoView({behavior: 'smooth'});
 }
