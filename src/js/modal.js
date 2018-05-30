@@ -1,82 +1,89 @@
-class ModalWindow {
-  constructor(parameters) {
-    this.toggles = document.getElementsByClassName(parameters.toggleSelector);
-    this.toggleSelector = parameters.toggleSelector;
-    this.visibility = parameters.visibility;
-    this.modal = parameters.modal;
-    this.close = parameters.close;
+const toggleSelector = 'modal-toggle';
+const closeBtnSelector = 'modal-close';
+const eventType = 'ontouchstart' in document.documentElement ? 'touchstart' : 'click';
 
-    this.handleToggleClick = this.handleToggleClick.bind(this);
-    this.handleModalClick = this.handleModalClick.bind(this);
-    this.hide = this.hide.bind(this);
-    this.closeModalWindow = this.closeModalWindow.bind(this);
+class ModalWindow {
+  constructor(toggle) {
+    this.toggle = toggle;
+    this.modalWindow = null;
+    this.closeButton = null;
 
     this.init();
   }
 
   init() {
-    this.setToggleEvents();
+    this.initModalWindow();
+    this.initCloseButton();
 
-    document.addEventListener('click', this.hide);
-  }
-
-  setToggleEvents() {
-    if (!this.toggles) return;
-
-    for(let i = 0; i < this.toggles.length; i++) {
-      this.toggles[i].addEventListener('click', this.handleToggleClick);
-      this.setModalEvents(this.toggles[i]);
+    if (this.modalWindow) {
+      document.addEventListener(eventType, this.close);
+      this.toggle.addEventListener(eventType, this.handleToggleClick);
     }
   }
 
-  setModalEvents() {
-    const modalItem = document.getElementById(this.modal);
-    const closeModal = document.getElementById(this.close);
+  initModalWindow() {
+    const modalWindow = document.querySelector(`[front-role="${this.toggle.dataset.target}"]`);
 
-    closeModal.addEventListener('click', this.closeModalWindow);
-    modalItem.addEventListener('click', this.handleModalClick);
+    if (!modalWindow) return;
+
+    modalWindow.addEventListener(eventType, this.handleModalWindowClick);
+
+    this.modalWindow = modalWindow;
   }
 
-  handleToggleClick(event) {
+  initCloseButton() {
+    const modalWindow = this.modalWindow;
+
+    if (!modalWindow) return;
+
+    const closeBtn = modalWindow.querySelector(`[front-role="${closeBtnSelector}"]`);
+
+    if (!closeBtn) return;
+
+    closeBtn.addEventListener(eventType, this.handleCloseBtnClick);
+
+    this.closeBtn = closeBtn;
+  }
+
+  handleToggleClick = (event) => {
     event.stopPropagation();
     event.preventDefault();
 
-    const toggle = event.target;
-    const isTarget = toggle.classList.contains(this.toggleSelector);
-    const modalLayout = document.getElementById(this.modal);
+    this.open();
+  }
 
-    if (!isTarget) return;
+  handleModalWindowClick = (event) => {
+    event.stopPropagation();
+  }
 
-    modalLayout.classList.add(this.visibility);
+  handleCloseBtnClick = (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+
+    this.close();
+  }
+
+  open = () => {
     document.body.style.overflow = 'hidden';
+    this.modalWindow.style.display = 'block';
   }
 
-  handleModalClick(event) {
-    event.stopPropagation();
-  }
-
-  hide() {
-    const modalLayout = document.getElementById(this.modal);
-    modalLayout.classList.remove(this.visibility);
-    document.body.style.overflow = 'auto';
-  }
-
-  closeModalWindow(event) {
-    event.preventDefault();
-    this.hide();
+  close = () => {
+    document.body.style.overflow = null;
+    this.modalWindow.style.display = 'none';
   }
 }
 
-const modalWindow = new ModalWindow({
-  toggleSelector: 'toggle-menu',
-  visibility: 'item--visible',
-  modal: 'menu',
-  close: 'close-menu'
-});
+const toggles = document.querySelectorAll(`[front-role="${toggleSelector}"]`);
 
-const subscribeWindow = new ModalWindow({
-  toggleSelector: 'open-modal-window',
-  visibility: 'item--visible',
-  modal: 'sub',
-  close: 'close-modal-window'
-});
+if (toggles) {
+  for (let i = 0; i <= toggles.length; i++) {
+    const toggle = toggles[i];
+
+    let modalWindow;
+
+    if (!toggle) continue;
+
+    modalWindow = new ModalWindow(toggle);
+  }
+}

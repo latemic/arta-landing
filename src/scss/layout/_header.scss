@@ -53,6 +53,7 @@
   &__right {
     @extend %list-reset;
     display: flex;
+    align-items: center;
   }
 
   &__right-item {
@@ -98,6 +99,7 @@
   }
 
   &__toggle {
+    @extend %button-reset;
     display: none;
     outline: 0;
     background-color: transparent;
@@ -137,6 +139,7 @@
 @include breakpoint(0, $screen-sm-max) {
   .header {
     height: 60px;
+    padding-right: 20px;
 
     &__brand {
       font-size: 18px;
@@ -155,6 +158,7 @@
     &__sign-in {
       height: 32px;
       line-height: 1;
+      margin-right: 0;
       padding: 9px 17px;
       z-index: 9991;
     }
@@ -167,6 +171,12 @@
       display: inline-block;
       position: relative;
       top: 2px;
+      width: 42px;
+      height: 50px;
+    }
+
+    &__toggle--img {
+      margin-left: 23px;
     }
   }
 
