@@ -18,7 +18,7 @@ gulp.task('scripts:dev', function() {
       presets: ['env'],
       plugins: ['transform-class-properties']
     }))
-    .pipe(wrap(`(function() { <%= contents %> })();`))
+    .pipe(wrap(`(function() {\n\n<%= contents %>\n})();\n`))
     .pipe(concat('will-be-renamed.js'))
     .pipe(sourcemaps.write())
     .pipe(rename(config.names.js))
