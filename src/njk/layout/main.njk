@@ -5,102 +5,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>{{ title }}</title>
-
-  <!-- Search Engine -->
-	<meta name="description" content="Augmented reality suite for home goods brands and retailers to manage virtual products and enable customers to interact with them before buying.">
-	<meta name="Keywords" content="AR, 3D, SDK, ARKit, ARCore, model, visualize">
-	<meta name="image" content="https://arta.temy.co/img/bg-setion-1.jpg">
-	<!-- Schema.org for Google -->
-	<meta itemprop="name" content="Augmented reality for reTAil">
-	<meta itemprop="description" content="Augmented reality suite for home goods brands and retailers to manage virtual products and enable customers to interact with them before buying.">
-	<meta itemprop="image" content="https://arta.temy.co/img/bg-setion-1.jpg">
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Augmented reality for reTAil">
-	<meta name="twitter:description" content="Augmented reality suite for home goods brands and retailers to manage virtual products and enable customers to interact with them before buying.">
-	<meta name="twitter:site" content="@arta6d">
-	<meta name="twitter:creator" content="@arta6d">
-	<meta name="twitter:image:src" content="https://arta.temy.co">
-	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
-	<meta property="og:title" content="Augmented Reality for reTAil">
-	<meta property="og:description" content="Augmented reality suite for home goods brands and retailers to manage virtual products and enable customers to interact with them before buying.">
-	<meta property="og:image" content="https://arta.temy.co/img/bg-setion-1.jpg">
-	<meta property="og:url" content="https://arta.temy.co">
-	<meta property="og:site_name" content="ARTA">
-	<meta property="og:locale" content="en_US">
-	<meta property="fb:admins" content="100001319364777">
-	<meta property="og:type" content="website">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
-
-  <!--Chatra Widget-->
-  <script>
-    window.ChatraSetup = {
-      colors: {
-          buttonText: '#ffffff', /* chat button text color */
-          buttonBg: '#2888e8'    /* chat button background color */
-      }
-    };
-    (function(d, w, c) {
-      w.ChatraID = 'kQtCP8N7JxFXaEDDt';
-      var s = d.createElement('script');
-      w[c] = w[c] || function() {
-      (w[c].q = w[c].q || []).push(arguments);
-      };
-      s.async = true;
-      s.src = 'https://call.chatra.io/chatra.js';
-      if (d.head) d.head.appendChild(s);
-    })(document, window, 'Chatra');
-  </script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48374451-2"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-
-  	gtag('config', 'UA-48374451-2');
-	</script>
-
-  <!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-	    (function (d, w, c) {
-	        (w[c] = w[c] || []).push(function() {
-	            try {
-	                w.yaCounter47711572 = new Ya.Metrika({
-	                    id:47711572,
-	                    clickmap:true,
-	                    trackLinks:true,
-	                    accurateTrackBounce:true,
-	                    webvisor:true
-	                });
-	            } catch(e) { }
-	        });
-
-	        var n = d.getElementsByTagName("script")[0],
-	            s = d.createElement("script"),
-	            f = function () { n.parentNode.insertBefore(s, n); };
-	        s.type = "text/javascript";
-	        s.async = true;
-	        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-	        if (w.opera == "[object Opera]") {
-	            d.addEventListener("DOMContentLoaded", f, false);
-	        } else { f(); }
-	    })(document, window, "yandex_metrika_callbacks");
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/47711572" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
+  {% include "../partials/head.njk" %}
 </head>
 <body class="page {{ pageClass }} site">
   {% include "../partials/header.njk" %}
-  {% include "../modals/subscribe.njk" %}
-  {% include "../modals/mobile_menu.njk" %}
 
   <main class="site__content">
     {% block content %}{% endblock %}
@@ -108,10 +16,10 @@
 
   {% include "../partials/footer.njk" %}
 
+  {% include "../modals/subscribe.njk" %}
+  {% include "../modals/mobile_menu.njk" %}
+
   <script src="js/scripts.js"></script>
-  <!-- Start of HubSpot Embed Code -->
-	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/623399.js">
-	</script>
-	<!-- End of HubSpot Embed Code -->
+	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/623399.js"></script>
 </body>
 </html>
