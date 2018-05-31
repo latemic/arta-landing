@@ -16,12 +16,13 @@
   }
 
   &__label {
-    position: relative;
+    position: absolute;
     display: block;
-    margin: 0 auto;
+    left: 50%;
+    margin-left: -145px;
     width: 290px;
     height: 542px;
-    top: -132px;
+    bottom: 130px;
     z-index: 9;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -45,8 +46,6 @@
 
   &__control:checked + &__image,
   &__image:hover {
-    width: 290px;
-    background-image: url('/img/sprite-lamp.png');
     background-position: 17px 0;
   }
 }
@@ -58,18 +57,8 @@
       top: -100px;
     }
 
-    &__label {
-      top: -202px;
-    }
-
     &__image:hover {
-      background-image: url('/img/sprite-lamp.png');
       background-position: -280px 0;
-      width: 290px;
-    }
-
-    .section__arrow {
-      bottom: 78px;
     }
   }
 }
@@ -86,11 +75,11 @@
     }
 
     &__label {
-      top: 10px;
-      right: 3px;
+      bottom: 0;
       width: 178px;
       height: 380px;
-
+      margin-left: -92px;
+      bottom: 125px;
     }
 
     &__image {
@@ -101,14 +90,11 @@
     }
 
     &__control:checked + &__image {
-      width: 178px;
       background-position: 0 0;
     }
 
     &__image:hover {
-      background-image: url('/img/sprite-lamp.png');
       background-position: -208px 0;
-      width: 178px;
     }
 
     &:before {
