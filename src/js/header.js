@@ -12,7 +12,7 @@ class changingHeader {
   }
 
   changeHeaderClass = () => {
-    let scrollPosY = window.pageYOffset || document.body.scrollTop;
+    const scrollPosY = window.pageYOffset || document.body.scrollTop;
 
     if(scrollPosY > 74) {
       this.header.classList.add(this.state);
