@@ -1,10 +1,4 @@
 .mobile-menu {
-  display: none;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: fixed;
   margin: 10px;
   height: 507px;
   border-radius: 6px;
@@ -12,8 +6,6 @@
   box-shadow: 0 1px 0 0 $alabaster;
   border: 1px solid $alabaster;
   z-index: 9999;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-tap-highlight-color: transparent;
 
   &__products::after {
     content: "";
@@ -32,7 +24,6 @@
   }
 
   &__close {
-    position: absolute;
     top: 15px;
     right: 10px;
     padding: 10px;
