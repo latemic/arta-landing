@@ -77,27 +77,12 @@
 
   &__btn {
     @extend %button-reset;
+    cursor: pointer;
     display: block;
     position: relative;
     margin: 0 auto;
-    height: 43px;
-    border-radius: 22px;
-    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
-      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
-    border: solid 1px $white;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
     line-height: 1;
-    text-align: center;
-    color: $white;
-    padding: 11px 22px;
-
-    &:hover,
-    &:active {
-      background-color: $science-blue;
-      border-color: $science-blue;
-    }
+    padding: 11px 22px 12px 22px;
   }
 }
 
