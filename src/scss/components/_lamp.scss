@@ -82,17 +82,33 @@
       margin-left: 21px;
       font-size: 32px;
       line-height: 1.31;
-      padding: 0;
+      padding: 32px 0 0 0;
     }
 
     &__label {
-      top: -100px;
+      top: 0;
+      right: 3px;
+      width: 178px;
+      height: 380px;
+
+    }
+
+    &__image {
+      width: 178px;
+      height: 380px;
+      background-size: cover;
+      background-position: -208px 0;
+    }
+
+    &__control:checked + &__image {
+      width: 178px;
+      background-position: 0 0;
     }
 
     &__image:hover {
       background-image: url('/img/sprite-lamp.png');
-      background-position: -280px 0;
-      width: 290px;
+      background-position: -208px 0;
+      width: 178px;
     }
 
     &:before {
