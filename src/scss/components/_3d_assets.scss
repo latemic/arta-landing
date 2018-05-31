@@ -14,32 +14,32 @@
     text-align: left;
   }
 
-  &__item-1 {
+  &__item {
     position: absolute;
+    z-index: 1;
+  }
+
+  &__item--1 {
     top: 490px;
     left: calc(207/1280 * 100%);
   }
 
-  &__item-2 {
-    position: absolute;
+  &__item--2 {
     top: 175px;
     width: 337px;
     left: calc(50% - 0.5 * 337px);
-    z-index: 1;
   }
 
-  &__item-3 {
-    position: absolute;
+  &__item--3 {
     top: 100px;
     left: calc(827/1280 * 100% + 57px);
-    z-index: 1;
   }
 }
 
 @include breakpoint($screen-md-min, $screen-md-max) {
   .assets {
 
-    &__item-1 {
+    &__item--1 {
       left: 97px;
     }
   }
@@ -52,7 +52,7 @@
       margin: 0 0 90px 21px;
     }
 
-    &__item-1 {
+    &__item--1 {
       left: 40px;
     }
   }
@@ -60,7 +60,6 @@
 
 @include breakpoint(xs) {
   .assets {
-    height: 530px;
     background-position: center;
 
     &__heading {
@@ -70,20 +69,20 @@
       padding-top: 35px;
     }
 
-    &__item-1 {
+    &__item--1 {
       width: 85px;
       top: 385px;
       left: 20px;
     }
 
-    &__item-2 {
+    &__item--2 {
       width: 169px;
       top: 235px;
       left: 50%;
       margin-left: -70px;
     }
 
-    &__item-3 {
+    &__item--3 {
       width: 45px;
       top: 210px;
       left: 80%;
