@@ -8,18 +8,21 @@
   {% include "../partials/head.njk" %}
 </head>
 <body class="page {{ pageClass }} site">
-  {% include "../partials/header.njk" %}
+  <div front-role="overflow-wrapper">
 
-  <main class="site__content">
-    {% block content %}{% endblock %}
-  </main>
+    {% include "../partials/header.njk" %}
 
-  {% include "../partials/footer.njk" %}
+    <main class="site__content">
+      {% block content %}{% endblock %}
+    </main>
 
-  {% include "../modals/subscribe.njk" %}
-  {% include "../modals/mobile_menu.njk" %}
+    {% include "../partials/footer.njk" %}
 
-  <script src="js/scripts.js"></script>
-	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/623399.js"></script>
+    {% include "../modals/subscribe.njk" %}
+    {% include "../modals/mobile_menu.njk" %}
+
+    <script src="js/scripts.js"></script>
+  	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/623399.js"></script>
+  </div>
 </body>
 </html>

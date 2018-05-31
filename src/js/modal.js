@@ -64,17 +64,21 @@ class ModalWindow {
   }
 
   open = () => {
-    document.body.style.overflow = 'hidden';
+
+    wrapper.style.overflow = 'hidden';
+    wrapper.style.position = 'fixed';
     this.modalWindow.style.display = 'block';
   }
 
   close = () => {
-    document.body.style.overflow = null;
+    wrapper.style.overflow = null;
+    wrapper.style.position = null;
     this.modalWindow.style.display = 'none';
   }
 }
 
 const toggles = document.querySelectorAll(`[front-role="${toggleSelector}"]`);
+const wrapper = document.querySelector(`[front-role="overflow-wrapper"]`);
 
 if (toggles) {
   for (let i = 0; i <= toggles.length; i++) {
