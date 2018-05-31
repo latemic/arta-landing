@@ -28,7 +28,7 @@
 
 @include breakpoint(xs) {
   .one-stop {
-    height: 530px;
+    min-height: 530px;
 
     &__heading {
       padding: 238px 20px 0 20px;

@@ -1,5 +1,4 @@
 .mobile-sdk {
-  min-height: 750px;
   padding-top: 186px;
   text-align: center;
 
@@ -29,7 +28,6 @@
 
 @include breakpoint(xs){
   .mobile-sdk {
-    min-height: 530px;
     padding-top: 50px;
 
     &__heading {

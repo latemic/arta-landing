@@ -1,6 +1,6 @@
 .lamp {
   position: relative;
-  height: 699px;
+  min-height: 699px;
   color: $matisse;
 
   &__heading {
@@ -72,7 +72,7 @@
 
 @include breakpoint(xs){
   .lamp {
-    height: 710px;
+    min-height: 710px;
 
     &__heading {
       margin-left: 21px;
@@ -82,7 +82,7 @@
     }
 
     &__label {
-      top: -100px;
+      top: -62px;
     }
 
     &__image:hover {

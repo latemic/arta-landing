@@ -1,5 +1,5 @@
 .visualisation {
-  height: 705px;
+  min-height: 705px;
   text-align: center;
   padding-top: 208px;
 
@@ -25,37 +25,11 @@
     margin: 0 auto;
     color: $white;
   }
-
-  &__buttons {
-    position: relative;
-    margin: 0 auto;
-    right: 25px;
-    width: 320px;
-  }
-
-  &__contact {
-    display: inline-block;
-    position: relative;
-    padding: 12px 18px 13px 18px;
-    margin: 0 auto;
-    top: 59px;
-  }
-
-  &__more {
-    display: inline-block;
-    position: relative;
-    color: #2888e8;
-    font-size: 16px;
-    font-weight: 700;
-    padding-left: 44px;
-    margin: 0 auto;
-    top: 59px;
-  }
 }
 
 @include breakpoint(xs) {
   .visualisation {
-    height: 530px;
+    min-height: 530px;
     padding-top: 85px;
 
     &__heading {
@@ -67,21 +41,6 @@
     &__description {
       font-size: 16px;
       width: 280px;
-    }
-
-    &__buttons {
-      right: 0;
-    }
-
-    &__contact {
-      top: 30px;
-      margin: 0 auto;
-    }
-
-    &__more {
-      display: block;
-      padding-left: 0;
-      line-height: 1.25;
     }
   }
 }
