@@ -67,12 +67,16 @@
       background-position: -280px 0;
       width: 290px;
     }
+
+    .section__arrow {
+      bottom: 78px;
+    }
   }
 }
 
 @include breakpoint(xs){
   .lamp {
-    min-height: 710px;
+    height: 710px;
 
     &__heading {
       margin-left: 21px;

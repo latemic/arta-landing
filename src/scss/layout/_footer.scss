@@ -59,24 +59,7 @@
   }
 
   &__stay-tuned {
-    height: 43px;
-    background-color: transparent;
-    border: 1px solid $white;
-    color: $white;
-    border-radius: 22px;
     margin: 71px 60px 0 auto;
-    padding: 9px 17px;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent;
-
-    &:hover,
-    &:active {
-      background-color: $matisse;
-      border-color: $matisse;
-    }
   }
 }
 

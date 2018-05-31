@@ -1,5 +1,5 @@
 .visualisation {
-  min-height: 705px;
+  height: 705px;
   text-align: center;
   padding-top: 208px;
 
@@ -29,7 +29,7 @@
 
 @include breakpoint(xs) {
   .visualisation {
-    min-height: 530px;
+    height: 530px;
     padding-top: 85px;
 
     &__heading {
