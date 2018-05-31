@@ -55,6 +55,7 @@
 
     &__heading {
       top: -100px;
+      padding: 0 20px;
     }
 
     &__image:hover {
@@ -68,10 +69,9 @@
     height: 710px;
 
     &__heading {
-      margin-left: 21px;
       font-size: 32px;
       line-height: 1.31;
-      padding: 32px 0 0 0;
+      padding: 32px 0 0 21px;
     }
 
     &__label {
