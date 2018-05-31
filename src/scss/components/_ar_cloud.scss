@@ -1,5 +1,4 @@
 .ar-cloud {
-  height: 750px;
   color: $big-stone;
   padding-top: 157px;
   text-align: center;
@@ -29,7 +28,6 @@
 
 @include breakpoint(xs){
   .ar-cloud {
-    height: 530px;
     padding-top: 104px;
 
     &__heading {
