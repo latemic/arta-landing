@@ -14,30 +14,28 @@
   &__brand {
     display: flex;
     align-items: center;
-  }
-
-  &__logo {
-    width: 45px;
-    height: 52px;
-  }
-
-  &__company-name {
-    margin-left: 13px;
     text-transform: uppercase;
     color: $white;
     font-size: 26px;
     font-weight: 900;
   }
 
-  &__navbar--center {
-    text-align: center;
+  &__company-name {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    background-image: url('/img/arta-logo.svg');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: 58px;
   }
 
-  &__list {
+  &__nav {
     @extend %list-reset;
   }
 
-  &__navbar-item {
+  &__nav-item {
     display: inline-block;
     position: relative;
     padding: 0 27px;
@@ -47,69 +45,38 @@
     font-weight: 700;
   }
 
-  &__navbar-link:hover,
-  &__navbar-link:active {
+  &__nav-link:hover,
+  &__nav-link:active {
     color: $dodger-blue;
   }
 
-  &__navbar--right {
-    right: 0;
-    justify-content: flex-end;
-  }
-
-  &__right-list {
+  &__right {
     @extend %list-reset;
     display: flex;
-    flex: 0 0 calc(300/1280 * 100%);
     align-items: center;
-    justify-content: flex-end;
   }
 
-  &__navbar-btn {
+  &__right-item {
     text-transform: uppercase;
     color: $white;
-    font-size: 13px;
     font-weight: 700;
   }
 
   &__sign-in {
-    border: 1px solid $curious-blue;
-    border-radius: 20px;
-    height: 40px;
     margin-right: 15px;
-    padding: 10px 20px;
-    font-size: 13px;
-    line-height: 1.23;
-    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
-      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
-
-    &:hover,
-    &:active {
-      background-color: $matisse;
-      border: 1px solid $matisse;
-    }
+    padding: 11px 20px 9px 20px;
   }
 
   &__start-free {
-    border: 1px solid $curious-blue;
-    background-color: $curious-blue;
-    border-radius: 20px;
-    height: 40px;
-    font-size: 16px;
-    line-height: 1;
     padding: 7px 16px;
-    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
-      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
-
-    &:hover,
-    &:active {
-      background-color: $matisse;
-      border: 1px solid $matisse;
-    }
   }
 
   &__toggle {
+    @extend %button-reset;
     display: none;
+    outline: 0;
+    background-color: transparent;
+    border: none;
   }
 
   &--scrolled {
@@ -117,15 +84,15 @@
     box-shadow: 0 2px 4px 0 rgba(49, 56, 64, 0.23);
   }
 
-  &--scrolled > * &__company-name {
+  &--scrolled &__company-name {
     color: $curious-blue;
   }
 
-  &--scrolled > * &__navbar-item {
+  &--scrolled &__nav-item {
     color: $matisse;
   }
 
-  &--scrolled > * &__sign-in {
+  &--scrolled &__sign-in {
     color: $matisse;
 
     &:hover,
@@ -145,25 +112,26 @@
 @include breakpoint(0, $screen-sm-max) {
   .header {
     height: 60px;
+    padding-right: 20px;
 
-    &__logo {
-      width: 33px;
-      height: 38px;
-    }
-
-    &__company-name {
+    &__brand {
       font-size: 18px;
     }
 
-    &__navbar--center {
+    &__company-name {
+      height: 38px;
+      background-size: contain;
+      text-indent: 42px;
+    }
+
+    &__nav {
       display: none;
     }
 
     &__sign-in {
-      z-index: 9991;
-      height: 32px;
-      line-height: 1;
+      margin-right: 0;
       padding: 9px 17px;
+      z-index: 9991;
     }
 
     &__start-free {
@@ -174,6 +142,13 @@
       display: inline-block;
       position: relative;
       top: 2px;
+      width: 42px;
+      height: 50px;
+      z-index: 9991;
+    }
+
+    &__toggle--img {
+      margin-left: 23px;
     }
   }
 }

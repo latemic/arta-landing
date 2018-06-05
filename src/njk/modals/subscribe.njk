@@ -1,12 +1,17 @@
-<div class="subscribe" id="sub">
-  <a href="#" id="close-modal-window">
-    <img class="subscribe__close" src="img/ic-close.svg" alt="close" />
+<div front-role="subscribe-modal" class="subscribe modal">
+  <a href="#" front-role="modal-close">
+    <img class="subscribe__close modal__close" src="img/ic-close.svg" alt="close" />
   </a>
-  <h3 class="subscribe__heading">
-    Interested in what we're doing? <br />Stay tuned for our updates
-  </h3>
-  <form action="#">
-    <input required class="subscribe__email" type="email" placeholder="youremail@gmail.com" name="mail">
-    <input type="submit" class="subscribe__btn" value="Subscribe">
-  </form>
+  <div class="subscribe__wrapper">
+    <h3 class="subscribe__heading">
+      Interested in what we're doing? <br />Stay tuned for our updates
+    </h3>
+    <form action="https://temy.us14.list-manage.com/subscribe/post" method="POST">
+      <input type="hidden" name="u" value="3489d658eefcc2886b073f935">
+      <input type="hidden" name="id" value="130e809fb1">
+
+      <input required class="subscribe__email" type="email" name="MERGE0" id="MERGE0" placeholder="Enter your email address">
+      <input type="submit" class="subscribe__btn button button--white-transparent" value="subscribe">
+    </form>
+  </div>
 </div>

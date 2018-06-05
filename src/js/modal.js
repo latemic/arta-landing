@@ -1,77 +1,93 @@
-//SUBSCRIBE WINDOW
-let modal = document.getElementById('sub');
-let btn = document.getElementById('open-modal-window');
-let close = document.getElementById('close-modal-window');
+const toggleSelector = 'modal-toggle';
+const closeBtnSelector = 'modal-close';
+const eventType = 'ontouchstart' in document.documentElement ? 'touchstart' : 'click';
 
-//btn.addEventListener('click', openModalWindow);
-close.addEventListener('click', closeModalWindow);
+class ModalWindow {
+  constructor(toggle) {
+    this.toggle = toggle;
+    this.modalWindow = null;
+    this.closeButton = null;
 
-function addClass(obj, className) {
-  obj.classList.add(className);
-}
+    this.init();
+  }
 
-function removeClass(obj, className) {
-  obj.classList.remove(className);
-}
+  init() {
+    this.initModalWindow();
+    this.initCloseButton();
 
-function defaultBehaviour(e, flowStyle) {
-  e.preventDefault();
-  document.body.style.overflow = flowStyle;
-}
+    if (this.modalWindow) {
+      document.addEventListener(eventType, this.close);
+      this.toggle.addEventListener(eventType, this.handleToggleClick);
+    }
+  }
 
-//Open Modal Window
-function openModalWindow(e) {
-  defaultBehaviour(e, 'hidden');
-  addClass(modal, 'subscribe--visible');
-}
+  initModalWindow() {
+    const modalWindow = document.querySelector(`[front-role="${this.toggle.dataset.target}"]`);
 
-//Close Modal Window
-function closeModalWindow(e) {
-  defaultBehaviour(e, 'auto');
-  removeClass(modal, 'subscribe--visible');
-}
+    if (!modalWindow) return;
 
+    modalWindow.addEventListener(eventType, this.handleModalWindowClick);
 
-//CHANGING HEADER CLASS ON SCROLLING
-window.addEventListener('scroll', changeHeaderClass);
+    this.modalWindow = modalWindow;
+  }
 
-function changeHeaderClass(){
-  let scrollPosY = window.pageYOffset | document.body.scrollTop;
-  let navBar = document.getElementById('changing-header');
+  initCloseButton() {
+    const modalWindow = this.modalWindow;
 
-  if(scrollPosY > 74) {
-    addClass(navBar, 'header--scrolled');
-  } else if(scrollPosY <= 74) {
-    removeClass(navBar, 'header--scrolled');
+    if (!modalWindow) return;
+
+    const closeBtn = modalWindow.querySelector(`[front-role="${closeBtnSelector}"]`);
+
+    if (!closeBtn) return;
+
+    closeBtn.addEventListener(eventType, this.handleCloseBtnClick);
+
+    this.closeBtn = closeBtn;
+  }
+
+  handleToggleClick = (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+
+    this.open();
+  }
+
+  handleModalWindowClick = (event) => {
+    event.stopPropagation();
+  }
+
+  handleCloseBtnClick = (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+
+    this.close();
+  }
+
+  open = () => {
+
+    wrapper.style.overflow = 'hidden';
+    wrapper.style.position = 'fixed';
+    this.modalWindow.style.display = 'block';
+  }
+
+  close = () => {
+    wrapper.style.overflow = null;
+    wrapper.style.position = null;
+    this.modalWindow.style.display = 'none';
   }
 }
 
-/*
-//MOBILE MENU
-let menu = document.getElementById('menu');
-let burger = document.getElementById('toggle-menu');
-let closeMenuBtn = document.getElementById('close-menu');
+const toggles = document.querySelectorAll(`[front-role="${toggleSelector}"]`);
+const wrapper = document.querySelector(`[front-role="overflow-wrapper"]`);
 
-burger.addEventListener('click', openMenu);
-closeMenuBtn.addEventListener('click', closeMenu);
+if (toggles) {
+  for (let i = 0; i <= toggles.length; i++) {
+    const toggle = toggles[i];
 
-//Open Menu
-function openMenu(e){
-  defaultBehaviour(e, 'hidden');
-  addClass(menu, 'mobile-menu--visible');
-}
+    let modalWindow;
 
-//Close Menu
-function closeMenu(e){
-  defaultBehaviour(e, 'auto');
-  removeClass(menu, 'mobile-menu--visible');
-}
+    if (!toggle) continue;
 
-//Any click outside of the Menu will close the menu
-document.addEventListener('click', function(e) {
-  let isClickInside = menu.contains(e.target);
-  let isToggleClicked = burger.contains(e.target);
-  if (!isClickInside && !isToggleClicked) {
-    removeClass(menu, 'mobile-menu--visible');
+    modalWindow = new ModalWindow(toggle);
   }
-});*/
+}

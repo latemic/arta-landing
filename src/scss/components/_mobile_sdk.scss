@@ -1,27 +1,19 @@
 .mobile-sdk {
-  height: 750px;
   padding-top: 186px;
-  background-image: url('/img/bg-mob-sdk.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
-
-  &__image {
-    display: block;
-    position: relative;
-    width: 67px;
-    margin: 0 auto;
-  }
 
   &__heading {
     @extend %heading-reset;
     font-size: 30px;
     font-weight: 700;
+    height: 150px;
     text-transform: uppercase;
     color: $white;
-    padding-top: 12px;
+    padding-top: 92px;
     line-height: 2.33;
+    background-image: url('/img/arta-sdk.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 
   &__description {
@@ -32,74 +24,26 @@
     padding: 19px 20px 0 20px;
     color: $white;
   }
-
-  &__buttons {
-    position: relative;
-    margin: 0 auto;
-    right: 25px;
-    width: 320px;
-  }
-
-  &__request {
-    @extend %button-style;
-    display: inline-block;
-    position: relative;
-    padding: 12px 18px 13px 18px;
-    margin: 0 auto;
-    top: 59px;
-  }
-
-  &__more {
-    display: inline-block;
-    position: relative;
-    color: $curious-blue;
-    font-size: 16px;
-    font-weight: 700;
-    padding-left: 44px;
-    margin: 0 auto;
-    top: 59px;
-  }
 }
 
 @include breakpoint(xs){
   .mobile-sdk {
-    height: 530px;
     padding-top: 50px;
 
-    &__image {
-      margin-top: 30px;
-    }
-
     &__heading {
-      margin: 0 auto;
+      margin: 30px auto 0 auto;
       font-size: 24px;
       line-height: 1.33;
       width: 215px;
-      padding-top: 30px;
+      padding-top: 110px;
     }
 
     &__description {
       font-size: 16px;
     }
 
-    &__buttons {
-      right: 0;
+    br {
+      display: none;
     }
-
-    &__request {
-      top: 30px;
-    }
-
-    &__more {
-      display: block;
-      margin: 0 auto;
-      padding-left: 0;
-      top: 58px;
-      line-height: 1.25;
-    }
-  }
-
-  .mobile-sdk br {
-    display: none;
   }
 }

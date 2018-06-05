@@ -9,9 +9,13 @@
 @import 'layout/header';
 @import 'layout/footer';
 
+@import 'modals/modal';
 @import 'modals/subscribe';
 @import 'modals/mobile_menu';
-@import 'modals/sign_in';
+
+@import 'components/section';
+@import 'components/buttons';
+@import 'components/section_group';
 
 @import 'components/intro';
 @import 'components/one_stop';

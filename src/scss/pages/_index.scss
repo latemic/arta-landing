@@ -7,3 +7,29 @@
 .site__content {
   flex: 1;
 }
+
+.item--visible {
+  display: block;
+}
+
+.chatra--side-bottom {
+  bottom: 5px!important;
+}
+
+.chatra--pos-right {
+  right: 60px!important;
+}
+
+.chatra--expanded {
+  right: 0 !important;
+}
+
+@include breakpoint(0, $screen-sm-max) {
+  .chatra--pos-right {
+    right: 20px!important;
+  }
+
+  .chatra--expanded {
+    right: 0 !important;
+  }
+}

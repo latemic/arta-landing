@@ -1,0 +1,109 @@
+.buttons-group {
+  position: relative;
+  margin: 0 auto;
+  right: 25px;
+  width: 320px;
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    top: 59px;
+  }
+
+  &__item--1 {
+    padding: 12px 18px 13px 18px;
+  }
+
+  &__item--2 {
+    padding-left: 44px;
+  }
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+
+  &--transparent {
+    color: $curious-blue;
+  }
+
+  &--blue {
+    border: 1px solid $curious-blue;
+    border-radius: 22px;
+    background-color: $curious-blue;
+    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
+    0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
+    height: 43px;
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1;
+
+    &:hover,
+    &:active {
+      background-color: $science-blue;
+      border-color: $science-blue;
+    }
+  }
+
+  &--white-transparent {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+    height: 43px;
+    border-radius: 22px;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active {
+      background-color: $matisse;
+      border-color: $matisse;
+    }
+  }
+
+  &--blue-transparent {
+    border: 1px solid $curious-blue;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 1.23;
+    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
+      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
+
+    &:hover,
+    &:active {
+      background-color: $matisse;
+      border: 1px solid $matisse;
+    }
+  }
+}
+
+@include breakpoint($screen-sm-min, $screen-sm-max) {
+  .button {
+    &--blue-transparent {
+      height: 32px;
+      line-height: 1;
+    }
+  }
+}
+
+
+
+@include breakpoint(xs) {
+  .buttons-group {
+    right: 0;
+
+    &__item--1 {
+      top: 30px;
+    }
+
+    &__item--2 {
+      display: block;
+      margin: 0 auto;
+      padding-left: 0;
+      top: 58px;
+    }
+  }
+}

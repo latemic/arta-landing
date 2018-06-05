@@ -1,10 +1,13 @@
 .intro {
-  height: 750px;
   background-image: url('/img/header_bgr.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__heading {
     @extend %heading-reset;
@@ -12,13 +15,9 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $white;
-    padding: 290px 57px 0 57px;
+    padding: 0 57px;
     line-height: 1.4;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
-  }
-
-  &__br--xs {
-    display: none;
   }
 
   &__description {
@@ -31,31 +30,31 @@
   }
 
   &__start-free {
-    @extend %button-style;
     position: relative;
     margin: 0 auto;
     top: 35px;
-    padding: 8px 18px 9px 18px;
-
+    padding: 13px 18px 0 18px;
   }
 
-  &__arrow {
-    @extend %arrow;
-    padding: 24.8px 0 63.8px 0;
-    top: 675px;
+  br {
+    display: none;
+  }
+
+  .section__arrow {
+    bottom: 64px;
   }
 }
 
 @include breakpoint(xs){
   .intro {
-    height: 530px;
+    min-height: 530px;
     background-image: url('/img/bg-section-1.jpg');
     background-position: center 0;
 
     &__heading {
       margin: 0 auto;
       font-size: 32px;
-      padding: 106px 20px 0 20px;
+      padding: 0 20px 0 20px;
       line-height: 1.31;
     }
 
@@ -68,8 +67,12 @@
       top: 30px;
     }
 
-    &__arrow {
-      top:  465px;
+    br {
+      display: block;
+    }
+
+    .section__arrow {
+      bottom: 25px;
     }
   }
 }

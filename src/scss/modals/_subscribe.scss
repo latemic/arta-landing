@@ -1,21 +1,17 @@
 .subscribe {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background-color: rgba(6, 14, 22, 0.95);
-  z-index: 9999;
-
-  &--visible {
-    display: block;
-  }
+  z-index: 99999;
 
   &__close {
-    position: absolute;
-    right: 61px;
-    top: 61px;
+    right: 46px;
+    top: 46px;
+    padding: 15px;
+  }
+
+  &__wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__heading {
@@ -25,7 +21,7 @@
     color: $white;
     text-transform: uppercase;
     text-align: center;
-    padding: 153px 171px 51px 171px;
+    padding: 0 171px 51px 171px;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
   }
 
@@ -35,15 +31,19 @@
     background: transparent;
     outline: none;
     border: none;
+    box-shadow: none;
     color: $white;
     border-bottom: 1px solid;
+    border-radius: 0;
     margin: 0 auto;
     text-align: center;
     width: 395px;
     font-size: 16px;
     font-weight: 700px;
+    line-height: 1.5;
     padding-bottom: 18px;
     margin-bottom: 51px;
+
   }
 
   &__email::placeholder {
@@ -78,27 +78,12 @@
 
   &__btn {
     @extend %button-reset;
+    cursor: pointer;
     display: block;
     position: relative;
     margin: 0 auto;
-    height: 43px;
-    border-radius: 22px;
-    box-shadow: 0 1px 2px 0 rgba(47, 101, 170, 0.55),
-      0 0 5px 0 rgba(31, 82, 133, 0.17), inset 0 0.5px 0 0 $danube;
-    border: solid 1px $white;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700;
     line-height: 1;
-    text-align: center;
-    color: $white;
-    padding: 11px 22px;
-
-    &:hover,
-    &:active {
-      background-color: $science-blue;
-      border-color: $science-blue;
-    }
+    padding: 11px 22px 12px 22px;
   }
 }
 
@@ -106,8 +91,9 @@
   .subscribe {
 
     &__close {
-      right: 11px;
-      top: 11px;
+      right: 0;
+      top: 0;
+      padding: 11px;
     }
 
     &__heading {

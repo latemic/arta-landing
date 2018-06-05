@@ -1,12 +1,10 @@
 .lamp {
   position: relative;
-  height: 699px;
+  min-height: 702px;
   color: $matisse;
-  background-image: url('/img/bg-lamp.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
 
   &__heading {
+    @extend %heading-reset;
     position: relative;
     padding-left: 97px;
     font-size: 50px;
@@ -17,60 +15,51 @@
     line-height: 1.4;
   }
 
+  &__label {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -145px;
+    width: 290px;
+    height: 542px;
+    bottom: 100px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+  }
+
   &__image {
     position: relative;
-    top: -230px;
+    left: 10px;
     margin: 0 auto;
-    width: 240px;
+    width: 290px;
     height: 542px;
     background-image: url('/img/sprite-lamp.png');
     background-repeat: no-repeat;
-    background-position: -290px 0;
+    background-position: -280px 0;
   }
 
-  &__label {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 265px;
-    height: 542px;
-  }
-
-  #lampControl {
+  &__control {
     display: none;
   }
 
-  #lampControl:checked + &__image,
+  &__control:checked + &__image,
   &__image:hover {
-    width: 260px;
-    background-image: url('/img/sprite-lamp.png');
     background-position: 17px 0;
   }
-
-  &__arrow {
-    @extend %arrow;
-    padding: 47px 0 64px 0;
-    top: 610px;
-  }
 }
-
-
 
 @include breakpoint($screen-sm-min, $screen-sm-max){
   .lamp {
 
     &__heading {
       top: -100px;
-    }
-
-    &__image {
-      top: -250px;
+      padding: 0 20px;
     }
 
     &__image:hover {
-      background-image: url('/img/sprite-lamp.png');
-      background-position: -290px 0;
-      width: 240px;
+      background-position: -280px 0;
     }
   }
 }
@@ -78,28 +67,42 @@
 @include breakpoint(xs){
   .lamp {
     height: 710px;
-    background: url('/img/bg-lamp.svg') no-repeat center;
-    background-size: cover;
 
     &__heading {
-      margin-left: 21px;
       font-size: 32px;
       line-height: 1.31;
-      padding: 0;
+      padding: 32px 0 0 21px;
+    }
+
+    &__label {
+      bottom: 0;
+      width: 178px;
+      height: 380px;
+      margin-left: -92px;
+      bottom: 125px;
     }
 
     &__image {
-      top: -150px;
+      width: 178px;
+      height: 380px;
+      background-size: cover;
+      background-position: -208px 0;
+    }
+
+    &__control:checked + &__image {
+      background-position: 0 0;
     }
 
     &__image:hover {
-      background-image: url('/img/sprite-lamp.png');
-      background-position: -290px 0;
-      width: 240px;
+      background-position: -208px 0;
     }
 
-    &__arrow {
-      top: 611px;
+    &:before {
+      background-position: left 220px;
+    }
+
+    &:after {
+      background-position: right 220px;
     }
   }
 }

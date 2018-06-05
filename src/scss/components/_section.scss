@@ -1,0 +1,70 @@
+.section {
+  position: relative;
+  min-height: 750px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &--grills:before,
+  &--grills:after {
+    position: absolute;
+    top: 118px;
+    width: 50%;
+    height: 595px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+  }
+
+  &--grills:before {
+    content: "";
+    left: 0;
+    background-image: url('/img/hexa-left.svg');
+    background-position: left;
+  }
+
+  &--grills:after {
+    content: "";
+    right: 0;
+    background-image: url('/img/hexa-right.svg');
+    background-position: right;
+  }
+
+  &__arrow {
+    display: block;
+    position: absolute;
+    width: 32px;
+    margin-left: -13px;
+    left: 50%;
+    z-index: 99;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    bottom: 25px;
+
+    &:hover,
+    &:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+@include breakpoint(xs) {
+  .section {
+    min-height: 530px;
+
+    &--grills:before,
+    &--grills:after {
+      background-size: 90%;
+    }
+
+    &--grills:before {
+      background-image: url('/img/hexa-mob-left.svg');
+      background-position: top left;
+    }
+
+    &--grills:after {
+      background-image: url('/img/hexa-mob-right.svg');
+      background-position: top right;
+    }
+  }
+}

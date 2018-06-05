@@ -1,36 +1,30 @@
 <header id="changing-header" class="header">
-    <a class="header__brand" href="#">
-      <img class="header__logo" src="img/arta-logo.svg" alt="Arta" />
-      <h1 class="header__company-name">Arta</h1>
-    </a>
 
-    <!--<div class="header__navbar--center">
-      <ul class="header__list">
-        <li class="header__navbar-item"><a class="header__navbar-link" href="#">Products</a></li>
-        <li class="header__navbar-item"><a class="header__navbar-link" href="#">Pricing</a></li>
-        <li class="header__navbar-item"><a class="header__navbar-link" href="#">Support</a></li>
-        <li class="header__navbar-item"><a class="header__navbar-link" href="#">Blog</a></li>
-      </ul>
-    </div>-->
+    <h1 class="header__brand"><a class="header__company-name" href="#">Arta</a></h1>
 
-    <div class="header__navbar--right">
-      <ul class="header__right-list">
-        <li class="header__navbar-btn">
-          <a class="header__sign-in" href="#">
-            Sign In
-          </a>
-        </li>
-        <li class="header__navbar-btn">
-          <a class="header__start-free" href="#">
-            Start Free
-          </a>
-        </li>
-        <li class="header__navbar-btn">
-          <a id="toggle-menu" class="header__toggle" href="#">
-            <img class="" src="img/ic-menu.svg" alt="toggle" />
-          </a>
-        </li>
-      </ul>
-    </div>
+    {# <ul class="header__nav">
+      <li class="header__nav-item"><a class="header__nav-link" href="#">Products</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="#">Pricing</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="#">Support</a></li>
+      <li class="header__nav-item"><a class="header__nav-link" href="#">Blog</a></li>
+    </ul> #}
+
+    <ul class="header__right">
+      <li class="header__right-item">
+        <a class="header__sign-in button button--blue-transparent" href="https://cloud.arta.temy.co/login">
+          Sign In
+        </a>
+      </li>
+      <li class="header__right-item">
+        <a class="header__start-free button button--blue" href="https://cloud.arta.temy.co/signup">
+          Start Free
+        </a>
+      </li>
+      {# <li class="header__right-item">
+        <button front-role="modal-toggle" class="header__toggle" href="#" data-target="mobile-menu">
+          <img class="header__toggle--img"src="img/ic-menu.svg" alt="toggle" />
+        </button>
+      </li> #}
+    </ul>
 
 </header>

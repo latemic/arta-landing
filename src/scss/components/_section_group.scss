@@ -1,0 +1,33 @@
+.section-group {
+  &--triple-skew {
+    background-image: url('/img/triple-desktop-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center 48px;
+    background-size: 100% 2202px;
+  }
+
+  &--double-skew {
+    background-image: url('/img/double-desktop-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center 70px;
+    background-size: 100% 1334px;
+  }
+}
+
+@include breakpoint(xs) {
+  .section-group {
+    &--triple-skew {
+      background-image: url('/img/triple-mobile-bg.svg');
+      background-repeat: no-repeat;
+      background-position: center 430px;
+      background-size: 100% 1350px;
+    }
+
+    &--double-skew {
+      background-image: url('/img/double-mobile-bg.svg');
+      background-repeat: no-repeat;
+      background-position: center 370px;
+      background-size: 100% 1240px;
+    }
+  }
+}
