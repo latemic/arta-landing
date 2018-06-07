@@ -1,5 +1,6 @@
 .assets {
   position: relative;
+  min-height: 702px;
 
   &__heading {
     @extend %heading-reset;
@@ -20,18 +21,18 @@
   }
 
   &__item--1 {
-    top: 490px;
+    top: 450px;
     left: calc(207/1280 * 100%);
   }
 
   &__item--2 {
-    top: 175px;
+    top: 145px;
     width: 337px;
     left: calc(50% - 0.5 * 337px);
   }
 
   &__item--3 {
-    top: 100px;
+    top: 80px;
     left: calc(827/1280 * 100% + 57px);
   }
 }
@@ -50,6 +51,7 @@
 
     &__heading {
       margin: 0 0 90px 21px;
+      max-width: 420px;
     }
 
     &__item--1 {
@@ -61,7 +63,7 @@
 @include breakpoint(xs) {
   .assets {
     background-position: center;
-
+    min-height: 530px;
     &__heading {
       font-size: 32px;
       line-height: 1.31;
